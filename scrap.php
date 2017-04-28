@@ -1,3 +1,4 @@
+<title>Web Scrapper</title>
 <?php 
 
 require('simple_html_dom.php');
