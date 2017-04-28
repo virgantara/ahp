@@ -1,6 +1,7 @@
 <?php
 $html = file_get_contents('http://pokemondb.net/evolution'); //get the html returned from the following url
 
+
 $pokemon_doc = new DOMDocument();
 
 libxml_use_internal_errors(TRUE); //disable libxml errors
