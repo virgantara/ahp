@@ -1,11 +1,7 @@
 logs/*
-<<<<<<< HEAD
+
 
 *.zip
 
 *.log
 
-=======
-*.zip
-*.log
->>>>>>> f2dc2f8ffd56231b490b17643ebcb7b3484bcbb6

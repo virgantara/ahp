@@ -1,0 +1,15 @@
+[Fri Apr 28 09:37:57.585828 2017] [:error] [pid 13947] [client 172.68.144.151:20143] PHP Fatal error:  Class 'DOMDocument' not found in /var/www/ahp/scrapt.php on line 5
+[Fri Apr 28 09:37:57.586493 2017] [:error] [pid 13947] [client 172.68.144.151:20143] PHP Stack trace:
+[Fri Apr 28 09:37:57.586538 2017] [:error] [pid 13947] [client 172.68.144.151:20143] PHP   1. {main}() /var/www/ahp/scrapt.php:0
+[Fri Apr 28 09:41:08.018586 2017] [:error] [pid 13946] [client 172.68.144.151:27183] PHP Fatal error:  Class 'DOMDocument' not found in /var/www/ahp/scrapt.php on line 5
+[Fri Apr 28 09:41:08.018706 2017] [:error] [pid 13946] [client 172.68.144.151:27183] PHP Stack trace:
+[Fri Apr 28 09:41:08.018737 2017] [:error] [pid 13946] [client 172.68.144.151:27183] PHP   1. {main}() /var/www/ahp/scrapt.php:0
+[Fri Apr 28 09:42:29.232242 2017] [:error] [pid 13949] [client 172.68.144.151:21619] PHP Fatal error:  Class 'DOMDocument' not found in /var/www/ahp/scrapt.php on line 5
+[Fri Apr 28 09:42:29.232358 2017] [:error] [pid 13949] [client 172.68.144.151:21619] PHP Stack trace:
+[Fri Apr 28 09:42:29.232388 2017] [:error] [pid 13949] [client 172.68.144.151:21619] PHP   1. {main}() /var/www/ahp/scrapt.php:0
+[Fri Apr 28 09:43:28.078277 2017] [:error] [pid 14463] [client 172.68.144.151:33096] PHP Fatal error:  Class 'DOMDocument' not found in /var/www/ahp/scrapt.php on line 5
+[Fri Apr 28 09:43:28.078436 2017] [:error] [pid 14463] [client 172.68.144.151:33096] PHP Stack trace:
+[Fri Apr 28 09:43:28.078471 2017] [:error] [pid 14463] [client 172.68.144.151:33096] PHP   1. {main}() /var/www/ahp/scrapt.php:0
+[Fri Apr 28 09:57:27.441891 2017] [:error] [pid 14466] [client 172.68.144.151:34764] PHP Fatal error:  Class 'DOMDocument' not found in /var/www/ahp/scrapt.php on line 5
+[Fri Apr 28 09:57:27.441984 2017] [:error] [pid 14466] [client 172.68.144.151:34764] PHP Stack trace:
+[Fri Apr 28 09:57:27.442007 2017] [:error] [pid 14466] [client 172.68.144.151:34764] PHP   1. {main}() /var/www/ahp/scrapt.php:0
