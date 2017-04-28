@@ -1,47 +1,38 @@
-<?php
-$html = file_get_contents('http://pokemondb.net/evolution'); //get the html returned from the following url
+<?php 
 
-
-$pokemon_doc = new DOMDocument();
-
-libxml_use_internal_errors(TRUE); //disable libxml errors
-
-if(!empty($html)){ //if any html is actually returned
-
-	$pokemon_doc->loadHTML($html);
-	libxml_clear_errors(); //remove errors for yucky html
-	
-	$pokemon_xpath = new DOMXPath($pokemon_doc);
-
-	$pokemon_list = array();
-
-$pokemon_and_type = $pokemon_xpath->query('//span[@class="infocard-tall "]');
-
-if($pokemon_and_type->length > 0){	
-	
-	//loop through all the pokemons
-	foreach($pokemon_and_type as $pat){
-		
-		//get the name of the pokemon
-		$name = $pokemon_xpath->query('a[@class="ent-name"]', $pat)->item(0)->nodeValue;
-		
-		$pkmn_types = array(); //reset $pkmn_types for each pokemon
-		$types = $pokemon_xpath->query('small[@class="aside"]/a', $pat);
-
-		//loop through all the types and store them in the $pkmn_types array
-		foreach($types as $type){
-			$pkmn_types[] = $type->nodeValue; //the pokemon type
-		}
-
-		//store the data in the $pokemon_list array
-		$pokemon_list[] = array('name' => $name, 'types' => $pkmn_types);
-		
-	}
+require('simple_html_dom.php');
+ 
+// Create DOM from URL or file
+$html = file_get_html('https://www.youtube.com/feed/trending');
+ 
+// creating an array of elements
+$videos = array();
+ 
+// Find top ten videos
+$i = 1;
+foreach ($html->find('li.expanded-shelf-content-item-wrapper') as $video) {
+        if ($i > 10) {
+                break;
+        }
+ 
+        // Find item link element 
+        $videoDetails = $video->find('a.yt-uix-tile-link', 0);
+ 
+        // get title attribute
+        $videoTitle = $videoDetails->title;
+ 
+        // get href attribute
+        $videoUrl = 'https://youtube.com' . $videoDetails->href;
+ 
+        // push to a list of videos
+        $videos[] = array(
+                'title' => $videoTitle,
+                'url' => $videoUrl
+        );
+ 
+        $i++;
 }
-
-//output what we have
-echo "<pre>";
-print_r($pokemon_list);
-echo "</pre>";
-}
+ echo '<pre>';
+print_r($videos);
+echo '</pre>';
 ?>
