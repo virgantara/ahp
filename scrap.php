@@ -1,39 +1,52 @@
-<title>Web Scrapper</title>
-<?php 
 
-require('simple_html_dom.php');
- 
-// Create DOM from URL or file
-$html = file_get_html('https://www.youtube.com/feed/trending');
- 
-// creating an array of elements
-$videos = array();
- 
-// Find top ten videos
-$i = 1;
-foreach ($html->find('li.expanded-shelf-content-item-wrapper') as $video) {
-        if ($i > 10) {
-                break;
-        }
- 
-        // Find item link element 
-        $videoDetails = $video->find('a.yt-uix-tile-link', 0);
- 
-        // get title attribute
-        $videoTitle = $videoDetails->title;
- 
-        // get href attribute
-        $videoUrl = 'https://youtube.com' . $videoDetails->href;
- 
-        // push to a list of videos
-        $videos[] = array(
-                'title' => $videoTitle,
-                'url' => $videoUrl
-        );
- 
-        $i++;
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+</head>
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">
+
+function callback(data){
+    // var regions = JSON.stringify(data.config.regions);
+    var itemReg =  $.map(data.config.regions, function(value){
+        return value;
+    });
+
+    // console.log(itemReg);
+    // var itemReg = '';
+    // $.each(data.config.regions, function (index, value) {
+    //     // console.log(value);
+
+    //     itemReg += '<pre>'+value.region+'</pre>';
+    //     $.each(value.types, function (i2, v2) {
+    //        $.each(value.types, function (i3, v3) {
+    //             console.log(v3);
+    //             // itemReg += '<pre>'+v2.region+'</pre>';
+    //         });
+    //         // itemReg += '<pre>'+v2.region+'</pre>';
+    //     });
+    // });
+
+    // $('#regions').html(itemReg);
+   $('#regions').html(JSON.stringify(itemReg));
 }
- echo '<pre>';
-print_r($videos);
-echo '</pre>';
-?>
+
+$(document).ready(function(){
+    $.ajax({
+      url: 'http://a0.awsstatic.com/pricing/1/ec2/pricing-data-transfer-with-regions.min.js',
+      dataType: 'jsonp',
+      jsonpCallback: 'callback', // specify the callback name if you're hard-coding it
+      success: function(data){
+        // callback(data);
+        // $.each(data.response.venue.tips.groups, function (index, value) {
+        //     $.each(this.items, function () {
+        //         console.log(this.text);
+        //     });
+        // });
+      }
+    });
+
+});
+</script>
+
+<div id="regions"></div>
