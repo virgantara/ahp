@@ -1,4 +1,8 @@
 
+
+<?php 
+require_once 'config.php';
+?>
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 <meta content="utf-8" http-equiv="encoding">
@@ -7,10 +11,22 @@
 <script type="text/javascript">
 
 function callback(data){
-    // var regions = JSON.stringify(data.config.regions);
-    var itemReg =  $.map(data.config.regions, function(value){
-        return value;
-    });
+        var regions = JSON.stringify(data.config.regions);
+        $.ajax({
+            type: 'POST',
+            url: '<?php echo $baseurl;?>/handle_json.php',
+            data: regions, // or JSON.stringify ({name: 'jonas'}),
+            success: function(data) { alert('data: ' + data); },
+            contentType: "application/json",
+            dataType: 'json',
+            success : function(data){
+                alert(data);
+            }
+        });    
+    // 
+    // var itemReg =  $.map(data.config.regions, function(value){
+    //     return value;
+    // });
 
     // console.log(itemReg);
     // var itemReg = '';
@@ -28,7 +44,7 @@ function callback(data){
     // });
 
     // $('#regions').html(itemReg);
-   $('#regions').html(JSON.stringify(itemReg));
+   // $('#regions').html(JSON.stringify(itemReg));
 }
 
 $(document).ready(function(){
