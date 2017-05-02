@@ -2,6 +2,7 @@
 
 <?php 
 require_once 'config.php';
+exit;
 ?>
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -20,7 +21,7 @@ function callback(data){
             contentType: "application/json",
             dataType: 'json',
             success : function(data){
-                alert(data);
+                console.log(data);
             }
         });    
     // 

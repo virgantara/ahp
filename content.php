@@ -1,26 +1,17 @@
 <?php 
-
-$json = file_get_contents('php://input');
-$obj = json_decode($json);
-foreach($obj as $item){
-	print_r($item);
-}
-
-try {
+// connect to mongodb
+   
+   try {
 
     $mng = new MongoDB\Driver\Manager("mongodb://localhost:27017");
-    $bulk = new MongoDB\Driver\BulkWrite;
-    
-    foreach($obj as $item){
-		$doc = ['_id' => new MongoDB\BSON\ObjectID, $item];
-		$bulk->insert($doc);
-		
+    $query = new MongoDB\Driver\Query([]); 
+     
+    $rows = $mng->executeQuery("amazon.konten", $query);
+	echo '<pre>';
+   foreach($rows as $row){
+    print_r($row);
 	}
-
-	$mng->executeBulkWrite('amazon.konten', $bulk);
-	
-
-	
+echo '</pre>';
 } catch (MongoDB\Driver\Exception\Exception $e) {
 
     $filename = basename(__FILE__);
@@ -35,3 +26,4 @@ try {
 
 
 ?>
+

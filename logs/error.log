@@ -13,3 +13,1177 @@
 [Fri Apr 28 09:57:27.441891 2017] [:error] [pid 14466] [client 172.68.144.151:34764] PHP Fatal error:  Class 'DOMDocument' not found in /var/www/ahp/scrapt.php on line 5
 [Fri Apr 28 09:57:27.441984 2017] [:error] [pid 14466] [client 172.68.144.151:34764] PHP Stack trace:
 [Fri Apr 28 09:57:27.442007 2017] [:error] [pid 14466] [client 172.68.144.151:34764] PHP   1. {main}() /var/www/ahp/scrapt.php:0
+[Fri Apr 28 10:09:37.674836 2017] [:error] [pid 14463] [client 172.68.144.151:9646] script '/var/www/ahp/scrapt.php' not found or unable to stat
+[Fri Apr 28 10:12:09.958498 2017] [:error] [pid 14462] [client 162.158.166.215:28682] script '/var/www/ahp/scrapt.php' not found or unable to stat
+[Fri Apr 28 23:14:54.587568 2017] [:error] [pid 14463] [client 91.196.50.33:60630] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Sun Apr 30 00:54:37.675756 2017] [:error] [pid 3917] [client 91.196.50.33:59168] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Sun Apr 30 15:18:18.519997 2017] [:error] [pid 10594] [client 91.196.50.33:41521] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Sun Apr 30 19:13:04.190146 2017] [:error] [pid 15821] [client 192.0.85.129:23234] script '/var/www/ahp/xmlrpc.php' not found or unable to stat, referer: http://103.3.61.209/xmlrpc.php?for=jetpack&token=ZpTIqqyiB%286zgjHdkO%5Ey9iGUdT7OH%2873%3A1%3A1&timestamp=1493579583&nonce=V8LqxpJJqo&body-hash=pdst%2B%2B8gjpsEsdzTGdS19%2BYN3g4%3D&signature=juHpRLGytJfSYEaSpC9IBw88VwY%3D
+[Mon May 01 05:59:36.233099 2017] [:error] [pid 10630] [client 185.25.148.240:39245] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Mon May 01 18:14:35.055178 2017] [:error] [pid 23679] [client 91.196.50.33:39841] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Tue May 02 06:35:27.925922 2017] [:error] [pid 6652] [client 162.158.167.168:9802] script '/var/www/ahp/handle_json.php' not found or unable to stat
+[Tue May 02 06:35:36.724701 2017] [:error] [pid 6653] [client 162.158.167.168:19810] script '/var/www/ahp/handle_json.php' not found or unable to stat
+[Tue May 02 06:42:46.393995 2017] [:error] [pid 6649] [client 91.196.50.33:46299] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Tue May 02 08:08:20.963957 2017] [:error] [pid 6649] [client 162.158.167.168:33702] PHP Fatal error:  Class 'MongoClient' not found in /var/www/ahp/index.php on line 2
+[Tue May 02 08:08:20.964107 2017] [:error] [pid 6649] [client 162.158.167.168:33702] PHP Stack trace:
+[Tue May 02 08:08:20.964382 2017] [:error] [pid 6649] [client 162.158.167.168:33702] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 08:09:01.396335 2017] [:error] [pid 6733] [client 192.0.102.40:39850] PHP Fatal error:  Class 'MongoClient' not found in /var/www/ahp/index.php on line 2
+[Tue May 02 08:09:01.396417 2017] [:error] [pid 6733] [client 192.0.102.40:39850] PHP Stack trace:
+[Tue May 02 08:09:01.396434 2017] [:error] [pid 6733] [client 192.0.102.40:39850] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 08:14:06.189249 2017] [:error] [pid 6652] [client 192.0.102.40:58908] PHP Fatal error:  Class 'MongoClient' not found in /var/www/ahp/index.php on line 2
+[Tue May 02 08:14:06.189337 2017] [:error] [pid 6652] [client 192.0.102.40:58908] PHP Stack trace:
+[Tue May 02 08:14:06.189353 2017] [:error] [pid 6652] [client 192.0.102.40:58908] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 08:18:10.957808 2017] [:error] [pid 21536] [client 162.158.167.168:28529] PHP Fatal error:  Class 'MongoClient' not found in /var/www/ahp/index.php on line 2
+[Tue May 02 08:18:10.957868 2017] [:error] [pid 21536] [client 162.158.167.168:28529] PHP Stack trace:
+[Tue May 02 08:18:10.957874 2017] [:error] [pid 21536] [client 162.158.167.168:28529] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 08:19:08.671968 2017] [:error] [pid 21537] [client 192.0.102.40:16831] PHP Fatal error:  Class 'MongoClient' not found in /var/www/ahp/index.php on line 2
+[Tue May 02 08:19:08.672032 2017] [:error] [pid 21537] [client 192.0.102.40:16831] PHP Stack trace:
+[Tue May 02 08:19:08.672041 2017] [:error] [pid 21537] [client 192.0.102.40:16831] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 08:24:01.381113 2017] [:error] [pid 21538] [client 192.0.102.40:21966] PHP Fatal error:  Class 'MongoClient' not found in /var/www/ahp/index.php on line 2
+[Tue May 02 08:24:01.381205 2017] [:error] [pid 21538] [client 192.0.102.40:21966] PHP Stack trace:
+[Tue May 02 08:24:01.381229 2017] [:error] [pid 21538] [client 192.0.102.40:21966] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 08:29:04.593129 2017] [:error] [pid 21535] [client 192.0.102.40:41539] PHP Fatal error:  Class 'MongoClient' not found in /var/www/ahp/index.php on line 2
+[Tue May 02 08:29:04.593225 2017] [:error] [pid 21535] [client 192.0.102.40:41539] PHP Stack trace:
+[Tue May 02 08:29:04.593367 2017] [:error] [pid 21535] [client 192.0.102.40:41539] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 08:34:06.144033 2017] [:error] [pid 29801] [client 192.0.102.40:56482] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:2\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 2
+[Tue May 02 08:35:09.419331 2017] [:error] [pid 29802] [client 192.0.102.40:15098] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:2\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 2
+[Tue May 02 08:35:14.774460 2017] [:error] [pid 29803] [client 54.217.201.243:44350] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:2\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 2
+[Tue May 02 08:35:14.984194 2017] [:error] [pid 29800] [client 122.248.245.244:22917] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:2\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 2
+[Tue May 02 08:35:15.064473 2017] [:error] [pid 29804] [client 54.232.116.4:62589] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:2\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 2
+[Tue May 02 08:36:39.113251 2017] [:error] [pid 29801] [client 162.158.167.168:36997] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:2\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 2
+[Tue May 02 09:17:10.634810 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634869 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634875 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634882 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634884 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634887 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634891 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634893 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634896 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634901 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634903 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634906 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634909 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634911 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634913 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634916 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634918 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634920 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634924 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634926 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634929 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634932 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634934 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634936 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634945 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634951 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634954 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634958 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634960 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634963 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634966 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634968 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634971 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634973 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634975 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634978 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634981 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634983 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634986 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634989 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634990 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634993 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634996 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.634997 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635000 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635004 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635006 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635009 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635012 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635014 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635019 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635022 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635024 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635027 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635031 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635033 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635035 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635038 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635040 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635042 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635045 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635047 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635049 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635053 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635055 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635057 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635060 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635062 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635064 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635067 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635069 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635071 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635075 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635077 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635082 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635085 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635087 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635089 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635092 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635099 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635102 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635105 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635107 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635110 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635113 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635114 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635117 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635120 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635121 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635124 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635128 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635130 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635133 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635136 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635137 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635140 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635143 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635144 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635147 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635154 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635156 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635158 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635161 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635163 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635166 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635168 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635170 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635172 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635176 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635178 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635181 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635184 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635186 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635188 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635191 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635192 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635195 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635198 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635200 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635203 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635206 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635208 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635210 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635216 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635217 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635220 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635224 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635225 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635228 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635231 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635233 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635235 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635238 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635240 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635242 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635246 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635248 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635251 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635254 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635256 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635258 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635261 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635262 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635265 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635268 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635270 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635273 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635279 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635281 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635283 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635286 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635288 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635290 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635294 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635296 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635298 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635301 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635303 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635306 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635308 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635310 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635313 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635316 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635318 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635321 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635324 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635325 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635328 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635330 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635332 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635335 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635338 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635343 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635346 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635349 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635351 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635353 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635356 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635358 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635360 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635364 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635366 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635369 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635372 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635374 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635376 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635379 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635381 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635383 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635386 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635388 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635391 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635394 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635396 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635398 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635401 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635405 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635408 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635412 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635414 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635416 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635419 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635421 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635423 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635426 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635428 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635430 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635434 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635436 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635438 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635441 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635443 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635445 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635448 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635450 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635452 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635456 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635458 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635461 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635463 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635468 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635470 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635473 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635475 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635478 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635482 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635484 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635487 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635489 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635491 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635494 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635496 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635498 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635501 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635504 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635506 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635508 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635511 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635513 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635516 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635518 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635520 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635523 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635526 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635528 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635533 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635537 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635539 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635541 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635544 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635545 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635548 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635551 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635553 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635556 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635559 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635561 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635563 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635566 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635568 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635572 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635578 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635582 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635586 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635591 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635595 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635599 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635603 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 267, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635606 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635622 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635680 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 279, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635687 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635691 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635695 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635701 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 279, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635704 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635707 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635711 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635716 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 279, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635720 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635724 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635728 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635733 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 279, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635736 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635740 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635744 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635749 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 279, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635753 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635756 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635760 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635765 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 279, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635768 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635771 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635776 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635788 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 283, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635791 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635795 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635799 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635804 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 283, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635807 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635811 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635815 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635820 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 283, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635823 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635826 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635830 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635835 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 283, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635839 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635843 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635847 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635852 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 283, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635855 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635859 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635863 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635868 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Notice:  Undefined index: popularity in /var/www/ahp/calculate.php on line 283, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635871 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635874 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635878 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635891 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 291, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635894 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635898 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635902 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635907 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 291, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635910 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635914 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635918 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635923 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 291, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635926 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635930 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635934 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635948 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 291, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635953 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635957 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635961 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635967 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 291, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635970 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635974 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635978 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635983 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Warning:  Division by zero in /var/www/ahp/calculate.php on line 291, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635986 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP Stack trace:, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635990 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
+[Tue May 02 09:17:10.635995 2017] [:error] [pid 30894] [client 172.68.144.205:9167] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Tue May 02 12:13:32.792053 2017] [:error] [pid 6855] [client 162.158.167.168:32551] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:2\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 2
+[Tue May 02 12:14:13.218560 2017] [:error] [pid 6861] [client 192.0.102.40:17258] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:2\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 2
+[Tue May 02 12:15:08.575894 2017] [:error] [pid 6858] [client 162.158.167.168:12799] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:3\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 3
+[Tue May 02 12:15:16.753481 2017] [:error] [pid 6841] [client 192.0.102.40:35042] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:3\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 3
+[Tue May 02 12:15:22.084963 2017] [:error] [pid 6839] [client 54.217.201.243:59751] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:3\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 3
+[Tue May 02 12:15:22.318839 2017] [:error] [pid 6842] [client 122.248.245.244:36441] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:3\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 3
+[Tue May 02 12:15:22.368603 2017] [:error] [pid 6846] [client 54.232.116.4:7885] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:3\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 3
+[Tue May 02 12:16:21.378844 2017] [:error] [pid 7324] [client 162.158.167.168:25122] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:3\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 3
+[Tue May 02 12:17:16.441968 2017] [:error] [pid 7391] [client 162.158.167.168:30643] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:3\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 3
+[Tue May 02 12:19:10.032943 2017] [:error] [pid 7392] [client 192.0.102.40:31044] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:3\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 3
+[Tue May 02 12:24:03.900800 2017] [:error] [pid 7393] [client 192.0.102.40:31953] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:3\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 3
+[Tue May 02 12:29:06.080941 2017] [:error] [pid 7390] [client 192.0.102.40:53187] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:3\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 3
+[Tue May 02 12:29:38.910368 2017] [:error] [pid 7394] [client 89.163.235.166:55345] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:3\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 3
+[Tue May 02 12:29:51.103709 2017] [:error] [pid 7398] [client 162.158.167.168:10429] PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /var/www/ahp/index.php:3\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/index.php on line 3
+[Tue May 02 12:30:31.041774 2017] [:error] [pid 7391] [client 162.158.167.168:19557] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 12:30:31.041840 2017] [:error] [pid 7391] [client 162.158.167.168:19557] PHP Stack trace:
+[Tue May 02 12:30:31.041847 2017] [:error] [pid 7391] [client 162.158.167.168:19557] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 12:34:07.157234 2017] [:error] [pid 7398] [client 192.0.102.40:1283] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 12:34:07.157303 2017] [:error] [pid 7398] [client 192.0.102.40:1283] PHP Stack trace:
+[Tue May 02 12:34:07.157308 2017] [:error] [pid 7398] [client 192.0.102.40:1283] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 12:39:13.297721 2017] [:error] [pid 7608] [client 192.0.102.40:31679] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 12:39:13.297860 2017] [:error] [pid 7608] [client 192.0.102.40:31679] PHP Stack trace:
+[Tue May 02 12:39:13.297871 2017] [:error] [pid 7608] [client 192.0.102.40:31679] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 12:43:59.202403 2017] [:error] [pid 7610] [client 192.0.102.40:25446] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 12:43:59.202468 2017] [:error] [pid 7610] [client 192.0.102.40:25446] PHP Stack trace:
+[Tue May 02 12:43:59.202474 2017] [:error] [pid 7610] [client 192.0.102.40:25446] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 12:49:41.439907 2017] [:error] [pid 7609] [client 192.0.102.40:9196] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 12:49:41.439966 2017] [:error] [pid 7609] [client 192.0.102.40:9196] PHP Stack trace:
+[Tue May 02 12:49:41.439972 2017] [:error] [pid 7609] [client 192.0.102.40:9196] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 12:54:01.572973 2017] [:error] [pid 7392] [client 192.0.102.40:58707] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 12:54:01.573043 2017] [:error] [pid 7392] [client 192.0.102.40:58707] PHP Stack trace:
+[Tue May 02 12:54:01.573050 2017] [:error] [pid 7392] [client 192.0.102.40:58707] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 12:59:12.441601 2017] [:error] [pid 7393] [client 192.0.102.40:24148] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 12:59:12.441655 2017] [:error] [pid 7393] [client 192.0.102.40:24148] PHP Stack trace:
+[Tue May 02 12:59:12.441661 2017] [:error] [pid 7393] [client 192.0.102.40:24148] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 13:04:09.132868 2017] [:error] [pid 7390] [client 192.0.102.40:31879] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 13:04:09.132924 2017] [:error] [pid 7390] [client 192.0.102.40:31879] PHP Stack trace:
+[Tue May 02 13:04:09.132929 2017] [:error] [pid 7390] [client 192.0.102.40:31879] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 13:09:05.219138 2017] [:error] [pid 7393] [client 192.0.102.40:43761] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 13:09:05.219201 2017] [:error] [pid 7393] [client 192.0.102.40:43761] PHP Stack trace:
+[Tue May 02 13:09:05.219211 2017] [:error] [pid 7393] [client 192.0.102.40:43761] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 13:14:11.723941 2017] [:error] [pid 7390] [client 192.0.102.40:63678] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 13:14:11.723989 2017] [:error] [pid 7390] [client 192.0.102.40:63678] PHP Stack trace:
+[Tue May 02 13:14:11.723995 2017] [:error] [pid 7390] [client 192.0.102.40:63678] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 13:19:09.434154 2017] [:error] [pid 8076] [client 192.0.102.40:15388] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 13:19:09.434216 2017] [:error] [pid 8076] [client 192.0.102.40:15388] PHP Stack trace:
+[Tue May 02 13:19:09.434221 2017] [:error] [pid 8076] [client 192.0.102.40:15388] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 13:24:07.705931 2017] [:error] [pid 7609] [client 192.0.102.40:27342] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 13:24:07.706004 2017] [:error] [pid 7609] [client 192.0.102.40:27342] PHP Stack trace:
+[Tue May 02 13:24:07.706024 2017] [:error] [pid 7609] [client 192.0.102.40:27342] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 13:29:26.634123 2017] [:error] [pid 7391] [client 192.0.102.40:60710] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 13:29:26.634191 2017] [:error] [pid 7391] [client 192.0.102.40:60710] PHP Stack trace:
+[Tue May 02 13:29:26.634199 2017] [:error] [pid 7391] [client 192.0.102.40:60710] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 13:34:37.094811 2017] [:error] [pid 7394] [client 192.0.102.40:13749] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 13:34:37.094867 2017] [:error] [pid 7394] [client 192.0.102.40:13749] PHP Stack trace:
+[Tue May 02 13:34:37.094874 2017] [:error] [pid 7394] [client 192.0.102.40:13749] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 13:39:09.073369 2017] [:error] [pid 7398] [client 192.0.102.40:8030] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 13:39:09.073447 2017] [:error] [pid 7398] [client 192.0.102.40:8030] PHP Stack trace:
+[Tue May 02 13:39:09.073457 2017] [:error] [pid 7398] [client 192.0.102.40:8030] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 13:45:07.036921 2017] [:error] [pid 7608] [client 192.0.102.40:45753] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 13:45:07.036989 2017] [:error] [pid 7608] [client 192.0.102.40:45753] PHP Stack trace:
+[Tue May 02 13:45:07.036996 2017] [:error] [pid 7608] [client 192.0.102.40:45753] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 13:49:05.165444 2017] [:error] [pid 7610] [client 192.0.102.40:32775] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 13:49:05.165517 2017] [:error] [pid 7610] [client 192.0.102.40:32775] PHP Stack trace:
+[Tue May 02 13:49:05.165525 2017] [:error] [pid 7610] [client 192.0.102.40:32775] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 13:54:06.619846 2017] [:error] [pid 7392] [client 192.0.102.40:51715] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 13:54:06.619899 2017] [:error] [pid 7392] [client 192.0.102.40:51715] PHP Stack trace:
+[Tue May 02 13:54:06.619906 2017] [:error] [pid 7392] [client 192.0.102.40:51715] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 13:59:35.559598 2017] [:error] [pid 7393] [client 192.0.102.40:23851] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 13:59:35.559673 2017] [:error] [pid 7393] [client 192.0.102.40:23851] PHP Stack trace:
+[Tue May 02 13:59:35.559683 2017] [:error] [pid 7393] [client 192.0.102.40:23851] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 14:04:14.993045 2017] [:error] [pid 7390] [client 192.0.102.40:22788] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 14:04:14.993101 2017] [:error] [pid 7390] [client 192.0.102.40:22788] PHP Stack trace:
+[Tue May 02 14:04:14.993107 2017] [:error] [pid 7390] [client 192.0.102.40:22788] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 14:09:11.686265 2017] [:error] [pid 8076] [client 192.0.102.40:37172] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 14:09:11.686507 2017] [:error] [pid 8076] [client 192.0.102.40:37172] PHP Stack trace:
+[Tue May 02 14:09:11.686794 2017] [:error] [pid 8076] [client 192.0.102.40:37172] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 14:14:16.143011 2017] [:error] [pid 7609] [client 192.0.102.40:55783] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 14:14:16.143069 2017] [:error] [pid 7609] [client 192.0.102.40:55783] PHP Stack trace:
+[Tue May 02 14:14:16.143092 2017] [:error] [pid 7609] [client 192.0.102.40:55783] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 14:18:44.216878 2017] [:error] [pid 7391] [client 46.19.100.26:46117] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 14:18:44.216950 2017] [:error] [pid 7391] [client 46.19.100.26:46117] PHP Stack trace:
+[Tue May 02 14:18:44.216960 2017] [:error] [pid 7391] [client 46.19.100.26:46117] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 14:19:14.196245 2017] [:error] [pid 7394] [client 192.0.102.40:6977] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 14:19:14.196304 2017] [:error] [pid 7394] [client 192.0.102.40:6977] PHP Stack trace:
+[Tue May 02 14:19:14.196311 2017] [:error] [pid 7394] [client 192.0.102.40:6977] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 14:24:09.011276 2017] [:error] [pid 7398] [client 192.0.102.40:14603] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 14:24:09.011359 2017] [:error] [pid 7398] [client 192.0.102.40:14603] PHP Stack trace:
+[Tue May 02 14:24:09.011368 2017] [:error] [pid 7398] [client 192.0.102.40:14603] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 14:29:06.487502 2017] [:error] [pid 7608] [client 192.0.102.40:27327] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 14:29:06.487558 2017] [:error] [pid 7608] [client 192.0.102.40:27327] PHP Stack trace:
+[Tue May 02 14:29:06.487564 2017] [:error] [pid 7608] [client 192.0.102.40:27327] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 14:34:16.668403 2017] [:error] [pid 7610] [client 192.0.102.40:54010] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 14:34:16.668461 2017] [:error] [pid 7610] [client 192.0.102.40:54010] PHP Stack trace:
+[Tue May 02 14:34:16.668467 2017] [:error] [pid 7610] [client 192.0.102.40:54010] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 14:39:09.751382 2017] [:error] [pid 7392] [client 192.0.102.40:56135] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 14:39:09.751481 2017] [:error] [pid 7392] [client 192.0.102.40:56135] PHP Stack trace:
+[Tue May 02 14:39:09.751492 2017] [:error] [pid 7392] [client 192.0.102.40:56135] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 14:46:19.601284 2017] [:error] [pid 7393] [client 192.0.102.40:9683] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 14:46:19.601340 2017] [:error] [pid 7393] [client 192.0.102.40:9683] PHP Stack trace:
+[Tue May 02 14:46:19.601346 2017] [:error] [pid 7393] [client 192.0.102.40:9683] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 14:54:50.023489 2017] [:error] [pid 7390] [client 192.0.102.40:34207] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 14:54:50.023568 2017] [:error] [pid 7390] [client 192.0.102.40:34207] PHP Stack trace:
+[Tue May 02 14:54:50.023576 2017] [:error] [pid 7390] [client 192.0.102.40:34207] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 14:58:39.005762 2017] [:error] [pid 8076] [client 192.0.102.40:46542] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 14:58:39.005836 2017] [:error] [pid 8076] [client 192.0.102.40:46542] PHP Stack trace:
+[Tue May 02 14:58:39.005846 2017] [:error] [pid 8076] [client 192.0.102.40:46542] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 15:02:17.107644 2017] [:error] [pid 7609] [client 192.0.102.40:13054] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 15:02:17.107714 2017] [:error] [pid 7609] [client 192.0.102.40:13054] PHP Stack trace:
+[Tue May 02 15:02:17.107745 2017] [:error] [pid 7609] [client 192.0.102.40:13054] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 15:04:49.755796 2017] [:error] [pid 7391] [client 192.0.102.40:64796] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 15:04:49.755876 2017] [:error] [pid 7391] [client 192.0.102.40:64796] PHP Stack trace:
+[Tue May 02 15:04:49.755886 2017] [:error] [pid 7391] [client 192.0.102.40:64796] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 15:10:47.985846 2017] [:error] [pid 7394] [client 192.0.102.40:44564] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 15:10:47.985905 2017] [:error] [pid 7394] [client 192.0.102.40:44564] PHP Stack trace:
+[Tue May 02 15:10:47.985911 2017] [:error] [pid 7394] [client 192.0.102.40:44564] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 15:15:17.971425 2017] [:error] [pid 7398] [client 192.0.102.40:57643] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 15:15:17.971488 2017] [:error] [pid 7398] [client 192.0.102.40:57643] PHP Stack trace:
+[Tue May 02 15:15:17.971497 2017] [:error] [pid 7398] [client 192.0.102.40:57643] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 15:19:52.933776 2017] [:error] [pid 7608] [client 192.0.102.40:54521] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 15:19:52.933828 2017] [:error] [pid 7608] [client 192.0.102.40:54521] PHP Stack trace:
+[Tue May 02 15:19:52.933833 2017] [:error] [pid 7608] [client 192.0.102.40:54521] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 15:24:55.246902 2017] [:error] [pid 7610] [client 192.0.102.40:7091] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 15:24:55.246960 2017] [:error] [pid 7610] [client 192.0.102.40:7091] PHP Stack trace:
+[Tue May 02 15:24:55.246966 2017] [:error] [pid 7610] [client 192.0.102.40:7091] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 15:30:12.697058 2017] [:error] [pid 7392] [client 192.0.102.40:37371] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 15:30:12.697119 2017] [:error] [pid 7392] [client 192.0.102.40:37371] PHP Stack trace:
+[Tue May 02 15:30:12.697126 2017] [:error] [pid 7392] [client 192.0.102.40:37371] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 15:34:59.172024 2017] [:error] [pid 7393] [client 192.0.102.40:41704] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 15:34:59.172111 2017] [:error] [pid 7393] [client 192.0.102.40:41704] PHP Stack trace:
+[Tue May 02 15:34:59.172118 2017] [:error] [pid 7393] [client 192.0.102.40:41704] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 15:40:54.382526 2017] [:error] [pid 7390] [client 192.0.102.40:7763] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 15:40:54.382605 2017] [:error] [pid 7390] [client 192.0.102.40:7763] PHP Stack trace:
+[Tue May 02 15:40:54.382613 2017] [:error] [pid 7390] [client 192.0.102.40:7763] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 15:44:50.446963 2017] [:error] [pid 8076] [client 192.0.102.40:62080] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 15:44:50.447033 2017] [:error] [pid 8076] [client 192.0.102.40:62080] PHP Stack trace:
+[Tue May 02 15:44:50.447043 2017] [:error] [pid 8076] [client 192.0.102.40:62080] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 15:49:53.267853 2017] [:error] [pid 7609] [client 192.0.102.40:19385] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 15:49:53.267913 2017] [:error] [pid 7609] [client 192.0.102.40:19385] PHP Stack trace:
+[Tue May 02 15:49:53.267919 2017] [:error] [pid 7609] [client 192.0.102.40:19385] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 15:54:46.261532 2017] [:error] [pid 7391] [client 192.0.102.40:25013] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 15:54:46.261589 2017] [:error] [pid 7391] [client 192.0.102.40:25013] PHP Stack trace:
+[Tue May 02 15:54:46.261595 2017] [:error] [pid 7391] [client 192.0.102.40:25013] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 15:59:47.487139 2017] [:error] [pid 7394] [client 192.0.102.40:41840] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$mydb in /var/www/ahp/index.php on line 7
+[Tue May 02 15:59:47.487205 2017] [:error] [pid 7394] [client 192.0.102.40:41840] PHP Stack trace:
+[Tue May 02 15:59:47.487213 2017] [:error] [pid 7394] [client 192.0.102.40:41840] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 16:04:46.300484 2017] [:error] [pid 7398] [client 162.158.167.168:34107] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$amazon in /var/www/ahp/index.php on line 7
+[Tue May 02 16:04:46.300535 2017] [:error] [pid 7398] [client 162.158.167.168:34107] PHP Stack trace:
+[Tue May 02 16:04:46.300550 2017] [:error] [pid 7398] [client 162.158.167.168:34107] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 16:04:51.322528 2017] [:error] [pid 7393] [client 192.0.102.40:61526] PHP Notice:  Undefined property: MongoDB\\Driver\\Manager::$amazon in /var/www/ahp/index.php on line 7
+[Tue May 02 16:04:51.322625 2017] [:error] [pid 7393] [client 192.0.102.40:61526] PHP Stack trace:
+[Tue May 02 16:04:51.322634 2017] [:error] [pid 7393] [client 192.0.102.40:61526] PHP   1. {main}() /var/www/ahp/index.php:0
+[Tue May 02 16:14:26.380854 2017] [:error] [pid 7394] [client 162.158.167.168:29161] PHP Parse error:  syntax error, unexpected '{' in /var/www/ahp/handle_json.php on line 6, referer: http://ahp.keltech.co.id/scrap.php
+[Tue May 02 16:14:46.596644 2017] [:error] [pid 7608] [client 162.158.167.168:9582] PHP Parse error:  syntax error, unexpected '{' in /var/www/ahp/handle_json.php on line 6, referer: http://ahp.keltech.co.id/scrap.php
+[Tue May 02 16:19:11.862373 2017] [:error] [pid 7390] [client 162.158.167.168:11360] PHP Notice:  Trying to get property of non-object in /var/www/ahp/handle_json.php on line 6, referer: http://ahp.keltech.co.id/scrap.php
+[Tue May 02 16:19:11.862425 2017] [:error] [pid 7390] [client 162.158.167.168:11360] PHP Stack trace:, referer: http://ahp.keltech.co.id/scrap.php
+[Tue May 02 16:19:11.862433 2017] [:error] [pid 7390] [client 162.158.167.168:11360] PHP   1. {main}() /var/www/ahp/handle_json.php:0, referer: http://ahp.keltech.co.id/scrap.php
+[Tue May 02 16:31:49.040682 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.040754 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.040765 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:31:49.040863 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.040871 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.040877 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:31:49.040934 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.040940 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.040945 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:31:49.041001 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.041021 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.041025 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:31:49.041080 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.041086 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.041090 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:31:49.041158 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.041165 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.041169 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:31:49.041221 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.041226 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.041230 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:31:49.041281 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.041287 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.041290 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:31:49.041341 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.041346 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.041350 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:31:49.041400 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.041405 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.041409 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:31:49.041730 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.041741 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.041745 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:31:49.041801 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.041806 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.041810 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:31:49.041902 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.041913 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.041917 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:31:49.041969 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.041974 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.041986 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:31:49.042045 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Notice:  Undefined property: stdClass::$types in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:31:49.042051 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP Stack trace:
+[Tue May 02 16:31:49.042054 2017] [:error] [pid 7398] [client 162.158.167.168:35085] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:32:08.114252 2017] [:error] [pid 8076] [client 162.158.167.168:15766] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/ahp/regions.php:13\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:33:09.224394 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.224448 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.224454 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:09.224556 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.224566 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.224572 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:09.224643 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.224653 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.224658 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:09.224721 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.224728 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.224733 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:09.224795 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.224802 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.224807 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:09.224887 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.224898 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.224903 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:09.224965 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.224971 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.224974 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:09.225013 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.225017 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.225033 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:09.225080 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.225084 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.225087 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:09.225124 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.225127 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.225129 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:09.225404 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.225412 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.225415 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:09.225454 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.225457 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.225460 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:09.225496 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.225498 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.225501 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:09.225536 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.225538 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.225541 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:09.225575 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$region in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:09.225578 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP Stack trace:
+[Tue May 02 16:33:09.225580 2017] [:error] [pid 7394] [client 162.158.167.168:9749] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:17.661051 2017] [:error] [pid 7393] [client 162.158.167.168:15486] PHP Fatal error:  Uncaught Error: Cannot use object of type MongoDB\\BSON\\ObjectID as array in /var/www/ahp/regions.php:15\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848059 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848108 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848114 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848145 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848148 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848151 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848216 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848220 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848223 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848234 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848236 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848239 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848275 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848278 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848280 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848304 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848307 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848310 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848347 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848350 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848352 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848362 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848364 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848366 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848400 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848402 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848405 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848414 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848416 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848419 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848715 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848725 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848728 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848741 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848744 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848746 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848789 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848793 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848795 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848805 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848807 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848809 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848842 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848845 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848847 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848858 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848860 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848863 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848896 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848898 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848901 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848910 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848912 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848914 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848946 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848949 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848951 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.848960 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.848962 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.848964 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.849116 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.849122 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.849125 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.849136 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.849138 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.849145 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.849179 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.849182 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.849184 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.849193 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.849195 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.849197 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.849230 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.849233 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.849235 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.849246 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.849248 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.849250 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.849296 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.849303 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.849308 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.849324 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.849328 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.849332 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.849385 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: MongoDB\\BSON\\ObjectID::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.849389 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.849392 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:45.849401 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Notice:  Undefined property: stdClass::$oid in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:33:45.849403 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP Stack trace:
+[Tue May 02 16:33:45.849406 2017] [:error] [pid 7610] [client 162.158.167.168:11546] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:33:56.424731 2017] [:error] [pid 7392] [client 162.158.167.168:19038] PHP Fatal error:  Uncaught Error: Cannot use object of type MongoDB\\BSON\\ObjectID as array in /var/www/ahp/regions.php:15\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.527274 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.527443 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.527664 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.527732 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.527737 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.527741 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.527756 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.527759 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.527761 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.527770 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.527772 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.527775 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.527838 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.527844 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.527849 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528013 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528022 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528025 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528042 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528047 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528051 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528063 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528067 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528071 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528180 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528188 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528191 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528203 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528205 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528207 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528429 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528437 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528440 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528451 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528460 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528493 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528540 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528543 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528546 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528555 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528556 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528559 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528567 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528569 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528571 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528580 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528582 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528584 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528641 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528649 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528654 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528669 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528673 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528677 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528687 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528690 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528692 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528699 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528701 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528703 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528823 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528827 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528830 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528839 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528846 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528849 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528857 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528862 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528864 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528871 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528873 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528875 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528910 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528912 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528915 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528924 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528926 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528928 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528935 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528937 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528939 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528946 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528948 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528950 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528983 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528985 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528987 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.528995 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.528997 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.528999 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529087 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529093 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529095 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529105 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529107 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529114 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529156 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529159 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529162 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529171 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529174 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529178 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529191 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529195 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529199 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529214 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529218 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529222 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529262 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529265 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529267 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529275 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529277 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529279 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529286 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529288 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529290 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529297 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529299 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529301 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529411 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529416 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529419 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529428 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529430 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529433 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529451 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529455 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529459 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529470 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529473 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529476 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529536 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529543 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529548 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529563 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529568 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529572 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529582 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529584 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529588 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529600 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529604 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529608 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529651 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529655 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529657 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529665 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529667 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529670 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529753 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529757 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529760 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529768 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529770 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529772 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529808 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529816 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529819 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529827 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529829 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529831 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529838 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529840 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529842 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529850 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529852 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529854 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529887 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529890 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529892 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529900 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529902 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529904 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529911 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Notice:  Undefined variable: q in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529912 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529915 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:34:54.529921 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/regions.php on line 15
+[Tue May 02 16:34:54.529923 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP Stack trace:
+[Tue May 02 16:34:54.529925 2017] [:error] [pid 7390] [client 162.158.167.168:11273] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:20.221101 2017] [:error] [pid 7393] [client 162.158.167.168:19657] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/ahp/regions.php:18\nStack trace:\n#0 {main}\n  thrown in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.219964 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220016 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220021 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220057 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220060 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220078 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220089 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220091 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220094 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220105 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220107 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220109 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220119 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220121 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220124 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220143 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220146 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220148 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220226 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220231 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220234 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220245 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220247 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220249 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220257 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220259 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220262 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220270 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220272 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220274 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220514 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220525 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220530 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220545 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220549 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220552 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220621 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220627 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220630 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220641 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220643 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220645 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220653 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220655 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220657 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220667 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220669 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220672 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220680 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220681 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220684 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220691 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220693 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220696 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220731 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220734 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220736 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220746 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220748 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220750 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220835 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220838 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220841 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220850 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220852 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220854 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220868 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220871 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220873 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220881 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220883 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220885 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220921 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220924 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220926 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220937 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220939 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220941 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220949 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220951 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220953 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220961 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220963 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220965 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220973 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220975 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220977 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.220985 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.220987 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.220989 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221128 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221134 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221137 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221151 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221153 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221155 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221168 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221170 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221173 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221181 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221182 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221185 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221193 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221202 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221204 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221214 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221217 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221219 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221255 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221258 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221260 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221286 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221290 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221292 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221301 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221303 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221305 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221313 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221315 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221317 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221407 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221415 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221419 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221436 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221441 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221445 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221517 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221535 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221540 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221558 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221567 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221572 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221588 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221593 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221598 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221617 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221622 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221626 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221639 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221641 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221644 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221652 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221654 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221656 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221696 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221699 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221701 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221710 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221712 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221715 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221833 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221841 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221843 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221853 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221856 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221858 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221866 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221874 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221876 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221885 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221887 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221889 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221927 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221929 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221932 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221943 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221945 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221947 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221955 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221957 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221959 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221967 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221969 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221971 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221979 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221981 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221983 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.221991 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.221993 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.221995 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222089 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222093 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222095 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222104 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222106 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222109 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222120 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222129 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222134 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222152 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222157 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222160 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222169 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222171 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222174 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222184 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222188 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222192 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222274 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222282 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222287 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222306 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222310 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222313 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222327 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222332 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222337 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222353 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222357 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222360 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222550 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222554 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222556 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222565 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222567 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222569 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222608 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222617 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222619 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222629 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222631 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222634 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222641 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222643 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222646 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222655 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222657 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222659 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222667 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222669 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222671 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222678 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222680 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222683 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222717 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222719 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222722 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222731 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222733 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222735 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222808 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222814 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222818 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222831 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222835 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222838 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222850 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222853 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222864 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222875 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222878 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222880 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222918 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222921 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222923 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222934 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222936 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222938 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222946 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Trying to get property of non-object in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222948 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222950 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222958 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222960 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222962 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222970 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222972 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222974 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:36:58.222982 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Notice:  Undefined property: stdClass::$name in /var/www/ahp/regions.php on line 18
+[Tue May 02 16:36:58.222984 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP Stack trace:
+[Tue May 02 16:36:58.222986 2017] [:error] [pid 7610] [client 162.158.167.168:17438] PHP   1. {main}() /var/www/ahp/regions.php:0
+[Tue May 02 16:39:43.345841 2017] [:error] [pid 8076] [client 162.158.167.168:11407] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /var/www/ahp/regions.php on line 13
+[Tue May 02 16:39:43.345899 2017] [:error] [pid 8076] [client 162.158.167.168:11407] PHP Stack trace:
+[Tue May 02 16:39:43.345905 2017] [:error] [pid 8076] [client 162.158.167.168:11407] PHP   1. {main}() /var/www/ahp/regions.php:0
