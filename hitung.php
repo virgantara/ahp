@@ -246,9 +246,6 @@ foreach($criteria as $c)
 }
 echo '</table>';
 
-?>
-
-<?php
 
 $sums_norm = array();
 $priority_vector = array();
@@ -279,7 +276,67 @@ $consistency_index = ($sum_eigen - count($sums)) / (count($sums) - 1);
 $r15 = 1.12;
 $consistency_ratio = $consistency_index / $r15;
 echo "Consistency Ratio: "  .$consistency_ratio;
+echo '<br>';
+
+// provider respect to cost
+
+$rtocost = array();
+
+
+foreach($criteria as $q => $v)
+{
+  if($q == 0) continue;
+
+  echo '<br><strong>Respect to '.$v.'</strong>';
+  echo '<table border="1" width="50%">';
+  echo '<tr>';
+  echo '<td>&nbsp;</td>';
+  foreach($scoring as $row)
+  {
+
+      echo '<td>';
+      echo $row['provider'];
+      echo '</td>';
+
+  }
+
+  echo '</tr>';
+
+  echo '<tr>';
 
 
 
+
+  $i = 1;
+  foreach($scoring as $row)
+  {
+
+      echo '<td>';
+      echo $row['provider'];
+      echo '</td>';
+
+      $j = 1;
+      foreach($scoring as $col)
+      {
+
+         echo '<td>';
+         $rtocost[$i][$j] = $score_provider[$q][$i] / $score_provider[$q][$j];
+         
+         
+         echo $rtocost[$i][$j];
+         
+         $j++;
+         echo '</td>';
+      }
+
+      $i++;
+  echo '</tr>';
+
+  }
+
+
+
+
+  echo '</table>';
+}
 ?>
