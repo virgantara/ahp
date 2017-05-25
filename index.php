@@ -34,6 +34,8 @@ $baseurl = 'http://localhost:81/ahp/';
 		else{
 			vals[i] = (i+1) + incr1;
 			incr1 = incr1 - 3;
+      if(vals[i]!= 1)
+        vals[i] = vals[i] * -1;
 		}
 	}
 
@@ -43,79 +45,6 @@ $baseurl = 'http://localhost:81/ahp/';
   </script>
 
 <?php 
-
-$scoring = array(
-    
-        "provider"=> "M",
-        "value"=> array(
-          "cost"=> 14,
-          "security"=> 38,
-          "reliability"=> 90,
-          "availability"=> 73,
-          "usability"=> 47
-        )
-      ,
-      
-        "provider"=> "K",
-        "value"=> array(
-          "cost"=> 45,
-          "security"=> 24,
-          "reliability"=> 55,
-          "availability"=> 12,
-          "usability"=> 37
-        )
-      ,
-      
-        "provider"=> "I",
-        "value"=> array(
-          "cost"=> 55,
-          "security"=> 47,
-          "reliability"=> 68,
-          "availability"=> 74,
-          "usability"=> 25
-        )
-      ,
-      
-        "provider"=> "A",
-        "value"=> array(
-          "cost"=> 31,
-          "security"=> 71,
-          "reliability"=> 36,
-          "availability"=> 21,
-          "usability"=> 80
-        )
-      ,
-      
-        "provider"=> "B",
-        "value"=> array(
-          "cost"=> 95,
-          "security"=> 48,
-          "reliability"=> 10,
-          "availability"=> 19,
-          "usability"=> 33
-        )
-      ,
-      
-        "provider"=> "T",
-        "value"=> array(
-          "cost"=> 62,
-          "security"=> 65,
-          "reliability"=> 49,
-          "availability"=> 24,
-          "usability"=> 47
-        )
-      
-);
-
-$importance = array(
-		9=>'Absolutely more important',
-		7=>'Very much more important',
-		5=>'Much more important',
-		3=>'Somewhat more important',
-		1=>'Equal importance',
-
-	);
-
 $lv1 = array('','Cost','Security','Reliability','Availability','Usability');
 
 
@@ -125,8 +54,9 @@ $data = $lv1;
 $input_array = array (
 
   );
-
-echo "<h4>Pairwise comparison</h4>";
+?>
+<form method="POST" action="hitung.php">
+<?php
 echo "<table width='40%'>";
 for ($i = 1 ; $i <= $sum; $i++)
 {
@@ -178,7 +108,7 @@ $( function() {
           <tr><td colspan='8'>
         ";
         ?>
-<input type='text' id="txt_<?php echo 't-'.$i.'-'.$j;?>" name ='<?php echo 't-'.$i.'-'.$j;?>' value="1"/>
+<input type='hidden' id="txt_<?php echo 't-'.$i.'-'.$j;?>" name ='<?php echo 't-'.$i.'-'.$j;?>' value="1"/>
 
         <?php
         echo '</td></tr>';
@@ -200,4 +130,5 @@ $( function() {
 
  ?>
 
-  <input class='button-primary' type='submit' value='calculate' /> <input type='reset' class='button-primary'  value='reset' />
+  <input class='button-primary' type='submit' value='Calculate' /> <input type='reset' class='button-primary'  value='Reset' />
+  </form>
