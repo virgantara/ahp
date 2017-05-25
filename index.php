@@ -1,169 +1,134 @@
-﻿
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Form AHP</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/skeleton.css">
- 
-  <!-- JS 
-  -->
-
- <script src="assets/js/jquery.min.js"></script>
-               
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-
+﻿<?php 
+$baseurl = 'http://localhost:81/ahp/';
+?>
+<script src="<?php echo $baseurl;?>/assets/js/jquery.min.js"></script>
+<script src="<?php echo $baseurl;?>/assets/js/jquery-ui.js"></script>
+<link rel="stylesheet" href="<?php echo $baseurl;?>/assets/css/jquery-ui.css">
   <style>
+  .custom-handle {
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -5px;
+    padding : 5px;
+    /*margin-bottom: 30px*/
+    text-align: center;
+    line-height: 1.6em;
+
+  }
 
   </style>
+<script>
+	
+	var maks = 9;
+	var vals = [];  
+
+	var incr1 = 8;
+	var incr2 = -3;
+	for(var i=0;i < 9 ;i++){
+		if(i > 4){
+			vals[i] = (i+1) + incr2;
+			incr2 = incr2 + 1; 
+		}
+	
+		else{
+			vals[i] = (i+1) + incr1;
+			incr1 = incr1 - 3;
+      if(vals[i]!= 1)
+        vals[i] = vals[i] * -1;
+		}
+	}
+
+	
+
+  
+  </script>
+
+<?php 
+$lv1 = array('','Cost','Security','Reliability','Availability','Usability');
 
 
-</head>
-<body>
+$sum=count($lv1)-1;
+$data = $lv1;
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 10%">
-        <h4>Analytical Hierarchy Process Form</h4>
-        <p>Insert number of criteria</p>
-        	<form id="ahp" action="" method="post">
-	        	<label for="num_criteria">Number of criteria</label>
-	      		<input class="u-full-width" type="number" id="num_criteria" value="5">
-	      		<input class="button-primary" type="submit" value="Submit" id="num_criteria_submit">
-        	</form>      
-      </div>
-    </div>
+$input_array = array (
 
-    <div class="row">
-    	<div class="one-half column">
-    		<form id="result" action="" method="post">
-    		</form>
-    	</div>
-    </div>
+  );
+?>
+<form method="POST" action="hitung.php">
+<?php
+echo "<table width='40%'>";
+for ($i = 1 ; $i <= $sum; $i++)
+{
+  
+  for ($j = 1 ; $j<=$sum ; $j++)
+  {
+    if ($i<$j) {
+      # code...
 
-    <div class="row">
-    	<div class="one-half column">
-		    <form id="input_ahp" action="" method="post">
-			   <table>
-			   <div id="table"> </div>   
-			   </table>
-			</form>
-    	</div>
-    </div>
-
-    <div id="table2">
-	</div>
+      echo "
+          <tr>
+            <th colspan='4'>$data[$i]</th>
+            
+            <th colspan='4' style='text-align:right'>$data[$j]</th>
+          </tr>
+          <tr>
+            <td colspan='8'>
+        ";
+        ?>
+        <script>
+$( function() {
 
 
 
-  </div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script type="text/javascript">
-	$(document).ready(function(){
-
-		 // ajax call add_criteia.php to show form and ask for the number of criteria 
-		 $("#ahp").submit(function() {		   
-			 var sum = $("#num_criteria").val();
-			 $('#loading1').show();
-			  $.ajax({
-			     type: "POST",
-			     url : "add_criteria.php",    
-				 data: "sum="+sum+"",
-			     success: function(data){ 
-			    $('#loading1').hide();
-			    $('#result').show();
-			     document.getElementById("result").innerHTML = data;
-			 
-		       }	 
-		     });
-		     return false;
-	    });
-
-		$("#num_criteria_submit").click();
-
-
-		// ajax call form.php
-		  $("#result").click(function() {		    
-			 var sum = $("#sum_criteria").val();
-			 var i=1;
-			 var criteria = new Array();
-			 for (i ; i <= sum; i++) {
-			 	criteria[i]=$('#criteria-'+i+'').val();
-			 }
-			  $('#loading2').show();
-			  $.ajax({
-			     type: "POST",
-			     url : "form.php",    
-				 data: "sum="+sum+"&criteria="+criteria,
-				     success: function(data){ 
-				     $('#loading2').hide();
-				     $('#table').show();
-				     document.getElementById("table").innerHTML = data;
-				 }	 
-		     });
-		     return false;
-	    });
-
-
-		//
-		   $("#input_ahp").submit(function() {
-		   	  $('#loading3').show();
-			  $.ajax({
-			     type: "POST",
-			     url : "calculate.php",    
-			     data: $("#input_ahp").serialize(),
-				     success: function(data){ 
-				    
-				     $('#loading3').hide();
-				     $('#table2').show();
-					 document.getElementById("table2").innerHTML = data;
-					 $('#start').show();
-					 $('#start').focus();
-				 }	 
-		     });
-		     return false;
-	    });
-
-
-		//reset button    
-		$("#start").click(function() {
-		    	$('#result').hide();
-		    	 $('#table').hide();
-		    	 $('#table2').hide();
-		    	 $('#start').hide();
-		    	return false;
-		
-		});
-
-	});
-</script>
-
-</body>
-</html>
-
-
+    var handle = $( "#custom-handle_<?php echo 't-'.$i.'-'.$j;?>" );
+    $( "#slider_<?php echo 't-'.$i.'-'.$j;?>" ).slider({
+      value : 5,
+      min : 1,
+      max : 9,
+      create: function() {
+        handle.text( vals[$( this ).slider( "value" )-1] );
+      },
+      slide: function( event, ui ) {
+      	
+        handle.text( vals[ui.value-1] );
+        $('#txt_<?php echo 't-'.$i.'-'.$j;?>').val(handle.text());
+      }
+    });
+  } );
+  </script>
+<div id="slider_<?php echo 't-'.$i.'-'.$j;?>" class="slider">
+  <div id="custom-handle_<?php echo 't-'.$i.'-'.$j;?>" class="ui-slider-handle custom-handle"></div>
+</div>
  
+        <?php
+        echo "</td>
+          </tr>
+          <tr><td colspan='8'>
+        ";
+        ?>
+<input type='hidden' id="txt_<?php echo 't-'.$i.'-'.$j;?>" name ='<?php echo 't-'.$i.'-'.$j;?>' value="1"/>
+
+        <?php
+        echo '</td></tr>';
+
+    }
+  }
+  // echo "
+
+  // <div style='margin-top: 10%' >
+  //   <input class='' type='hidden' id='result_data' name='result_data' value='$sum' />
+  //   <input class='' type='hidden' id='criteria-$i' name='criteria-$i' value='".$data[$i]."' />
+  // </div>
+
+  // ";
+
+}
+  echo "</table>";
+  
+
+ ?>
+
+  <input class='button-primary' type='submit' value='Calculate' /> <input type='reset' class='button-primary'  value='Reset' />
+  </form>
