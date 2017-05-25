@@ -207,7 +207,6 @@ echo '</tr>';
 
 $it = 0;
 $i = 0;
-$j = 0;
 $norm_matrices = array();
 foreach($criteria as $c)
 {
@@ -217,6 +216,7 @@ foreach($criteria as $c)
     $i++;
     echo '<tr>';
     
+    $j = 0;
 
     foreach($criteria as $q => $v)
     {
@@ -237,7 +237,7 @@ foreach($criteria as $c)
           
     }
 
-    $j =0;
+
     echo '</tr>';
 
   }
@@ -282,7 +282,7 @@ echo '<br>';
 
 $rtocost = array();
 
-
+  $priority_vector_respect = array();
 foreach($criteria as $q => $v)
 {
   if($q == 0) continue;
@@ -302,14 +302,9 @@ foreach($criteria as $q => $v)
 
   echo '</tr>';
 
-  echo '<tr>';
-
-
-
-
   $i = 1;
   foreach($scoring as $row)
-  {
+  {  echo '<tr>';
 
       echo '<td>';
       echo $row['provider'];
@@ -322,7 +317,6 @@ foreach($criteria as $q => $v)
          echo '<td>';
          $rtocost[$i][$j] = $score_provider[$q][$i] / $score_provider[$q][$j];
          
-         
          echo $rtocost[$i][$j];
          
          $j++;
@@ -334,9 +328,219 @@ foreach($criteria as $q => $v)
 
   }
 
+  echo '<tr>';
 
+  $i = 1;
+
+  
+  echo '<td>Sum</td>';
+  $sums_respect = array();
+  $norm_respect = array();
+  foreach($scoring as $col)
+  {  
+
+      $j = 1;
+      $sum = 0;
+      foreach($scoring as $row)
+      {
+         
+         $sum = $sum + $rtocost[$j][$i];
+         $j++;
+      }
+
+      $sums_respect[$i] = $sum;
+      
+      $j = 1;
+      foreach($scoring as $row)
+      {
+         $norm_respect[$i][$j] = $rtocost[$j][$i]/$sum;
+         $j++;
+      }
+        
+
+      echo '<td>'.$sum.'</td>';
+
+      $sum = 0;
+
+      $i++;
+  
+
+  }
+
+  echo '</tr>';
+  
+
+  echo '</table>';
+echo '<br><strong>Normalize Matrix</strong>';
+    echo '<table border="1" width="50%">';
+  echo '<tr>';
+  echo '<td>&nbsp;</td>';
+  foreach($scoring as $row)
+  {
+
+      echo '<td>';
+      echo $row['provider'];
+      echo '</td>';
+
+  }
+
+   echo '<td>SUM</td>';
+    echo '<td>Priority Vector</td>';
+
+  echo '</tr>';
+
+  $i = 1;
+
+  foreach($scoring as $row)
+  {  echo '<tr>';
+
+      echo '<td>';
+      echo $row['provider'];
+      echo '</td>';
+
+      $j = 1;
+      $sum = 0;
+      foreach($scoring as $col)
+      {
+
+         echo '<td>';
+         
+         $sum = $sum + $norm_respect[$j][$i];
+         echo $norm_respect[$j][$i];
+         
+         $j++;
+         echo '</td>';
+      }
+
+      echo '<td>';
+      echo $sum;
+      echo '</td>';
+      echo '<td>';
+      $prior_vect = $sum / count($scoring); 
+      echo $prior_vect;
+
+      
+
+      $priority_vector_respect[$q][$i] = $prior_vect;  
+      // echo '#'.$q.'#'.$i.'#<br>';
+
+       
+      echo '</td>';
+
+      $i++;
+  echo '</tr>';
+
+  }
 
 
   echo '</table>';
 }
+
+echo '<br><strong>Overall Table</strong>';
+// print_r($priority_vector_respect);
+echo '<table border="1" width="50%">';
+echo '<tr>';
+foreach($criteria as $q => $v)
+{
+   
+   echo '<td>'.$v.'</td>';
+   
+}
+echo '</tr>';
+echo '<tr>';
+echo '<td>Weight</td>';
+foreach($priority_vector as $q => $v)
+{
+   
+   echo '<td>'.$v.'</td>';
+   
+}
+echo '</tr>';
+$i = 1;
+foreach($scoring as $score)
+{
+  echo '<tr>';
+  echo '<td>'.$score['provider'].'</td>';
+      
+  
+  foreach($criteria as $q => $v)
+  {
+    if($q == 0) continue;
+      echo '<td>'.$priority_vector_respect[$q][$i].'</td>';
+     
+  }
+
+  echo '</tr>';
+  $i++;
+}
+
+echo '</table>';
+
+
+echo '<br><strong>Weight per provider</strong>';
+// print_r($priority_vector_respect);
+echo '<table border="1" width="50%">';
+echo '<tr>';
+foreach($criteria as $q => $v)
+{
+   
+   echo '<td>'.$v.'</td>';
+   
+}
+
+echo '<td>Total</td>';
+echo '<td>Percentage</td>';
+echo '</tr>';
+$i = 1;
+
+$final_result = array();
+foreach($scoring as $score)
+{
+  echo '<tr>';
+  echo '<td>'.$score['provider'].'</td>';
+      
+  $total = 0;
+  foreach($criteria as $q => $v)
+  {
+    if($q == 0) continue;
+
+    $value = $priority_vector_respect[$q][$i] * $priority_vector[$q];
+    $total = $total + $value;
+    echo '<td>'.$value.'</td>';
+     
+  }
+
+  echo '<td>'.$total.'</td>';
+   echo '<td>'.($total*100).'</td>';
+   $final_result[] = array(
+      'provider' => $score['provider'],
+      'value' => $total*100
+    );
+
+  echo '</tr>';
+  $i++;
+}
+
+echo '</table>';
+
+usort($final_result, function($a, $b) {
+  $a = $a['value'];
+  $b = $b['value'];
+if ($a == $b) { return 0; }
+  return ($a < $b) ? -1 : 1;
+});
+
+$final_result = array_reverse($final_result);
+echo '<strong>Recommended Provider</strong>';
+echo '<table border="1" width="25%">';
+echo '<tr><th>Provider</th><th>Value</th><th>Rank</th></tr>';
+$i = 1;
+foreach($final_result as $fr)
+{
+   echo '<tr>';
+   echo '<td>'.$fr['provider'].'</td><td>'.$fr['value'].'</td><td>'.$i.'</td>';
+   echo '</tr>';
+   $i++;
+}
+echo '</table>';
 ?>
