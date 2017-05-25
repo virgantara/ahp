@@ -2,76 +2,78 @@
 
 
 $scoring = array(
-    
-        "provider"=> "M",
-        "value"=> array(
-          "cost"=> 14,
-          "security"=> 38,
-          "reliability"=> 90,
-          "availability"=> 73,
-          "usability"=> 47
+        array(
+          "provider"=> "M",
+          "value"=> array(
+            1=> 14,
+            2=> 38,
+            3=> 90,
+            4=> 73,
+            5=> 47
+          )
         )
       ,
-      
+         array(
         "provider"=> "K",
         "value"=> array(
-          "cost"=> 45,
-          "security"=> 24,
-          "reliability"=> 55,
-          "availability"=> 12,
-          "usability"=> 37
+          1=> 45,
+          2=> 24,
+          3=> 55,
+          4=> 12,
+          5=> 37
+        )
         )
       ,
-      
+       array(
         "provider"=> "I",
         "value"=> array(
-          "cost"=> 55,
-          "security"=> 47,
-          "reliability"=> 68,
-          "availability"=> 74,
-          "usability"=> 25
-        )
+          1=> 55,
+          2=> 47,
+          3=> 68,
+          4=> 74,
+          5=> 25
+        ))
       ,
-      
+       array(
         "provider"=> "A",
         "value"=> array(
-          "cost"=> 31,
-          "security"=> 71,
-          "reliability"=> 36,
-          "availability"=> 21,
-          "usability"=> 80
-        )
+          1=> 31,
+          2=> 71,
+          3=> 36,
+          4=> 21,
+          5=> 80
+        ))
       ,
-      
+       array(
         "provider"=> "B",
         "value"=> array(
-          "cost"=> 95,
-          "security"=> 48,
-          "reliability"=> 10,
-          "availability"=> 19,
-          "usability"=> 33
-        )
+          1=> 95,
+          2=> 48,
+          3=> 10,
+          4=> 19,
+          5=> 33
+        ))
       ,
-      
+       array(
         "provider"=> "T",
         "value"=> array(
-          "cost"=> 62,
-          "security"=> 65,
-          "reliability"=> 49,
-          "availability"=> 24,
-          "usability"=> 47
+          1=> 62,
+          2=> 65,
+          3=> 49,
+          4=> 24,
+          5=> 47
         )
-      
+      )
 );
 
 $importance = array(
-		9=>'Absolutely more important',
-		7=>'Very much more important',
-		5=>'Much more important',
-		3=>'Somewhat more important',
-		1=>'Equal importance',
+    9=>'Absolutely more important',
+    7=>'Very much more important',
+    5=>'Much more important',
+    3=>'Somewhat more important',
+    1=>'Equal importance',
 
-	);
+  );
 
 $criteria = array(
     0 => "*",
@@ -82,6 +84,20 @@ $criteria = array(
     5=>      "Usability",
   
   );
+
+$score_provider = array();
+
+
+$j = 1;
+foreach($scoring as $s)
+{
+    for($i=1;$i<count($criteria);$i++)
+    {
+        $score_provider[$i][$j] = $s['value'][$i];
+    }
+
+    $j++;
+}
 
 $data = array();
 
