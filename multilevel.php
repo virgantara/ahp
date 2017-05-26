@@ -55,7 +55,7 @@ $lv1 = array(
 
 $sub_criteria = array(
   array(
-      'C1','C2'
+      'C1'
   ),
   array(
       'S1','S2','S3','S4'
@@ -64,7 +64,7 @@ $sub_criteria = array(
       'R1','R2',
   ),
   array(
-      'A1','A2'
+      'A1',
   ),
   array(
       'U1','U2','U3',
@@ -74,7 +74,7 @@ $sub_criteria = array(
 
 
 ?>
-<form method="POST" action="hitung.php">
+<form method="POST" action="hitung_multi.php">
 <?php 
 $i = 0;
 foreach($lv1 as $maincrit)
@@ -84,25 +84,66 @@ foreach($lv1 as $maincrit)
   
   $sum=count($sub_criteria[$i]);
   $data = $sub_criteria[$i];
+  
+
 
   for ($j = 0 ; $j < $sum; $j++)
   {
 
     for ($k = 0 ; $k<$sum ; $k++)
     {
+
+      if($sum == 1){
+        echo "<tr>
+        <th colspan='8'>";
+       
+        echo $data[0];
+        echo "</th>
+        </tr>
+        <tr>";
+      }
       if ($j<$k) {
       # code...
 
       echo "
         <tr>
-        <th colspan='4'>$data[$j]</th>
+        <th colspan='4'>";
+       
+        echo $data[$j];
+        echo "</th>
 
         <th colspan='4' style='text-align:right'>$data[$k]</th>
         </tr>
         <tr>
         <td colspan='8'>
       ";
+ ?>
+ <script>
+$( function() {
 
+
+
+
+    var handle = $( "#custom-handle_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>" );
+    $( "#slider_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>" ).slider({
+      value : 5,
+      min : 1,
+      max : 9,
+      create: function() {
+        handle.text( vals[$( this ).slider( "value" )-1] );
+      },
+      slide: function( event, ui ) {
+        
+        handle.text( vals[ui.value-1] );
+        $('#txt_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>').val(handle.text());
+      }
+    });
+  } );
+  </script>
+<div id="slider_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>" class="slider">
+  <div id="custom-handle_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>" class="ui-slider-handle custom-handle"></div>
+</div>
+ <?php
         echo "</td>
           </tr>
           <tr><td colspan='8'>
