@@ -1,7 +1,16 @@
 <?php
 $time_start = microtime(true);
 include_once "config.php";
+
+$weighted_sum = array();
+
+foreach($_POST['pvec'] as $pr)
+{
+  $weighted_sum[] = $pr;
+}
  
+
+ // print_r($weighted_sum);exit;
 $sub_criteria_index = array();
 
 $i =0;

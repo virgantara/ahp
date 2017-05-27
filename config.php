@@ -1,7 +1,70 @@
 <?php 
 
-$baseurl = 'http://ahp.keltech.co.id';
-
+$baseurl = 'http://localhost:81/ahp/';
+$scoring_main = array(
+        array(
+          "provider"=> "M",
+          "value"=> array(
+            1=> 14,
+            2=> 38,
+            3=> 90,
+            4=> 73,
+            5=> 47
+          )
+        )
+      ,
+         array(
+        "provider"=> "K",
+        "value"=> array(
+          1=> 45,
+          2=> 24,
+          3=> 55,
+          4=> 12,
+          5=> 37
+        )
+        )
+      ,
+       array(
+        "provider"=> "I",
+        "value"=> array(
+          1=> 55,
+          2=> 47,
+          3=> 68,
+          4=> 74,
+          5=> 25
+        ))
+      ,
+       array(
+        "provider"=> "A",
+        "value"=> array(
+          1=> 31,
+          2=> 71,
+          3=> 36,
+          4=> 21,
+          5=> 80
+        ))
+      ,
+       array(
+        "provider"=> "B",
+        "value"=> array(
+          1=> 95,
+          2=> 48,
+          3=> 10,
+          4=> 19,
+          5=> 33
+        ))
+      ,
+       array(
+        "provider"=> "T",
+        "value"=> array(
+          1=> 62,
+          2=> 65,
+          3=> 49,
+          4=> 24,
+          5=> 47
+        )
+      )
+);
 $scoring = array(
         array(
           "provider"=> "M",
@@ -78,6 +141,5 @@ $lv1 = array(
   'Availability', 
   'Usability'
 );
-$weighted_sum = array(0.028108634,0.427903432,0.100082825,0.333738251,0.110166859);
 
 ?>
