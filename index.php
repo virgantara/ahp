@@ -55,7 +55,7 @@ $input_array = array (
 
   );
 ?>
-<form method="POST" action="hitung.php">
+<form method="POST" action="multilevel.php">
 <?php
 echo "<table width='40%'>";
 for ($i = 1 ; $i <= $sum; $i++)
