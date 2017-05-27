@@ -1,73 +1,6 @@
 <?php
 
-
-$scoring = array(
-        array(
-          "provider"=> "M",
-          "value"=> array(100,43,49,10,45,96,100,99,5,46,46)
-        )
-      ,
-         array(
-        "provider"=> "K",
-        "value"=> array(85,47,49,5,46,90,99,97,10,49,49)
-        )
-      ,
-       array(
-        "provider"=> "I",
-        "value"=> array(97,44,42,10,46,95,98,99,10,45,47)
-        )
-      ,
-       array(
-        "provider"=> "A",
-        "value"=> array(93 , 50 , 48 , 10,  49,  93 , 95,  98  ,5,48 ,48)
-        )
-      ,
-       array(
-        "provider"=> "B",
-        "value"=> array(100,46 ,43,  10,  41,  100, 91,  97,  5,50 ,45))
-      ,
-       array(
-        "provider"=> "T",
-        "value"=> array(90,  50 , 47,  5, 45 , 92,  97 , 99  ,10,  47  ,50)
-      )
-);
-
-$importance = array(
-    9=>'Absolutely more important',
-    7=>'Very much more important',
-    5=>'Much more important',
-    3=>'Somewhat more important',
-    1=>'Equal importance',
-
-  );
-
-$criteria = array(
-    0 => "*",
-    1=>"Cost",
-    2=>      "Security",
-    3=>      "Reliability",
-    4=>      "Availability",
-    5=>      "Usability",
-  
-  );
-
-$joinsub_criteria =  array(
-      'C1',
-      'S1','S2','S3','S4',
-      'R1','R2',
-      'A1',
-      'U1','U2','U3',
-);
-
-
-
-$sub_criteria = array(
-  array('C1'),
-  array('S1','S2','S3','S4'),
-  array('R1','R2',),
-  array('A1',),
-  array('U1','U2','U3',),
-);
+include_once "config.php";
 
 $sub_criteria_index = array();
 
@@ -90,13 +23,6 @@ foreach($sub_criteria as $sc)
 }
 
 
-$lv1 = array(
-  'Cost',
-  'Security',
-  'Reliability',
-  'Availability',
-  'Usability'
-);
 
 $score_provider = array();
 
@@ -280,7 +206,7 @@ foreach($sub_criteria as $sc)
       $sum_eigen = $sum_eigen + $eigen_values[$i];
   }
 
-$isc++;
+  $isc++;
 }  
 
   // $consistency_index = ($sum_eigen - count($sums)) / (count($sums));
@@ -461,6 +387,8 @@ $isc++;
 // print_r($priority_vector_respect);
 // exit;
 $isc = 0;
+
+$weighted_sum_total = array();
 foreach($sub_criteria as $sc)
 {
   //##############################
@@ -534,6 +462,7 @@ foreach($sub_criteria as $sc)
        $j++;
     }
 
+    $weighted_sum_total[$isc][$i] = $sum;
     echo '<td>'.$sum.'</td>';
 
     echo '</tr>';
@@ -545,8 +474,68 @@ foreach($sub_criteria as $sc)
   $isc++;
 }
 
+echo '<br><strong>TOTAL WEIGHT PER PROVIDER</strong>';
+echo '<table border="1" width="50%">';
+echo '<tr>';
+echo '<td>#</td>';
+foreach($lv1 as $col)
+{
 
-exit;
+    echo '<td>';
+    echo $col;
+    echo '</td>';
+
+}
+echo '<td>TOTAL</td>';
+echo '<td>PERCENTAGE</td>';
+echo '</tr>';
+// echo '<tr>';
+// echo '<td><strong>weight lv 1</td>';
+// foreach($weighted_sum as $col)
+// {
+
+//     echo '<td><strong>';
+//     echo $col;
+//     echo '</td>';
+
+// }
+
+// echo '</tr>';
+
+$i = 0;
+
+$final_result = array();
+foreach($scoring as $row)
+{  echo '<tr>';
+
+    echo '<td>';
+    echo $row['provider'];
+    echo '</td>';
+
+    $j = 0;
+    $sum = 0;
+    foreach($lv1 as $col)
+    {
+      $val = $weighted_sum_total[$j][$i] * $weighted_sum[$j];
+       echo '<td>'.$val.'</td>';
+        $j++;
+
+        $sum = $sum + $val;
+
+    }
+
+    echo '<td>'.$sum.'</td>';
+    echo '<td>'.($sum * 100).'</td>';
+    $final_result[] = array(
+      'provider' => $row['provider'],
+      'value' => $sum*100
+    );
+
+    $i++;
+echo '</tr>';
+
+}
+
 
 usort($final_result, function($a, $b) {
   $a = $a['value'];
