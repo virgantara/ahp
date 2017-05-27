@@ -536,6 +536,8 @@ echo '</tr>';
 
 }
 
+echo '</table>';
+
 
 usort($final_result, function($a, $b) {
   $a = $a['value'];
