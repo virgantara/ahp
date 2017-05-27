@@ -1,7 +1,7 @@
 <?php
-
+$time_start = microtime(true);
 include_once "config.php";
-
+ 
 $sub_criteria_index = array();
 
 $i =0;
@@ -559,4 +559,14 @@ foreach($final_result as $fr)
    $i++;
 }
 echo '</table>';
+
+
+
+$time_end = microtime(true);
+
+//dividing with 60 will give the execution time in minutes other wise seconds
+$execution_time = ($time_end - $time_start);
+
+//execution time of the script
+echo '<b>Total Execution Time:</b> '.$execution_time.' Secs';
 ?>
