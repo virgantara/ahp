@@ -60,6 +60,7 @@ $joinsub_criteria =  array(
 );
 
 
+
 $sub_criteria = array(
   array('C1'),
   array('S1','S2','S3','S4'),
@@ -67,6 +68,27 @@ $sub_criteria = array(
   array('A1',),
   array('U1','U2','U3',),
 );
+
+$sub_criteria_index = array();
+
+$i =0;
+$j = 0;
+foreach($sub_criteria as $sc)
+{
+  $si = array();
+
+  foreach($sc as $q => $v)
+  {
+      $si[] = $j;  
+
+      $j++;
+  }
+
+  $sub_criteria_index[] = $si;
+
+  $i++; 
+}
+
 
 $lv1 = array(
   'Cost',
@@ -91,6 +113,7 @@ foreach($scoring as $row)
 }
 
 $isc = 0;
+$priority_vector_criteria = array();
 foreach($sub_criteria as $sc)
 {
 
@@ -225,6 +248,7 @@ foreach($sub_criteria as $sc)
       }
 
       echo '<td>'.$sum.'</td>';
+      $priority_vector_criteria[$isc][$i] = $sum/count($sc);
       echo '<td>'.$sum/count($sc).'</td>';
       echo '</tr>';
       $i++;
@@ -268,11 +292,12 @@ $isc++;
 // provider respect to cost
 
 $isc = 0;
+$priority_vector_respect = array();
 foreach($joinsub_criteria as $q => $v)
 {
   $rtocost = array();
 
-  $priority_vector_respect = array();
+  
   // foreach($sc as $q => $v)
   // {
     // if($q == 0) continue;
@@ -386,7 +411,8 @@ foreach($joinsub_criteria as $q => $v)
     $i = 0;
 
     foreach($scoring as $row)
-    {  echo '<tr>';
+    { 
+     echo '<tr>';
 
         echo '<td>';
         echo $row['provider'];
@@ -432,94 +458,95 @@ foreach($joinsub_criteria as $q => $v)
   // }
 $isc++;
 }
-exit; 
-//##############################
-echo '<br><strong>Overall Table</strong>';
 // print_r($priority_vector_respect);
-echo '<table border="1" width="50%">';
-echo '<tr>';
-foreach($criteria as $q => $v)
+// exit;
+$isc = 0;
+foreach($sub_criteria as $sc)
 {
-   
-   echo '<td>'.$v.'</td>';
-   
-}
-echo '</tr>';
-echo '<tr>';
-echo '<td>Weight</td>';
-foreach($priority_vector as $q => $v)
-{
-   
-   echo '<td>'.$v.'</td>';
-   
-}
-echo '</tr>';
-$i = 1;
-foreach($scoring as $score)
-{
+  //##############################
+  echo '<br><strong>'.$lv1[$isc].' Overall Table</strong>';
+  // print_r($priority_vector_respect);
+  echo '<table border="1" width="50%">';
   echo '<tr>';
-  echo '<td>'.$score['provider'].'</td>';
-      
-  
-  foreach($criteria as $q => $v)
+  echo '<td>#</td>';
+  foreach($sub_criteria_index[$isc] as $si)
   {
-    if($q == 0) continue;
-      echo '<td>'.$priority_vector_respect[$q][$i].'</td>';
+     
+     echo '<td>'.$joinsub_criteria[$si].'</td>';
      
   }
-
   echo '</tr>';
-  $i++;
-}
-
-echo '</table>';
-
-
-echo '<br><strong>Weight per provider</strong>';
-// print_r($priority_vector_respect);
-echo '<table border="1" width="50%">';
-echo '<tr>';
-foreach($criteria as $q => $v)
-{
-   
-   echo '<td>'.$v.'</td>';
-   
-}
-
-echo '<td>Total</td>';
-echo '<td>Percentage</td>';
-echo '</tr>';
-$i = 1;
-
-$final_result = array();
-foreach($scoring as $score)
-{
   echo '<tr>';
-  echo '<td>'.$score['provider'].'</td>';
-      
-  $total = 0;
-  foreach($criteria as $q => $v)
-  {
-    if($q == 0) continue;
-
-    $value = $priority_vector_respect[$q][$i] * $priority_vector[$q];
-    $total = $total + $value;
-    echo '<td>'.$value.'</td>';
+  echo '<td><strong>Weight</td>';
+  $i = 0;
+  foreach($sub_criteria_index[$isc] as $si)
+  { 
      
+     echo '<td><strong>'.$priority_vector_criteria[$isc][$i].'</td>';
+     $i++;
+  }
+  echo '</tr>';
+  $i = 0;
+  foreach($scoring as $score)
+  {
+    echo '<tr>';
+    echo '<td>'.$score['provider'].'</td>';
+        
+    
+    foreach($sub_criteria_index[$isc] as $si)
+    {
+        echo '<td>'.$priority_vector_respect[$si][$i].'</td>';
+       
+    }
+
+    echo '</tr>';
+    $i++;
   }
 
-  echo '<td>'.$total.'</td>';
-   echo '<td>'.($total*100).'</td>';
-   $final_result[] = array(
-      'provider' => $score['provider'],
-      'value' => $total*100
-    );
+  echo '</table>';
 
+  echo '<br><strong>'.$lv1[$isc].' Weight per provider</strong>';
+  // print_r($priority_vector_respect);
+  echo '<table border="1" width="50%">';
+  echo '<tr>';
+  echo '<td>#</td>';
+  foreach($sub_criteria_index[$isc] as $si)
+  {
+     echo '<td>'.$joinsub_criteria[$si].'</td>';
+  }
+
+  echo '<td>TOTAL</td>';
   echo '</tr>';
-  $i++;
+  $i = 0;
+  foreach($scoring as $score)
+  {
+    echo '<tr>';
+    echo '<td>'.$score['provider'].'</td>';
+        
+    $j = 0;
+    $sum = 0;
+    foreach($sub_criteria_index[$isc] as $si)
+    {
+        $val = $priority_vector_respect[$si][$i];
+        $weight = $priority_vector_criteria[$isc][$j];
+        echo '<td>'.$val * $weight.'</td>';
+        $sum = $sum + $val * $weight;
+       $j++;
+    }
+
+    echo '<td>'.$sum.'</td>';
+
+    echo '</tr>';
+    $i++;
+  }
+
+  echo '</table>';
+
+  $isc++;
 }
 
-echo '</table>';
+
+exit;
 
 usort($final_result, function($a, $b) {
   $a = $a['value'];
