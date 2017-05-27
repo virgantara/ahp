@@ -4,65 +4,31 @@
 $scoring = array(
         array(
           "provider"=> "M",
-          "value"=> array(
-            1=> 14,
-            2=> 38,
-            3=> 90,
-            4=> 73,
-            5=> 47
-          )
+          "value"=> array(100,43,49,10,45,96,100,99,5,46,46)
         )
       ,
          array(
         "provider"=> "K",
-        "value"=> array(
-          1=> 45,
-          2=> 24,
-          3=> 55,
-          4=> 12,
-          5=> 37
-        )
+        "value"=> array(85,47,49,5,46,90,99,97,10,49,49)
         )
       ,
        array(
         "provider"=> "I",
-        "value"=> array(
-          1=> 55,
-          2=> 47,
-          3=> 68,
-          4=> 74,
-          5=> 25
-        ))
+        "value"=> array(97,44,42,10,46,95,98,99,10,45,47)
+        )
       ,
        array(
         "provider"=> "A",
-        "value"=> array(
-          1=> 31,
-          2=> 71,
-          3=> 36,
-          4=> 21,
-          5=> 80
-        ))
+        "value"=> array(93 , 50 , 48 , 10,  49,  93 , 95,  98  ,5,48 ,48)
+        )
       ,
        array(
         "provider"=> "B",
-        "value"=> array(
-          1=> 95,
-          2=> 48,
-          3=> 10,
-          4=> 19,
-          5=> 33
-        ))
+        "value"=> array(100,46 ,43,  10,  41,  100, 91,  97,  5,50 ,45))
       ,
        array(
         "provider"=> "T",
-        "value"=> array(
-          1=> 62,
-          2=> 65,
-          3=> 49,
-          4=> 24,
-          5=> 47
-        )
+        "value"=> array(90,  50 , 47,  5, 45 , 92,  97 , 99  ,10,  47  ,50)
       )
 );
 
@@ -85,357 +51,389 @@ $criteria = array(
   
   );
 
+$joinsub_criteria =  array(
+      'C1',
+      'S1','S2','S3','S4',
+      'R1','R2',
+      'A1',
+      'U1','U2','U3',
+);
+
+
+$sub_criteria = array(
+  array('C1'),
+  array('S1','S2','S3','S4'),
+  array('R1','R2',),
+  array('A1',),
+  array('U1','U2','U3',),
+);
+
+$lv1 = array(
+  'Cost',
+  'Security',
+  'Reliability',
+  'Availability',
+  'Usability'
+);
+
 $score_provider = array();
 
 
-$j = 1;
-foreach($scoring as $s)
+$i=0;
+foreach($scoring as $row)
 {
-    for($i=1;$i<count($criteria);$i++)
+    for($j=0;$j<count($joinsub_criteria);$j++)
     {
-        $score_provider[$i][$j] = $s['value'][$i];
+        $score_provider[$i][$j] = $row['value'][$j];
     }
 
-    $j++;
+    $i++;
 }
 
-$data = array();
-
-
-for($i = 1;$i<count($criteria);$i++)
+$isc = 0;
+foreach($sub_criteria as $sc)
 {
-   for($j=1;$j<count($criteria);$j++)
-   {
-      $data[$i][$j] = 1;
-      
-   }
-}
 
 
+  $data = array();
 
-for($i = 1;$i<count($criteria);$i++)
-{
-   for($j=1;$j<count($criteria);$j++)
-   {
-      if(!empty($_POST['t-'.$i.'-'.$j]))
-      {
-        $v = $_POST['t-'.$i.'-'.$j];
-        if($v < 0)  
-        {
-          $data[$i][$j] = 1/abs($v);
-          $data[$j][$i] = abs($v);  
-        }
-        else{
-          $data[$i][$j] = $v;  
-          $data[$j][$i] = 1/abs($v);
-        }
+
+  for($i = 0;$i<count($sc);$i++)
+  {
+     for($j=0;$j<count($sc);$j++)
+     {
+        $data[$i][$j] = 1;
         
-      }
+     }
+  }
 
 
-   }
-}
 
-echo 'Pairwise Matrix';
-echo '<table border="1" width="100%">';
-echo '<tr>';
-foreach($criteria as $c)
-{
-   echo '<td>'.$c.'</td>';
-}
-echo '</tr>';
 
-$it = 0;
-$i = 0;
-$j = 0;
-foreach($criteria as $c)
-{
-  if($it != 0)
+  for($i = 0;$i<count($sc);$i++)
   {
+     for($j=0;$j<count($sc);$j++)
+     {
+        if(!empty($_POST['t-'.$isc.'-'.$i.'-'.$j]))
+        {
+          $v = $_POST['t-'.$isc.'-'.$i.'-'.$j];
+          if($v < 0)  
+          {
+            $data[$i][$j] = 1/abs($v);
+            $data[$j][$i] = abs($v);  
+          }
+          else{
+            $data[$i][$j] = $v;  
+            $data[$j][$i] = 1/abs($v);
+          }
+          
+        }
 
-    $i++;
-    echo '<tr>';
+
+     }
+  }
+
+
+
+  echo '<br><strong>Pairwise Matrix : '.$lv1[$isc];
+  echo '<table border="1" width="100%">';
+  echo '<tr>';
+  echo '<td>*</td>';
+  foreach($sc as $c)
+  {
+     echo '<td>'.$c.'</td>';
+  }
+  echo '</tr>';
+
+  $i = 0;
+  foreach($sc as $c)
+  {
     
 
-    foreach($criteria as $q => $v)
-    {
-        if($q == 0  )
-        {
-          echo '<td>'.$criteria[$it].'</td>';
-        }
-
-        else
-        {
-          
-          $j++;
-            echo '<td>'.$data[$i][$j].'</td>'; 
-        }
-    }
-
-    $j =0;
-    echo '</tr>';
-
-  }
-  $it++;
-  
-}
-echo '<tr>';
-echo '<td><strong>Sum</strong></td>';
-$sums = array();
-for($j = 1;$j<count($criteria);$j++)
-{
-    $sum = 0;
-   for($i=1;$i<count($criteria);$i++)
-   {
-     $v = $data[$i][$j];
-      $sum = $sum + $v;
-   }
-   $sums[$j] = $sum;
-   echo '<td><strong>'.$sum.'</strong></td>';
-}
-echo '</tr>';
-echo '</table>';
-
-echo 'Normalize Matrix';
-echo '<table border="1" width="100%">';
-echo '<tr>';
-foreach($criteria as $c)
-{
-   echo '<td>'.$c.'</td>';
-}
-echo '</tr>';
-
-$it = 0;
-$i = 0;
-$norm_matrices = array();
-foreach($criteria as $c)
-{
-  if($it != 0)
-  {
-
-    $i++;
+      
     echo '<tr>';
-    
-    $j = 0;
+    echo '<td>'.$c.'</td>';
 
-    foreach($criteria as $q => $v)
+     $j =0;
+    foreach($sc as $q => $v)
     {
-        if($q == 0  )
-        {
-          echo '<td>'.$criteria[$it].'</td>';
-        }
+          
+            echo '<td>'.$data[$j][$i].'</td>'; 
+            
+        
 
-        else
-        {
-          
-          $j++;
-            $norm_matrices[$i][$j] = $data[$i][$j]/$sums[$j];
-            echo '<td>'.$data[$i][$j]/$sums[$j].'</td>';
-          
-        }
-
-          
+        $j++;
     }
-
-
-    echo '</tr>';
-
-  }
-  $it++;
-  
-}
-echo '</table>';
-
-
-$sums_norm = array();
-$priority_vector = array();
-for($i = 1;$i<count($criteria);$i++)
-{
-    $sum = 0;
-   for($j=1;$j<count($criteria);$j++)
-   {
-     $v = $norm_matrices[$i][$j];
-      $sum = $sum + $v;
-   }
-   $sums_norm[$i] = $sum;
-   $priority_vector[$i] = $sum / (count($criteria)-1);
 
    
-}
+    echo '</tr>';
+    $i++;
+    
+  
+    
+  }
+  echo '<tr>';
+  echo '<td><strong>Sum</strong></td>';
+  $sums = array();
+  for($j = 0;$j<count($sc);$j++)
+  {
+      $sum = 0;
+     for($i=0;$i<count($sc);$i++)
+     {
+       $v = $data[$j][$i];
+        $sum = $sum + $v;
+     }
+     $sums[$j] = $sum;
+     echo '<td><strong>'.$sum.'</strong></td>';
+  }
+  echo '</tr>';
+  echo '</table>';
 
-$eigen_values = array();
-$sum_eigen = 0;
-for($i=1;$i<=count($sums);$i++)
-{
-    $eigen_values[$i] = $sums[$i] * $priority_vector[$i];
-    $sum_eigen = $sum_eigen + $eigen_values[$i];
-}
+  
 
+  echo '<br><strong>Normalized Matrix : '.$lv1[$isc];
+  echo '<table border="1" width="100%">';
+  echo '<tr>';
+  foreach($sc as $c)
+  {
+     echo '<td>'.$c.'</td>';
+  }
+  echo '<td>SUM</td><td><strong>Priority Vector</td>';
+  echo '</tr>';
 
-$consistency_index = ($sum_eigen - count($sums)) / (count($sums) - 1);
-$r15 = 1.12;
-$consistency_ratio = $consistency_index / $r15;
-echo "Consistency Ratio: "  .$consistency_ratio;
-echo '<br>';
+  $i = 0;
+  $norm_matrices = array();
+  foreach($sc as $c)
+  {
+    
+
+      
+      echo '<tr>';
+      
+      $j = 0;
+      $sum = 0;
+      foreach($sc as $q => $v)
+      {
+            
+          $norm_matrices[$i][$j] = $data[$j][$i]/$sums[$j];
+          echo '<td>'.$data[$j][$i]/$sums[$j].'</td>';
+          
+          $sum = $sum + ($data[$j][$i]/$sums[$j]);  
+          
+
+            $j++;
+      }
+
+      echo '<td>'.$sum.'</td>';
+      echo '<td>'.$sum/count($sc).'</td>';
+      echo '</tr>';
+      $i++;
+    
+  }
+  echo '</table>';
+
+  $sums_norm = array();
+  $priority_vector = array();
+  for($i = 0;$i<count($sc);$i++)
+  {
+      $sum = 0;
+     for($j=0;$j<count($sc);$j++)
+     {
+       $v = $norm_matrices[$i][$j];
+        $sum = $sum + $v;
+     }
+     $sums_norm[$i] = $sum;
+     $priority_vector[$i] = $sum / (count($sc));
+
+     
+  }
+
+  $eigen_values = array();
+  $sum_eigen = 0;
+  for($i=0;$i<count($sums);$i++)
+  {
+      $eigen_values[$i] = $sums[$i] * $priority_vector[$i];
+      $sum_eigen = $sum_eigen + $eigen_values[$i];
+  }
+
+$isc++;
+}  
+
+  // $consistency_index = ($sum_eigen - count($sums)) / (count($sums));
+  // $r15 = 1.12;
+  // $consistency_ratio = $consistency_index / $r15;
+  // echo "Consistency Ratio: "  .$consistency_ratio;
+  // echo '<br>';
 
 // provider respect to cost
 
-$rtocost = array();
+$isc = 0;
+foreach($joinsub_criteria as $q => $v)
+{
+  $rtocost = array();
 
   $priority_vector_respect = array();
-foreach($criteria as $q => $v)
-{
-  if($q == 0) continue;
+  // foreach($sc as $q => $v)
+  // {
+    // if($q == 0) continue;
 
-  echo '<br><strong>Respect to '.$v.'</strong>';
-  echo '<table border="1" width="50%">';
-  echo '<tr>';
-  echo '<td>&nbsp;</td>';
-  foreach($scoring as $row)
-  {
+    echo '<br><strong>Respect to '.$v.'</strong>';
+    echo '<table border="1" width="50%">';
+    echo '<tr>';
+    echo '<td>#</td>';
+    foreach($scoring as $row)
+    {
 
-      echo '<td>';
-      echo $row['provider'];
-      echo '</td>';
+        echo '<td>';
+        echo $row['provider'];
+        echo '</td>';
 
-  }
+    }
 
-  echo '</tr>';
+    echo '</tr>';
 
-  $i = 1;
-  foreach($scoring as $row)
-  {  echo '<tr>';
+    $i = 0;
+    foreach($scoring as $row)
+    {  echo '<tr>';
 
-      echo '<td>';
-      echo $row['provider'];
-      echo '</td>';
+        echo '<td>';
+        echo $row['provider'];
+        echo '</td>';
 
-      $j = 1;
-      foreach($scoring as $col)
-      {
+        $j = 0;
+        
+        foreach($scoring as $col)
+        {
 
-         echo '<td>';
-         $rtocost[$i][$j] = $score_provider[$q][$i] / $score_provider[$q][$j];
-         
-         echo $rtocost[$i][$j];
-         
-         $j++;
-         echo '</td>';
-      }
+           echo '<td>';
+           $rtocost[$i][$j] = $score_provider[$i][$q] / $score_provider[$j][$q];
+           
+           echo $rtocost[$i][$j];
+          
+           echo '</td>';
+            $j++;
 
-      $i++;
-  echo '</tr>';
+        }
 
-  }
+        $i++;
+    echo '</tr>';
 
-  echo '<tr>';
+    }
 
-  $i = 1;
+    echo '<tr>';
 
-  
-  echo '<td>Sum</td>';
-  $sums_respect = array();
-  $norm_respect = array();
-  foreach($scoring as $col)
-  {  
+    $i = 0;
 
-      $j = 1;
-      $sum = 0;
-      foreach($scoring as $row)
-      {
-         
-         $sum = $sum + $rtocost[$j][$i];
-         $j++;
-      }
+    
+    echo '<td>Sum</td>';
+    $sums_respect = array();
+    $norm_respect = array();
+    foreach($scoring as $col)
+    {  
 
-      $sums_respect[$i] = $sum;
-      
-      $j = 1;
-      foreach($scoring as $row)
-      {
-         $norm_respect[$i][$j] = $rtocost[$j][$i]/$sum;
-         $j++;
-      }
+        $j = 0;
+        $sum = 0;
+        foreach($scoring as $row)
+        {
+           
+           $sum = $sum + $rtocost[$j][$i];
+           $j++;
+        }
+
+        $sums_respect[$i] = $sum;
+        
+        $j = 0;
+        foreach($scoring as $row)
+        {
+           $norm_respect[$i][$j] = $rtocost[$j][$i]/$sum;
+           // print_r($norm_respect[$i][$j]);
+           $j++;
+        }
+          
+
+        echo '<td>'.$sum.'</td>';
+
+        // $sum = 0;
+
+        $i++;
+    
+
+    }
+
+    echo '</tr>';
+    
+
+    echo '</table>';
+   
+    echo '<br><strong>Respect to '.$v.' Normalized Matrix</strong>';
+      echo '<table border="1" width="50%">';
+    echo '<tr>';
+    echo '<td>&nbsp;</td>';
+    foreach($scoring as $row)
+    {
+
+        echo '<td>';
+        echo $row['provider'];
+        echo '</td>';
+
+    }
+
+     echo '<td>SUM</td>';
+      echo '<td>Priority Vector</td>';
+
+    echo '</tr>';
+
+    $i = 0;
+
+    foreach($scoring as $row)
+    {  echo '<tr>';
+
+        echo '<td>';
+        echo $row['provider'];
+        echo '</td>';
+
+        $j = 0;
+        $sum = 0;
+        foreach($scoring as $col)
+        {
+
+           echo '<td>';
+           
+           $sum = $sum + $norm_respect[$j][$i];
+           // echo 'j:'.$j.',i:'.$i.'<br>';
+           echo $norm_respect[$j][$i];
+           
+           $j++;
+           echo '</td>';
+        }
+
+        echo '<td>';
+        echo $sum;
+        echo '</td>';
+        echo '<td>';
+        $prior_vect = $sum / count($scoring); 
+        echo $prior_vect;
+
         
 
-      echo '<td>'.$sum.'</td>';
+        $priority_vector_respect[$q][$i] = $prior_vect;  
+        // echo '#'.$q.'#'.$i.'#<br>';
 
-      $sum = 0;
-
-      $i++;
-  
-
-  }
-
-  echo '</tr>';
-  
-
-  echo '</table>';
-echo '<br><strong>Normalize Matrix</strong>';
-    echo '<table border="1" width="50%">';
-  echo '<tr>';
-  echo '<td>&nbsp;</td>';
-  foreach($scoring as $row)
-  {
-
-      echo '<td>';
-      echo $row['provider'];
-      echo '</td>';
-
-  }
-
-   echo '<td>SUM</td>';
-    echo '<td>Priority Vector</td>';
-
-  echo '</tr>';
-
-  $i = 1;
-
-  foreach($scoring as $row)
-  {  echo '<tr>';
-
-      echo '<td>';
-      echo $row['provider'];
-      echo '</td>';
-
-      $j = 1;
-      $sum = 0;
-      foreach($scoring as $col)
-      {
-
-         echo '<td>';
          
-         $sum = $sum + $norm_respect[$j][$i];
-         echo $norm_respect[$j][$i];
-         
-         $j++;
-         echo '</td>';
-      }
+        echo '</td>';
 
-      echo '<td>';
-      echo $sum;
-      echo '</td>';
-      echo '<td>';
-      $prior_vect = $sum / count($scoring); 
-      echo $prior_vect;
+        $i++;
+    echo '</tr>';
 
-      
-
-      $priority_vector_respect[$q][$i] = $prior_vect;  
-      // echo '#'.$q.'#'.$i.'#<br>';
-
-       
-      echo '</td>';
-
-      $i++;
-  echo '</tr>';
-
-  }
+    }
 
 
-  echo '</table>';
+    echo '</table>';
+  // }
+$isc++;
 }
-
+exit; 
+//##############################
 echo '<br><strong>Overall Table</strong>';
 // print_r($priority_vector_respect);
 echo '<table border="1" width="50%">';

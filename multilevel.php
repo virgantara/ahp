@@ -96,7 +96,10 @@ foreach($lv1 as $maincrit)
       if($sum == 1){
         echo "<tr>
         <th colspan='8'>";
-       
+       ?>
+       <input type='hidden' id="txt_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>" name ='<?php echo 't-'.$i.'-'.$j.'-'.$k;?>' value="1"/>
+
+       <?php
         echo $data[0];
         echo "</th>
         </tr>
@@ -143,11 +146,14 @@ $( function() {
 <div id="slider_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>" class="slider">
   <div id="custom-handle_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>" class="ui-slider-handle custom-handle"></div>
 </div>
+<input type='hidden' id="txt_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>" name ='<?php echo 't-'.$i.'-'.$j.'-'.$k;?>' value="1"/>
+
  <?php
         echo "</td>
           </tr>
           <tr><td colspan='8'>
         ";
+
         echo '</td></tr>';
       }
     }
