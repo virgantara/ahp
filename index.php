@@ -1,5 +1,5 @@
 ﻿<?php 
-$baseurl = 'http://localhost:81/ahp/';
+require_once "config.php";
 ?>
 <script src="<?php echo $baseurl;?>/assets/js/jquery.min.js"></script>
 <script src="<?php echo $baseurl;?>/assets/js/jquery-ui.js"></script>
