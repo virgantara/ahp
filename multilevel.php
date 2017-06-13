@@ -187,7 +187,7 @@ $consistency_ratio = $consistency_index / $r15;
   </script>
 
 <form method="POST" action="hitung_multi.php">
-
+<h2>Pairwise Comparison Subcriteria</h2>
 <?php 
 
 foreach($priority_vector_main_criteria as $pr)
@@ -203,11 +203,15 @@ foreach($priority_vector_main_criteria as $pr)
 $i = 0;
 foreach($lv1 as $maincrit)
 {
+
+  $sum=count($sub_criteria[$i]);
+  $data = $sub_criteria[$i];
+  
+
+  if($sum > 1)
   echo '<h3>'.$maincrit.'</h3>';
   echo "<table width='40%'>";
   
-  $sum=count($sub_criteria[$i]);
-  $data = $sub_criteria[$i];
   
 
 
@@ -218,16 +222,15 @@ foreach($lv1 as $maincrit)
     {
 
       if($sum == 1){
-        echo "<tr>
-        <th colspan='8'>";
+        // echo "<tr><th colspan='8'>";
        ?>
        <input type='hidden' id="txt_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>" name ='<?php echo 't-'.$i.'-'.$j.'-'.$k;?>' value="1"/>
 
        <?php
-        echo $data[0];
-        echo "</th>
-        </tr>
-        <tr>";
+        // echo $data[0];
+        // echo "</th>
+        // </tr>
+        // <tr>";
       }
       if ($j<$k) {
       # code...
@@ -235,7 +238,6 @@ foreach($lv1 as $maincrit)
       echo "
         <tr>
         <th colspan='4'>";
-       
         echo $data[$j];
         echo "</th>
 

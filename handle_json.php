@@ -2,15 +2,17 @@
 
 $json = file_get_contents('php://input');
 $obj = json_decode($json);
-foreach($obj as $item){
-	print_r($item);
-}
+// foreach($obj as $item){
+// 	print_r($item);
+// }
 
 try {
 
     $mng = new MongoDB\Driver\Manager("mongodb://localhost:27017");
     $bulk = new MongoDB\Driver\BulkWrite;
     
+    
+
     foreach($obj as $item){
 		$doc = ['_id' => new MongoDB\BSON\ObjectID, $item];
 		$bulk->insert($doc);
