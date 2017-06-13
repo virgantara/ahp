@@ -1,3 +1,4 @@
+<title>AHP | Subcriteria</title>
 <?php 
 
 include_once "config.php";
