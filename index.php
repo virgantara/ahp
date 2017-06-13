@@ -1,6 +1,8 @@
 ﻿<?php
 require_once "config.php";
 ?>
+<title>AHP</title>
+
 <script src="<?php echo $baseurl;?>/assets/js/jquery.min.js"></script>
 <script src="<?php echo $baseurl;?>/assets/js/jquery-ui.js"></script>
 <link rel="stylesheet" href="<?php echo $baseurl;?>/assets/css/jquery-ui.css">
