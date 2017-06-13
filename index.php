@@ -1,5 +1,5 @@
-﻿<?php 
-$baseurl = 'http://localhost:81/ahp/';
+﻿<?php
+require_once "config.php";
 ?>
 <script src="<?php echo $baseurl;?>/assets/js/jquery.min.js"></script>
 <script src="<?php echo $baseurl;?>/assets/js/jquery-ui.js"></script>
@@ -19,27 +19,27 @@ $baseurl = 'http://localhost:81/ahp/';
 
   </style>
 <script>
-	
-	var maks = 9;
-	var vals = [];  
+  
+  var maks = 9;
+  var vals = [];  
 
-	var incr1 = 8;
-	var incr2 = -3;
-	for(var i=0;i < 9 ;i++){
-		if(i > 4){
-			vals[i] = (i+1) + incr2;
-			incr2 = incr2 + 1; 
-		}
-	
-		else{
-			vals[i] = (i+1) + incr1;
-			incr1 = incr1 - 3;
+  var incr1 = 8;
+  var incr2 = -3;
+  for(var i=0;i < 9 ;i++){
+    if(i > 4){
+      vals[i] = (i+1) + incr2;
+      incr2 = incr2 + 1; 
+    }
+  
+    else{
+      vals[i] = (i+1) + incr1;
+      incr1 = incr1 - 3;
       if(vals[i]!= 1)
         vals[i] = vals[i] * -1;
-		}
-	}
+    }
+  }
 
-	
+  
 
   
   </script>
@@ -56,7 +56,9 @@ $input_array = array (
   );
 ?>
 <form method="POST" action="multilevel.php">
+<h2>Pairwise Comparison</h2>
 <?php
+
 echo "<table width='40%'>";
 for ($i = 1 ; $i <= $sum; $i++)
 {
@@ -91,7 +93,7 @@ $( function() {
         handle.text( vals[$( this ).slider( "value" )-1] );
       },
       slide: function( event, ui ) {
-      	
+        
         handle.text( vals[ui.value-1] );
         $('#txt_<?php echo 't-'.$i.'-'.$j;?>').val(handle.text());
       }

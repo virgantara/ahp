@@ -97,6 +97,9 @@ foreach($sub_criteria as $sc)
   echo '<table border="1" width="100%">';
   echo '<tr>';
   echo '<td>*</td>';
+
+  
+  
   foreach($sc as $c)
   {
      echo '<td>'.$c.'</td>';
