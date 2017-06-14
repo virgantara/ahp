@@ -111,6 +111,7 @@ foreach($criteria as $c)
 }
 // echo '</table>';
 
+// print_r($priority_vector_main_criteria);exit;
 
 $sums_norm = array();
 $priority_vector = array();
