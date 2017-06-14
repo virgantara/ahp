@@ -1,3 +1,4 @@
+<title>AHP | Multi calc</title>
 <?php
 $time_start = microtime(true);
 include_once "config.php";
@@ -98,8 +99,8 @@ foreach($sub_criteria as $sc)
   echo '<tr>';
   echo '<td>*</td>';
 
-  
-  
+
+
   foreach($sc as $c)
   {
      echo '<td>'.$c.'</td>';
@@ -194,29 +195,29 @@ foreach($sub_criteria as $sc)
   }
   echo '</table>';
 
-  $sums_norm = array();
-  $priority_vector = array();
-  for($i = 0;$i<count($sc);$i++)
-  {
-      $sum = 0;
-     for($j=0;$j<count($sc);$j++)
-     {
-       $v = $norm_matrices[$i][$j];
-        $sum = $sum + $v;
-     }
-     $sums_norm[$i] = $sum;
-     $priority_vector[$i] = $sum / (count($sc));
+  // $sums_norm = array();
+  // $priority_vector = array();
+  // for($i = 0;$i<count($sc);$i++)
+  // {
+  //     $sum = 0;
+  //    for($j=0;$j<count($sc);$j++)
+  //    {
+  //      $v = $norm_matrices[$i][$j];
+  //       $sum = $sum + $v;
+  //    }
+  //    $sums_norm[$i] = $sum;
+  //    $priority_vector[$i] = $sum / (count($sc));
 
      
-  }
+  // }
 
-  $eigen_values = array();
-  $sum_eigen = 0;
-  for($i=0;$i<count($sums);$i++)
-  {
-      $eigen_values[$i] = $sums[$i] * $priority_vector[$i];
-      $sum_eigen = $sum_eigen + $eigen_values[$i];
-  }
+  // $eigen_values = array();
+  // $sum_eigen = 0;
+  // for($i=0;$i<count($sums);$i++)
+  // {
+  //     $eigen_values[$i] = $sums[$i] * $priority_vector[$i];
+  //     $sum_eigen = $sum_eigen + $eigen_values[$i];
+  // }
 
   $isc++;
 }  
@@ -486,7 +487,70 @@ foreach($sub_criteria as $sc)
   $isc++;
 }
 
+
+
 echo '<br><strong>TOTAL WEIGHT PER PROVIDER</strong>';
+
+
+echo '<table border="1" width="50%">';
+echo '<tr>';
+echo '<td>#</td>';
+foreach($lv1 as $col)
+{
+
+    echo '<td>';
+    echo $col;
+    echo '</td>';
+
+}
+echo '</tr>';
+echo '<tr>';
+echo '<td><strong>weight lv 1</td>';
+foreach($weighted_sum as $col)
+{
+
+    echo '<td><strong>';
+    echo $col;
+    echo '</td>';
+
+}
+
+
+echo '</tr>';
+
+$i = 0;
+
+$final_result = array();
+foreach($scoring as $row)
+{  echo '<tr>';
+
+    echo '<td>';
+    echo $row['provider'];
+    echo '</td>';
+
+    $j = 0;
+    $sum = 0;
+
+    foreach($lv1 as $col)
+    {
+
+      $val = $weighted_sum_total[$j][$i];
+       echo '<td>'.$val.'</td>';
+        $j++;
+
+      
+    }
+
+    // echo '<td>'.$sum.'</td>';
+    // echo '<td>'.($sum * 100).'</td>';
+   
+
+    $i++;
+echo '</tr>';
+
+}
+
+echo '</table><br>';
 echo '<table border="1" width="50%">';
 echo '<tr>';
 echo '<td>#</td>';
@@ -501,18 +565,6 @@ foreach($lv1 as $col)
 echo '<td>TOTAL</td>';
 echo '<td>PERCENTAGE</td>';
 echo '</tr>';
-// echo '<tr>';
-// echo '<td><strong>weight lv 1</td>';
-// foreach($weighted_sum as $col)
-// {
-
-//     echo '<td><strong>';
-//     echo $col;
-//     echo '</td>';
-
-// }
-
-// echo '</tr>';
 
 $i = 0;
 
@@ -542,6 +594,8 @@ foreach($scoring as $row)
       'provider' => $row['provider'],
       'value' => $sum*100
     );
+
+
 
     $i++;
 echo '</tr>';
