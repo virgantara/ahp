@@ -565,18 +565,6 @@ foreach($lv1 as $col)
 echo '<td>TOTAL</td>';
 echo '<td>PERCENTAGE</td>';
 echo '</tr>';
-// echo '<tr>';
-// echo '<td><strong>weight lv 1</td>';
-// foreach($weighted_sum as $col)
-// {
-
-//     echo '<td><strong>';
-//     echo $col;
-//     echo '</td>';
-
-// }
-
-// echo '</tr>';
 
 $i = 0;
 
@@ -606,6 +594,8 @@ foreach($scoring as $row)
       'provider' => $row['provider'],
       'value' => $sum*100
     );
+
+
 
     $i++;
 echo '</tr>';
