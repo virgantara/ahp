@@ -95,9 +95,10 @@ $( function() {
         handle.text( vals[$( this ).slider( "value" )-1] );
       },
       slide: function( event, ui ) {
-        
-        handle.text( vals[ui.value-1] );
-        $('#txt_<?php echo 't-'.$i.'-'.$j;?>').val(handle.text());
+        var vslider = vals[ui.value-1]; 
+        var v = Math.abs(eval(vslider));
+        handle.text( v );
+        $('#txt_<?php echo 't-'.$i.'-'.$j;?>').val(vslider);
       }
     });
   } );

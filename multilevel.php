@@ -40,12 +40,12 @@ for($i = 1;$i<count($criteria);$i++)
         $v = $_POST['t-'.$i.'-'.$j];
         if($v < 0)  
         {
-          $data[$i][$j] = 1/abs($v);
-          $data[$j][$i] = abs($v);  
+          $data[$i][$j] = abs($v);
+          $data[$j][$i] = 1/abs($v);  
         }
         else{
-          $data[$i][$j] = $v;  
-          $data[$j][$i] = 1/abs($v);
+          $data[$i][$j] = 1/abs($v);  
+          $data[$j][$i] = abs($v);
         }
         
       }
@@ -264,9 +264,10 @@ $( function() {
         handle.text( vals[$( this ).slider( "value" )-1] );
       },
       slide: function( event, ui ) {
-        
-        handle.text( vals[ui.value-1] );
-        $('#txt_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>').val(handle.text());
+        var vslider = vals[ui.value-1]; 
+        var v = Math.abs(eval(vslider));
+        handle.text( v );
+        $('#txt_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>').val(vslider);
       }
     });
   } );

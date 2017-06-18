@@ -122,12 +122,12 @@ for($i = 1;$i<count($criteria);$i++)
         $v = $_POST['t-'.$i.'-'.$j];
         if($v < 0)  
         {
-          $data[$i][$j] = 1/abs($v);
-          $data[$j][$i] = abs($v);  
+          $data[$i][$j] = abs($v);
+          $data[$j][$i] = 1/abs($v);  
         }
         else{
-          $data[$i][$j] = $v;  
-          $data[$j][$i] = 1/abs($v);
+          $data[$i][$j] = 1/abs($v);  
+          $data[$j][$i] = abs($v);
         }
         
       }
