@@ -1,4 +1,4 @@
-<title>AHP | Multi calc</title>
+<title>AHP | Calc 3 LV AHP</title>
 <?php
 $time_start = microtime(true);
 include_once "config.php";
