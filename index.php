@@ -135,5 +135,5 @@ $( function() {
 
  ?>
 
-  <input class='button-primary' type='submit' value='Calculate' /> <input type='reset' class='button-primary'  value='Reset' />
+  <input class='button-primary' type='submit' value='Pairwise Subcriteria' /> 
   </form>

@@ -188,7 +188,7 @@ $consistency_ratio = $consistency_index / $r15;
   
   </script>
 
-<form method="POST" action="hitung_multi.php">
+<form method="POST" id="formmain">
 <h2>Pairwise Comparison Subcriteria</h2>
 <?php 
 
@@ -296,5 +296,29 @@ $( function() {
 ?>
 
 
-<input class='button-primary' type='submit' value='Calculate' /> <input type='reset' class='button-primary'  value='Reset' />
+<input class='button-primary btnsubmit' type='submit' value='Calculate 3 Lv AHP' /> 
+<input class='button-primary btnsubmit' type='submit' value='Calculate 3 Lv W-Sum' />
+  
+
 </form>
+
+
+<script>
+  $(document).ready(function(){
+    $('.btnsubmit').click(function(e){
+      e.preventDefault();
+      var val = $(this).val();
+
+      if(val == 'Calculate 3 Lv AHP'){
+        $('form#formmain').attr("action","hitung_multi.php");
+      }
+
+      else if(val == 'Calculate 3 Lv W-Sum'){
+        $('form#formmain').attr("action","calc_weighted_sum.php");
+      }
+      
+      $('form#formmain').submit();
+    });
+  });
+
+</script>
