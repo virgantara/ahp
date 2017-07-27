@@ -47,17 +47,18 @@ require_once "config.php";
   </script>
 
 <?php 
-$lv1 = array('','Cost','Security','Reliability','Availability','Usability');
+// $lv1 = array('','Cost','Security','Reliability','Availability','Usability');
+$lv1 = $_POST['kriteria'];//array('','Cost','Security','Reliability','Availability','Usability');
 
+array_unshift($lv1, '');
 
 $sum=count($lv1)-1;
 $data = $lv1;
-
 $input_array = array (
-
+    'kriteria' => $lv1
   );
 ?>
-<form method="POST" action="multilevel.php">
+<form method="POST" action="multilevel_adaptive.php?<?php echo http_build_query($input_array);?>">
 <h2>Pairwise Comparison</h2>
 <?php
 
@@ -135,5 +136,5 @@ $( function() {
 
  ?>
 
-  <input class='button-primary' type='submit' value='Pairwise Subcriteria' /> 
+  <input class='button-primary' type='submit' value='Calculate' /> 
   </form>

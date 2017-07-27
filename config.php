@@ -96,6 +96,38 @@ $scoring = array(
       )
 );
 
+$aggregate_scoring = array(
+        array(
+          "provider"=> "M",
+          "value"=> array(100,147,196,99,51)
+        )
+      ,
+         array(
+        "provider"=> "K",
+        "value"=> array(85,147,189,97,59)
+        )
+      ,
+       array(
+        "provider"=> "I",
+        "value"=> array(97,142,193,99,55)
+        )
+      ,
+       array(
+        "provider"=> "A",
+        "value"=> array(93 , 157, 188, 98,  53)
+        )
+      ,
+       array(
+        "provider"=> "B",
+        "value"=> array(100 ,140, 191, 97 , 55)
+        )
+      ,
+       array(
+        "provider"=> "T",
+        "value"=> array(90 , 147, 189, 99 , 57)
+      )
+);
+
 $importance = array(
     9=>'Absolutely more important',
     7=>'Very much more important',
@@ -115,13 +147,13 @@ $criteria = array(
   
   );
 
-$joinsub_criteria =  array(
-      'C1',
-      'S1','S2','S3','S4',
-      'R1','R2',
-      'A1',
-      'U1','U2','U3',
-);
+// $joinsub_criteria =  array(
+//       'C1',
+//       'S1','S2','S3','S4',
+//       'R1','R2',
+//       'A1',
+//       'U1','U2','U3',
+// );
 
 
 
@@ -133,6 +165,13 @@ $sub_criteria = array(
   array('U1','U2','U3',),
 );
 
+$sub_criteria_name = array(
+  'Cost' => array('C1'),
+  'Security' => array('S1','S2','S3','S4'),
+  'Reliability' => array('R1','R2',),
+  'Availability' => array('A1',),
+  'Utility' => array('U1','U2','U3',),
+);
 
 $lv1 = array(
   'Cost',
