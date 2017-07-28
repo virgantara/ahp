@@ -1,6 +1,6 @@
 logs/*
-
-
+access.log
+error.log
 *.zip
 
 *.log
