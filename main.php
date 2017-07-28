@@ -1,5 +1,5 @@
 <?php 
-$baseurl = 'http://localhost:81/ahp/';
+$baseurl = 'http://localhost/ahp/';
 ?>
 
 

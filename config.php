@@ -147,13 +147,13 @@ $criteria = array(
   
   );
 
-// $joinsub_criteria =  array(
-//       'C1',
-//       'S1','S2','S3','S4',
-//       'R1','R2',
-//       'A1',
-//       'U1','U2','U3',
-// );
+$all_joinsub_criteria =  array(
+      'C1',
+      'S1','S2','S3','S4',
+      'R1','R2',
+      'A1',
+      'U1','U2','U3',
+);
 
 
 

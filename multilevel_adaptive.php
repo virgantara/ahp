@@ -446,36 +446,6 @@ foreach($lv1 as $q => $v)
 $isc++;
 }
 
-// print_r($sum_vertical);exit;
-// $sums_norm = array();
-// $priority_vector = array();
-// for($i = 1;$i<count($criteria);$i++)
-// {
-//     $sum = 0;
-//    for($j=1;$j<count($criteria);$j++)
-//    {
-//      $v = $norm_matrices[$i][$j];
-//       $sum = $sum + $v;
-//    }
-//    $sums_norm[$i] = $sum;
-//    $priority_vector[$i] = $sum / (count($criteria)-1);
-
-   
-// }
-
-// $eigen_values = array();
-// $sum_eigen = 0;
-// for($i=1;$i<=count($sums);$i++)
-// {
-//     $eigen_values[$i] = $sums[$i] * $priority_vector[$i];
-//     $sum_eigen = $sum_eigen + $eigen_values[$i];
-// }
-
-// // echo 'eigen:'.$sum_eigen
-// $consistency_index = ($sum_eigen - count($sums)) / (count($sums) - 1);
-// $r15 = 1.12;
-// $consistency_ratio = $consistency_index / $r15;
-// echo "Consistency Ratio: "  .$consistency_ratio;
 
 
 ?>
@@ -523,10 +493,11 @@ $isc++;
   </script>
 <?php
 $input_array = array (
-    'kriteria' => $_GET['kriteria']
+    'kriteria' => $_GET['kriteria'],
+    'priority' => $priority_vector_main_criteria
   );
 ?>
-<form method="POST" action="calc_multi_adaptive.php?<?php echo http_build_query($input_array);?>">
+<form method="POST" action="calc_multilevel_adaptive.php?<?php echo http_build_query($input_array);?>">
 
 <?php 
 
