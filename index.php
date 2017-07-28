@@ -25,7 +25,7 @@ $lv1 = array('','Cost','Security','Reliability','Availability','Usability');
     });
   });
 </script>
-<form method="POST" action="index.php" id="form-calc">
+<form method="POST" action="process.php" id="form-calc">
 
 Select criterias : <br>
 
