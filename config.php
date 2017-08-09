@@ -170,7 +170,7 @@ $sub_criteria_name = array(
   'Security' => array('S1','S2','S3','S4'),
   'Reliability' => array('R1','R2',),
   'Availability' => array('A1',),
-  'Utility' => array('U1','U2','U3',),
+  'Usability' => array('U1','U2','U3',),
 );
 
 $lv1 = array(

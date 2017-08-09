@@ -1,25 +1,13 @@
-<?php
-require_once "config.php";
+
+<?php 
+
+include "head.php";
 ?>
-<title>AHP</title>
 
-<script src="<?php echo $baseurl;?>/assets/js/jquery.min.js"></script>
-<script src="<?php echo $baseurl;?>/assets/js/jquery-ui.js"></script>
 <link rel="stylesheet" href="<?php echo $baseurl;?>/assets/css/jquery-ui.css">
-  <style>
-  .custom-handle {
-    width: 3em;
-    height: 1.6em;
-    top: 50%;
-    margin-top: -5px;
-    padding : 5px;
-    /*margin-bottom: 30px*/
-    text-align: center;
-    line-height: 1.6em;
 
-  }
 
-  </style>
+
 <script>
   
   var maks = 9;
@@ -58,8 +46,47 @@ $input_array = array (
     'kriteria' => $lv1
   );
 ?>
+
+<div class="wrapper">
+
+  <?php 
+  include_once "header_menu.php";
+  ?>
+
+  <style>
+  div.custom-handle {
+    
+  }
+
+  </style>
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+    <div class="container">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Selection
+          <!-- <small>Example 2.0</small> -->
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li><a href="#">Layout</a></li>
+          <li class="active">Top Navigation</li>
+        </ol>
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        
+        <div class="box box-default">
+          <div class="box-header with-border">
+            <h3 class="box-title">Criteria Selection</h3>
+          </div>
+          <div class="box-body">
+           
+
 <form method="POST" action="multilevel_adaptive.php?<?php echo http_build_query($input_array);?>">
-<h2>Pairwise Comparison</h2>
+
 <?php
 
 echo "<table width='40%'>";
@@ -105,7 +132,8 @@ $( function() {
   } );
   </script>
 <div id="slider_<?php echo 't-'.$i.'-'.$j;?>" class="slider">
-  <div id="custom-handle_<?php echo 't-'.$i.'-'.$j;?>" class="ui-slider-handle custom-handle"></div>
+  <div id="custom-handle_<?php echo 't-'.$i.'-'.$j;?>" class="ui-slider-handle" style="width: 2em;height: 2.0em;top: 0%;margin-top: -11px;padding : 3px;text-align: center;line-height: 1.6em;left:45%;
+"></div>
 </div>
  
         <?php
@@ -121,20 +149,32 @@ $( function() {
 
     }
   }
-  // echo "
-
-  // <div style='margin-top: 10%' >
-  //   <input class='' type='hidden' id='result_data' name='result_data' value='$sum' />
-  //   <input class='' type='hidden' id='criteria-$i' name='criteria-$i' value='".$data[$i]."' />
-  // </div>
-
-  // ";
 
 }
   echo "</table>";
   
 
  ?>
+ <br>
+<input type="submit" class="btn btn-primary" value="Calculate" name="submit2" id="submit2" />
+</form>
+          </div>
+          <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  <?php 
+  include_once "footer.php";
+  ?>
+</div>
 
-  <input class='button-primary' type='submit' value='Calculate' /> 
-  </form>
+<!-- 
+<a href="admin.php">Config</a> -->
+<?php 
+include "script.php";
+?>
