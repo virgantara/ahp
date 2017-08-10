@@ -12,7 +12,7 @@ include "head.php";
   include_once "header_menu.php";
 
 
-$baseurl = 'http://localhost/ahp';
+$baseurl = '';
 
 
 try {
@@ -103,7 +103,7 @@ try {
 </div>
 <div class="box-footer">
                 
-<input type="button" class="btn btn-primary" value="Save" name="submit2" id="submit2" />
+<input type="submit" class="btn btn-primary" value="Save" name="submit2" id="submit2" />
               </div>
 </form>
           </div>
@@ -122,19 +122,6 @@ try {
 </div>
 
 
-<script type="text/javascript">
-  $(document).ready(function(){
-
-    $("#submit2").click(function(){
-        if($('.kriteria:checked').length > 1){
-          document.forms["form-calc"].submit();
-        }
-
-        else{
-          alert('Minimum selected criteria must be 2');
-        }
-    });
-  });
 </script>
 <!-- 
 <a href="admin.php">Config</a> -->
