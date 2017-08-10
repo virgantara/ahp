@@ -1,6 +1,19 @@
+
 <?php 
 
+
+include_once "head.php";
 include_once "config.php";
+
+include_once "db_helper.php";
+
+$scoring = getProviderScore();
+?>
+<link rel="stylesheet" href="<?php echo $baseurl;?>/assets/css/jquery-ui.css">
+
+
+
+<?php
 
 $criteria = $_GET['kriteria'];
 
@@ -14,19 +27,19 @@ array_splice($lv1, 0,1);
 
 // print_r($criteria);exit;
 
-$score_provider = array();
+// $score_provider = array();
 
 
-$j = 1;
-foreach($scoring_main as $s)
-{
-    for($i=1;$i<count($criteria);$i++)
-    {
-        $score_provider[$i][$j] = $s['value'][$i];
-    }
+// $j = 1;
+// foreach($scoring_main as $s)
+// {
+//     for($i=1;$i<count($criteria);$i++)
+//     {
+//         $score_provider[$i][$j] = $s['value'][$i];
+//     }
 
-    $j++;
-}
+//     $j++;
+// }
 
 
 
@@ -66,11 +79,43 @@ for($i = 1;$i<count($criteria);$i++)
 
    }
 }
+?>
 
+
+<div class="wrapper">
+
+  <?php 
+  include_once "header_menu.php";
+  ?>
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+    <div class="container">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Selection
+          <!-- <small>Example 2.0</small> -->
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li><a href="#">Layout</a></li>
+          <li class="active">Top Navigation</li>
+        </ol>
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        
+        <div class="box box-default">
+          <div class="box-header with-border">
+            <h3 class="box-title">Criteria Selection</h3>
+          </div>
+          <div class="box-body">
+<?php
 
 echo 'Pairwise Matrix';
 $sums = array();
-echo '<table border="1">';
+echo '<table class="table table-bordered">';
 echo '<tr>';
 
     foreach($criteria as $c)
@@ -128,7 +173,7 @@ $norm_matrices = array();
 
 $priority_vector_main_criteria = array();
 echo 'Normalize Matrix';
-echo '<table border="1">';
+echo '<table class="table table-bordered">';
  echo '<tr>';
 
     foreach($criteria as $c)
@@ -170,7 +215,7 @@ foreach($criteria as $c)
             $dt = $data[$col][$row];
 
             $norm_matrices[$col][$row] = $dt / $sumvert;
-            echo '<td>'.$dt.'</td>';
+            echo '<td>'.($dt / $sumvert).'</td>';
             $sum = $sum + $dt / $sumvert;
 
         } 
@@ -318,7 +363,7 @@ foreach($lv1 as $q => $v)
     // if($q == 0) continue;
 
     echo '<br><strong>Respect to '.$v.'</strong>';
-    echo '<table border="1" width="50%">';
+    echo '<table class="table table-bordered">';
     echo '<tr>';
     echo '<td>#</td>';
     foreach($scoring as $row)
@@ -377,7 +422,7 @@ foreach($lv1 as $q => $v)
     echo '</table>';
    
     echo '<br><strong>Respect to '.$v.' Normalized Matrix</strong>';
-      echo '<table border="1" width="50%">';
+      echo '<table class="table table-bordered">';
     echo '<tr>';
     echo '<td>&nbsp;</td>';
     foreach($scoring as $row)
@@ -448,46 +493,30 @@ $isc++;
 
 
 
-?>
-<script src="<?php echo $baseurl;?>/assets/js/jquery.min.js"></script>
-<script src="<?php echo $baseurl;?>/assets/js/jquery-ui.js"></script>
-<link rel="stylesheet" href="<?php echo $baseurl;?>/assets/css/jquery-ui.css">
-  <style>
-  .custom-handle {
-    width: 3em;
-    height: 1.6em;
-    top: 50%;
-    margin-top: -5px;
-    padding : 5px;
-    /*margin-bottom: 30px*/
-    text-align: center;
-    line-height: 1.6em;
+?>         
 
-  }
-
-  </style>
 <script>
-	
-	var maks = 9;
-	var vals = [];  
+  
+  var maks = 9;
+  var vals = [];  
 
-	var incr1 = 8;
-	var incr2 = -3;
-	for(var i=0;i < 9 ;i++){
-		if(i > 4){
-			vals[i] = (i+1) + incr2;
-			incr2 = incr2 + 1; 
-		}
-	
-		else{
-			vals[i] = (i+1) + incr1;
-			incr1 = incr1 - 3;
+  var incr1 = 8;
+  var incr2 = -3;
+  for(var i=0;i < 9 ;i++){
+    if(i > 4){
+      vals[i] = (i+1) + incr2;
+      incr2 = incr2 + 1; 
+    }
+  
+    else{
+      vals[i] = (i+1) + incr1;
+      incr1 = incr1 - 3;
       if(vals[i]!= 1)
         vals[i] = vals[i] * -1;
-		}
-	}
+    }
+  }
 
-	
+  
 
   
   </script>
@@ -497,7 +526,9 @@ $input_array = array (
     'priority' => $priority_vector_main_criteria
   );
 ?>
-<form method="POST" action="calc_multilevel_adaptive.php?<?php echo http_build_query($input_array);?>">
+<form method="POST" action="calc_multilevel_adaptive.php?<?php echo http_build_query($input_array);?>" id="form-calc">
+
+
 
 <?php 
 
@@ -517,8 +548,8 @@ foreach($lv1 as $maincrit)
   echo '<h3>'.$maincrit.'</h3>';
   echo "<table width='40%'>";
   
-  $sum=count($sub_criteria[$i]);
-  $data = $sub_criteria[$i];
+ $sum=count($sub_criteria_name[$maincrit]);
+  $data = $sub_criteria_name[$maincrit];
   
 
 
@@ -571,15 +602,18 @@ $( function() {
         handle.text( vals[$( this ).slider( "value" )-1] );
       },
       slide: function( event, ui ) {
-        
-        handle.text( vals[ui.value-1] );
-        $('#txt_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>').val(handle.text());
+        var vslider = vals[ui.value-1]; 
+        var v = Math.abs(eval(vslider));
+        handle.text( v );
+        // handle.text( vals[ui.value-1] );
+        $('#txt_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>').val(vslider);
       }
     });
   } );
   </script>
 <div id="slider_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>" class="slider">
-  <div id="custom-handle_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>" class="ui-slider-handle custom-handle"></div>
+  <div id="custom-handle_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>" class="ui-slider-handle" style="width: 2em;height: 2.0em;top: 0%;margin-top: -11px;padding : 3px;text-align: center;line-height: 1.6em;left:45%;
+"></div>
 </div>
 <input type='hidden' id="txt_<?php echo 't-'.$i.'-'.$j.'-'.$k;?>" name ='<?php echo 't-'.$i.'-'.$j.'-'.$k;?>' value="1"/>
 
@@ -599,8 +633,27 @@ $( function() {
   echo "</table>";
     $i++;
 }
-?>
-
-
-<input class='button-primary' type='submit' value='Calculate' /> <input type='reset' class='button-primary'  value='Reset' />
+?><br>
+<input type="submit" class="btn btn-primary" value="Calculate" name="submit2" id="submit2" />
 </form>
+          </div>
+          <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  <?php 
+  include_once "footer.php";
+  ?>
+</div>
+
+
+<!-- 
+<a href="admin.php">Config</a> -->
+<?php 
+include "script.php";
+?>

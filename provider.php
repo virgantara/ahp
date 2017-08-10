@@ -72,14 +72,7 @@ $query = new MongoDB\Driver\Query(array('provider' => array('$ne'=>true)));
      $query = new MongoDB\Driver\Query([]); 
        
       $rows = $manager->executeQuery("ahp.provider", $query);
-// echo '<pre>';
-// foreach($rows as $row)
-// {
-//   print_r($row);
 
-// }
-// echo '</pre>';
-// exit;
 echo 'Provider\'s Score  : <br>';   
 echo '<table class="table table-bordered">';
 echo '<tr>';

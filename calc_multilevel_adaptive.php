@@ -1,7 +1,22 @@
-<?php
+
+<?php 
+
 $time_start = microtime(true);
+include_once "head.php";
+
+
 include_once "config.php";
 
+include_once "db_helper.php";
+
+$scoring = getProviderScore();
+
+
+?>
+
+<link rel="stylesheet" href="<?php echo $baseurl;?>/assets/css/jquery-ui.css">
+
+<?php
 // $lv1 = $_GET['kriteria'];
 
 $criteria = $_GET['kriteria'];
@@ -80,6 +95,42 @@ foreach($scoring as $row)
     $i++;
 }
 
+?>
+
+
+<div class="wrapper">
+
+  <?php 
+  include_once "header_menu.php";
+  ?>
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+    <div class="container">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Selection
+          <!-- <small>Example 2.0</small> -->
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li><a href="#">Layout</a></li>
+          <li class="active">Top Navigation</li>
+        </ol>
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        
+        <div class="box box-default">
+          <div class="box-header with-border">
+            <h3 class="box-title">Criteria Selection</h3>
+          </div>
+          <div class="box-body">
+           
+<?php
+
+
 $isc = 0;
 $priority_vector_criteria = array();
 foreach($sub_criteria as $sc)
@@ -126,8 +177,9 @@ foreach($sub_criteria as $sc)
 
 
 
+
   echo '<br><strong>Pairwise Matrix : '.$lv1[$isc];
-  echo '<table border="1" width="50%">';
+  echo '<table class="table table-bordered">';
   echo '<tr>';
   echo '<td>*</td>';
   foreach($sc as $c)
@@ -149,19 +201,13 @@ foreach($sub_criteria as $sc)
     foreach($sc as $q => $v)
     {
           
-            echo '<td>'.round($data[$j][$i],3).'</td>'; 
-            
-        
-
+        echo '<td>'.round($data[$j][$i],3).'</td>'; 
         $j++;
     }
 
    
     echo '</tr>';
     $i++;
-    
-  
-    
   }
   echo '<tr>';
   echo '<td><strong>Sum</strong></td>';
@@ -182,14 +228,14 @@ foreach($sub_criteria as $sc)
 
   
 
-  echo '<br><strong>Normalized Matrix : '.$lv1[$isc];
-  echo '<table border="1" width="100%">';
+  echo '<strong>Normalized Matrix : '.$lv1[$isc];
+  echo '<table class="table table-bordered">';
   echo '<tr>';
   foreach($sc as $c)
   {
      echo '<td>'.$c.'</td>';
   }
-  echo '<td>SUM</td><td><strong>Priority Vector</td>';
+  echo '<td>SUM</td><td>Priority Vector</td>';
   echo '</tr>';
 
   $i = 0;
@@ -252,7 +298,7 @@ foreach($sub_criteria as $sc)
 }  
 
 echo 'Simple Additive Weight<br>';
-echo '<table border="1" width="50%">';
+echo '<table class="table table-bordered">';
 echo '<tr>';
 echo '<th>1ST LEVEL PARAM</th><th>WEIGHT</th><th>SUB<br>PARAMS</th><th>WEIGHT</th>';
 echo '</tr>';
@@ -290,7 +336,7 @@ $overall_total_weight = array();
 foreach($scoring as $qm => $qv)
 {
   echo 'Provider '.$qv['provider'].'<br>';
-  echo '<table border="1" width="80%">';
+  echo '<table class="table table-bordered">';
   echo '<tr>';
   echo '<th>PARAM</th><th>SUBPARAM</th><th>VALUE</th>';
   echo '<th>WEIGHT</th><th>UTILITY</th><th>UTILITY TOTAL</th><th>WEIGHTED</th>';
@@ -391,7 +437,7 @@ if ($a == $b) { return 0; }
 
 $final_result = array_reverse($final_result);
 echo '<strong>Recommended Provider</strong>';
-echo '<table border="1" width="25%">';
+echo '<table class="table table-bordered">';
 echo '<tr><th>Provider</th><th>Value</th><th>Rank</th></tr>';
 $i = 1;
 foreach($final_result as $fr)
@@ -403,8 +449,6 @@ foreach($final_result as $fr)
 }
 echo '</table>';
 
-
-
 $time_end = microtime(true);
 
 //dividing with 60 will give the execution time in minutes other wise seconds
@@ -412,4 +456,25 @@ $execution_time = ($time_end - $time_start);
 
 //execution time of the script
 echo '<b>Total Execution Time:</b> '.$execution_time.' Secs';
+?>
+          </div>
+          <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  <?php 
+  include_once "footer.php";
+  ?>
+</div>
+
+
+<!-- 
+<a href="admin.php">Config</a> -->
+<?php 
+include "script.php";
 ?>

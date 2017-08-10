@@ -3,11 +3,6 @@
 
 
 include "head.php";
-?>
-
-
-
-<?php 
 
 
 $lv1 = array('','Cost','Security','Reliability','Availability','Usability');

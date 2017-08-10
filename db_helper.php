@@ -1,6 +1,54 @@
 <?php 
 
+function getProviderScore()
+{
+	$scoring = array();
+	try 
+	{
 
+        $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
+          
+        $query = new MongoDB\Driver\Query([]); 
+         
+        $rows = $manager->executeQuery("ahp.provider", $query);
+
+        foreach($rows as $row)
+        {
+
+            $obj = (array)$row;
+            $oid = $obj['_id'];
+            $obj = $obj[0];
+
+            $score = array();
+            foreach($obj->value as $q => $v)
+            {
+                $score[] = $v;
+            }
+
+            $p = array(
+                
+                'provider' => $obj->name,
+                'value' => $score
+            );
+
+            $scoring[] = $p;   
+        }
+
+	     
+	} catch (MongoDB\Driver\Exception\Exception $e) {
+
+	    $filename = basename(__FILE__);
+	    
+	    echo "The $filename script has experienced an error.\n"; 
+	    echo "It failed with the following exception:\n";
+	    
+	    echo "Exception:", $e->getMessage(), "\n";
+	    echo "In file:", $e->getFile(), "\n";
+	    echo "On line:", $e->getLine(), "\n";    
+	}
+
+	return $scoring;
+}
 
 function initProvider()
 {
