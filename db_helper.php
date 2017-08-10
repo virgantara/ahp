@@ -209,7 +209,7 @@ function initProvider()
 function loadBaseUrl()
 {
 	
-	$baseurl = 'http://localhost/ahp';
+	$baseurl = '';
 
 
 	try {
@@ -241,7 +241,7 @@ function loadBaseUrl()
 		{
 			$bulk = new MongoDB\Driver\BulkWrite;
     	// echo 'a';exit;
-	    	$doc = ['_id' => new MongoDB\BSON\ObjectID, 'baseurl' => $baseurl];
+	    	$doc = ['_id' => new MongoDB\BSON\ObjectID, 'baseurl' => 'http://localhost/ahp'];
 			$bulk->insert($doc);
 
 			$manager->executeBulkWrite('ahp.setting', $bulk);
