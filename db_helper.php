@@ -209,7 +209,7 @@ function initProvider()
 function loadBaseUrl()
 {
 	
-	$baseurl = '';
+	$baseurl = 'http://localhost/ahp';
 
 
 	try {
