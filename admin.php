@@ -12,7 +12,7 @@ include "head.php";
   include_once "header_menu.php";
 
 
-$baseurl = '';
+$baseurl = 'http://localhost/ahp';
 
 
 try {

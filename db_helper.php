@@ -236,6 +236,16 @@ function loadBaseUrl()
 				
 			}
 		}
+
+		else
+		{
+			$bulk = new MongoDB\Driver\BulkWrite;
+    	// echo 'a';exit;
+	    	$doc = ['_id' => new MongoDB\BSON\ObjectID, 'baseurl' => $baseurl];
+			$bulk->insert($doc);
+
+			$manager->executeBulkWrite('ahp.setting', $bulk);
+		}
 		
 	} catch (MongoDB\Driver\Exception\Exception $e) {
 
