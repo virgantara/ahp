@@ -6,45 +6,59 @@ try {
     if(!empty($_POST['save']))
     {    
 
-        $bulk = new MongoDB\Driver\BulkWrite;
+        $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
+        $query = new MongoDB\Driver\Query(array('provider' => array('$ne'=>true)));
 
-        foreach($scoring as $score)
+        $cursor = $manager->executeQuery('ahp.provider', $query);
+           
+        $result = $cursor->toArray();
+
+
+        if(!empty($result))
         {
-        // print_r($score);
-            $doc = ['_id' => new MongoDB\BSON\ObjectID, $score];
-            $bulk->insert($doc);
+              
+            $query = new MongoDB\Driver\Query([]); 
+             
+            $rows = $manager->executeQuery("ahp.provider", $query);
+
+            foreach($rows as $row)
+            {
+
+                $obj = (array)$row;
+                $oid = $obj['_id'];
+                $obj = $obj[0];
+
+                $score = array();
+                foreach($obj->value as $q => $v)
+                {
+                    $score[] = $_POST[$obj->name.'_'.$q];
+                }
+
+                $p = array(
+                    '0'=> array(
+                        'name' => $obj->name,
+                        'value' => $score
+                ));
+
+                $bulk = new MongoDB\Driver\BulkWrite;
+                $bulk->update(
+                    ['0.name' => $obj->name],
+                    $p,
+                    ['multi' => false, 'upsert' => false]
+                );
+
+                // print_r($p);
+
+                $manager->executeBulkWrite('ahp.provider', $bulk);   
+            }
+// exit;
+
         }
 
-       $manager->executeBulkWrite('ahp.provider', $bulk);   
     }
-    $query = new MongoDB\Driver\Query(array('provider' => array('$ne'=>true)));
 
-	$cursor = $manager->executeQuery('ahp.provider', $query);
-    
-    $result = $cursor->toArray();
 
- 	if(!empty($_POST['baseurl']))
- 	{
- 		$baseurl = $_POST['baseurl'];
- 		$bulk = new MongoDB\Driver\BulkWrite;
-    	// echo 'a';exit;
-
-		$bulk->delete(
-				['_id'=> new MongoDB\BSON\ObjectID($_POST['oid'])],
-    			['limit' => 1]
-			);
-
-		$manager->executeBulkWrite('ahp.setting', $bulk);	
-
-		$bulk = new MongoDB\Driver\BulkWrite;
-    	// echo 'a';exit;
-    	$doc = ['_id' => new MongoDB\BSON\ObjectID, 'baseurl' => $_POST['baseurl']];
-		$bulk->insert($doc);
-
-		$manager->executeBulkWrite('ahp.setting', $bulk);
-
-        header("Location:admin.php");
- 	}
+    header("Location:provider.php");
 
     
 } catch (MongoDB\Driver\Exception\Exception $e) {

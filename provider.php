@@ -72,14 +72,14 @@ $query = new MongoDB\Driver\Query(array('provider' => array('$ne'=>true)));
      $query = new MongoDB\Driver\Query([]); 
        
       $rows = $manager->executeQuery("ahp.provider", $query);
-echo '<pre>';
-foreach($rows as $row)
-{
-  print_r($row);
+// echo '<pre>';
+// foreach($rows as $row)
+// {
+//   print_r($row);
 
-}
-echo '</pre>';
-exit;
+// }
+// echo '</pre>';
+// exit;
 echo 'Provider\'s Score  : <br>';   
 echo '<table class="table table-bordered">';
 echo '<tr>';
@@ -105,19 +105,19 @@ foreach($rows as $row)
   echo '<tr>';
 
     echo '<td>';
-    echo $obj->provider;
+    echo $obj->name;
     echo '</td>';
 
     $j = 0;
-    
+    echo '<input type="hidden" name="oid_'.$obj->name.'" value="'.$oid.'" size="3"/>';
     foreach($obj->value as $q => $v)
     {
 
        echo '<td>';
 
        // print_r($val);
-        echo '<input type="text" name="'.$obj->provider.'_'.$q.'" value="'.$v.'" size="3"/>';
-        // echo '<input type="text" name="oid_'.$obj->provider.'_'.$q.'" value="'.$v.'" size="3"/>';
+        echo '<input type="text" name="'.$obj->name.'_'.$q.'" value="'.$v.'" size="3"/>';
+        
        echo '</td>';
         $j++;
 
@@ -147,7 +147,7 @@ echo '</table>';
 </div>
 <div class="box-footer">
                 
-<input type="button" class="btn btn-primary" value="Save" name="save" id="submit2" />
+<input type="submit" class="btn btn-primary" value="Save" name="save" id="submit2" />
               </div>
 </form>
           </div>
@@ -166,20 +166,6 @@ echo '</table>';
 </div>
 
 
-<script type="text/javascript">
-  $(document).ready(function(){
-
-    $("#submit2").click(function(){
-        if($('.kriteria:checked').length > 1){
-          document.forms["form-calc"].submit();
-        }
-
-        else{
-          alert('Minimum selected criteria must be 2');
-        }
-    });
-  });
-</script>
 <!-- 
 <a href="admin.php">Config</a> -->
 <?php 

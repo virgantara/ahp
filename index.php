@@ -1,5 +1,6 @@
-﻿
+
 <?php 
+
 
 include "head.php";
 ?>

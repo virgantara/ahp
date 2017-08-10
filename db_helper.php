@@ -7,32 +7,105 @@ function initProvider()
 
 	$scoring = array(
 	        array(
-	          "provider"=> "M",
-	          "value"=> array(100,43,49,10,45,96,100,99,5,46,46)
+	          "name"=> "M",
+	          "value"=> array(
+	          	 100,
+	          	 43,
+	          	 49,
+	          	 10,
+	          	 45,
+	          	 96,
+	          	 100,
+	          	 99,
+	          	 5,
+	          	46,
+	          	46
+	          )
 	        )
 	      ,
 	         array(
-	        "provider"=> "K",
-	        "value"=> array(85,47,49,5,46,90,99,97,10,49,49)
+	        "name"=> "K",
+	        "value"=> array(
+			 85,
+			 47,
+			 49,
+			 5,
+			 46,
+			 90,
+			 99,
+			 97,
+			 10,
+			49,
+			49
+			)
 	        )
 	      ,
 	       array(
-	        "provider"=> "I",
-	        "value"=> array(97,44,42,10,46,95,98,99,10,45,47)
+	        "name"=> "I",
+	        "value"=> array(
+			 97,
+			 44,
+			 42,
+			 10,
+			 46,
+			 95,
+			 98,
+			 99,
+			 10,
+			45,
+			47
+				)
 	        )
 	      ,
 	       array(
-	        "provider"=> "A",
-	        "value"=> array(93 , 50 , 48 , 10,  49,  93 , 95,  98  ,5,48 ,48)
+	        "name"=> "A",
+	        "value"=> array(
+			 93 , 
+			 50 , 
+			 48 , 
+			 10,  
+			 49,
+			 93 ,
+			 95, 
+			 98  ,
+			 5,
+			48 ,
+			48
+			)
 	        )
 	      ,
 	       array(
-	        "provider"=> "B",
-	        "value"=> array(100,46 ,43,  10,  41,  100, 91,  97,  5,50 ,45))
+	        "name"=> "B",
+	        "value"=> array(
+			 100,
+			 46 ,
+			 43, 
+			 10,
+			 41, 
+			 100, 
+			 91, 
+			 97,  
+			 5,
+			50 ,
+			45
+			)
+			)
 	      ,
 	       array(
-	        "provider"=> "T",
-	        "value"=> array(90,  50 , 47,  5, 45 , 92,  97 , 99  ,10,  47  ,50)
+	        "name"=> "T",
+	        "value"=> array(
+			 90, 
+			 50 , 
+			 47, 
+			 5, 
+			 45 , 
+			 92, 
+			 97 , 
+			 99  ,
+			 10,  
+			47  ,
+			50
+			)
 	      )
 	);
 
@@ -50,16 +123,25 @@ function initProvider()
 	    if(empty($result))
 	    {    
 
-	        $bulk = new MongoDB\Driver\BulkWrite;
+	  
 
 	        foreach($scoring as $score)
 	        {
-	        // print_r($score);
-	            $doc = ['_id' => new MongoDB\BSON\ObjectID, $score];
+	        	$bulk = new MongoDB\Driver\BulkWrite;
+	        	// $score;
+	        	$obj = new stdClass;
+	        	$obj->name = $score['name'];
+	        	$obj->value = $score['value'];
+	        // print_r($obj);
+	            $doc = ['_id' => new MongoDB\BSON\ObjectID, $obj];
 	            $bulk->insert($doc);
+	            $manager->executeBulkWrite('ahp.provider', $bulk);   
+	        
 	        }
 
-	       $manager->executeBulkWrite('ahp.provider', $bulk);   
+	        
+
+	       
 	    }
 	    
 	} catch (MongoDB\Driver\Exception\Exception $e) {
