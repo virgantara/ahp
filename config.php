@@ -1,6 +1,6 @@
 <?php 
 
-$baseurl = 'http://localhost/ahp/';
+// $baseurl = 'http://localhost/ahp/';
 // $scoring_main = array(
 //         array(
 //           "provider"=> "M",
