@@ -13,7 +13,6 @@ include "head.php";
 
 include_once "db_helper.php";
 
-initProvider();
   ?>
   <!-- Full Width Column -->
   <div class="content-wrapper">
