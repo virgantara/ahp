@@ -101,7 +101,7 @@ foreach($scoring as $row)
 <div class="wrapper">
 
   <?php 
-  include_once "header_menu.php";
+ // include_once "header_menu.php";
   ?>
   <!-- Full Width Column -->
   <div class="content-wrapper">
@@ -112,11 +112,12 @@ foreach($scoring as $row)
           Selection
           <!-- <small>Example 2.0</small> -->
         </h1>
+        <!--
         <ol class="breadcrumb">
           <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
           <li><a href="#">Layout</a></li>
           <li class="active">Top Navigation</li>
-        </ol>
+        </ol>-->
       </section>
 
       <!-- Main content -->
@@ -231,6 +232,7 @@ foreach($sub_criteria as $sc)
   echo '<strong>Normalized Matrix : '.$lv1[$isc];
   echo '<table class="table table-bordered">';
   echo '<tr>';
+  echo '<td>*</td>';
   foreach($sc as $c)
   {
      echo '<td>'.$c.'</td>';
@@ -246,12 +248,13 @@ foreach($sub_criteria as $sc)
 
       
       echo '<tr>';
-      
       $j = 0;
       $sum = 0;
+	  echo '<td>'.$c.'</td>';
       foreach($sc as $q => $v)
       {
-            
+			
+      	
           $norm_matrices[$i][$j] = $data[$j][$i]/$sums[$j];
           echo '<td>'.$data[$j][$i]/$sums[$j].'</td>';
           

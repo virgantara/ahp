@@ -5808,3 +5808,45 @@
 [Thu May 25 05:59:52.075864 2017] [:error] [pid 1289] [client 162.158.166.221:26685] PHP Stack trace:, referer: http://ahp.keltech.co.id/
 [Thu May 25 05:59:52.075866 2017] [:error] [pid 1289] [client 162.158.166.221:26685] PHP   1. {main}() /var/www/ahp/calculate.php:0, referer: http://ahp.keltech.co.id/
 [Thu May 25 05:59:52.075869 2017] [:error] [pid 1289] [client 162.158.166.221:26685] PHP   2. count_alt() /var/www/ahp/calculate.php:299, referer: http://ahp.keltech.co.id/
+[Sat Aug 12 06:45:49.196261 2017] [:error] [pid 24962] [client 91.196.50.33:35427] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Sat Aug 12 19:27:42.923169 2017] [:error] [pid 1146] [client 91.196.50.33:38457] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Sun Aug 13 14:09:41.565380 2017] [:error] [pid 12026] [client 91.196.50.33:33960] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Mon Aug 14 01:02:59.772091 2017] [:error] [pid 12014] [client 91.196.50.33:40784] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Mon Aug 14 23:46:25.786783 2017] [:error] [pid 26489] [client 187.66.50.64:40900] script '/var/www/ahp/command.php' not found or unable to stat
+[Tue Aug 15 03:22:57.156281 2017] [:error] [pid 27616] [client 91.196.50.33:52106] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Tue Aug 15 17:12:17.024272 2017] [:error] [pid 25502] [client 192.64.87.177:35866] script '/var/www/ahp/xmlrpc.php' not found or unable to stat
+[Wed Aug 16 15:19:35.030806 2017] [:error] [pid 13480] [client 91.196.50.33:44212] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Thu Aug 17 00:02:53.992800 2017] [:error] [pid 13479] [client 192.0.85.132:51071] script '/var/www/ahp/xmlrpc.php' not found or unable to stat, referer: http://103.3.61.209/xmlrpc.php?for=jetpack&token=ZpTIqqyiB%286zgjHdkO%5Ey9iGUdT7OH%2873%3A1%3A1&timestamp=1502928173&nonce=fjp5LZS78s&body-hash=pdst%2B%2B8gjpsEsdzTGdS19%2BYN3g4%3D&signature=IanbjSJPuValqRW1j9qsVR%2FPjTs%3D
+[Thu Aug 17 00:02:54.889238 2017] [:error] [pid 25285] [client 192.0.85.132:51155] script '/var/www/ahp/xmlrpc.php' not found or unable to stat, referer: http://103.3.61.209/xmlrpc.php?for=jetpack&token=ZpTIqqyiB%286zgjHdkO%5Ey9iGUdT7OH%2873%3A1%3A1&timestamp=1502928174&nonce=fhoXPEGRBt&body-hash=I7jdmsumuuig4d0hBXftM4xFJ4U%3D&signature=VvSwBEaqf9wQr5eI2N2AaUfukfQ%3D
+[Thu Aug 17 00:02:55.307761 2017] [:error] [pid 13476] [client 192.0.85.132:51359] script '/var/www/ahp/xmlrpc.php' not found or unable to stat, referer: http://103.3.61.209/xmlrpc.php?for=jetpack&token=ZpTIqqyiB%286zgjHdkO%5Ey9iGUdT7OH%2873%3A1%3A1&timestamp=1502928174&nonce=xLZ8jzqhXx&body-hash=I7jdmsumuuig4d0hBXftM4xFJ4U%3D&signature=LKBjT%2Bcio%2BTtXXKeFtQ%2BmwQxDeY%3D
+[Thu Aug 17 01:49:47.157515 2017] [:error] [pid 25781] [client 91.196.50.33:56420] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Thu Aug 17 23:18:07.141150 2017] [:error] [pid 31309] [client 162.158.165.112:32857] PHP Notice:  Undefined index: pvec in /var/www/ahp/calc_multilevel_adaptive.php on line 34
+[Thu Aug 17 23:18:07.141216 2017] [:error] [pid 31309] [client 162.158.165.112:32857] PHP Stack trace:
+[Thu Aug 17 23:18:07.141223 2017] [:error] [pid 31309] [client 162.158.165.112:32857] PHP   1. {main}() /var/www/ahp/calc_multilevel_adaptive.php:0
+[Thu Aug 17 23:18:07.141250 2017] [:error] [pid 31309] [client 162.158.165.112:32857] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ahp/calc_multilevel_adaptive.php on line 34
+[Thu Aug 17 23:18:07.141253 2017] [:error] [pid 31309] [client 162.158.165.112:32857] PHP Stack trace:
+[Thu Aug 17 23:18:07.141257 2017] [:error] [pid 31309] [client 162.158.165.112:32857] PHP   1. {main}() /var/www/ahp/calc_multilevel_adaptive.php:0
+[Fri Aug 18 10:10:29.453368 2017] [:error] [pid 15328] [client 91.196.50.33:44843] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Fri Aug 18 19:10:37.634854 2017] [:error] [pid 30893] [client 91.196.50.33:57954] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Sat Aug 19 08:18:47.198724 2017] [:error] [pid 10855] [client 91.196.50.33:56148] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Sat Aug 19 20:11:38.411497 2017] [:error] [pid 18163] [client 91.196.50.33:36171] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Sun Aug 20 12:15:55.916553 2017] [:error] [pid 32725] [client 91.196.50.33:52149] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Mon Aug 21 01:24:31.124520 2017] [:error] [pid 15860] [client 91.196.50.33:46152] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Mon Aug 21 14:59:54.482975 2017] [:error] [pid 28412] [client 91.196.50.33:35623] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Tue Aug 22 07:30:07.754176 2017] [:error] [pid 15449] [client 91.196.50.33:38167] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Tue Aug 22 19:55:36.970494 2017] [:error] [pid 19505] [client 187.37.46.222:36821] script '/var/www/ahp/command.php' not found or unable to stat
+[Tue Aug 22 21:59:39.368260 2017] [:error] [pid 15448] [client 91.196.50.33:49249] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Wed Aug 23 06:50:29.783970 2017] [:error] [pid 418] [client 91.196.50.33:50423] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Thu Aug 24 01:33:42.270979 2017] [:error] [pid 11079] [client 91.196.50.33:45351] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Thu Aug 24 07:19:28.380005 2017] [:error] [pid 28153] [client 91.196.50.33:37496] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Fri Aug 25 03:57:00.365160 2017] [:error] [pid 31505] [client 91.196.50.33:56235] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Fri Aug 25 14:16:01.952013 2017] [:error] [pid 15265] [client 91.196.50.33:40712] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Fri Aug 25 22:38:55.180972 2017] [:error] [pid 15272] [client 192.0.89.239:29874] script '/var/www/ahp/xmlrpc.php' not found or unable to stat, referer: http://103.3.61.209/xmlrpc.php?for=jetpack&token=ZpTIqqyiB%286zgjHdkO%5Ey9iGUdT7OH%2873%3A1%3A1&timestamp=1503700734&nonce=HPCNoqWXhu&body-hash=pdst%2B%2B8gjpsEsdzTGdS19%2BYN3g4%3D&signature=5SCXZPJKEULRbmSWTDKu4GNw5qA%3D
+[Fri Aug 25 22:38:56.046773 2017] [:error] [pid 15266] [client 192.0.89.239:29924] script '/var/www/ahp/xmlrpc.php' not found or unable to stat, referer: http://103.3.61.209/xmlrpc.php?for=jetpack&token=ZpTIqqyiB%286zgjHdkO%5Ey9iGUdT7OH%2873%3A1%3A1&timestamp=1503700735&nonce=nZUzJp9Ak0&body-hash=I7jdmsumuuig4d0hBXftM4xFJ4U%3D&signature=diLf6piWg8c9U9ba5RvdiUcCYMA%3D
+[Fri Aug 25 22:38:56.462043 2017] [:error] [pid 15268] [client 192.0.89.239:29966] script '/var/www/ahp/xmlrpc.php' not found or unable to stat, referer: http://103.3.61.209/xmlrpc.php?for=jetpack&token=ZpTIqqyiB%286zgjHdkO%5Ey9iGUdT7OH%2873%3A1%3A1&timestamp=1503700736&nonce=UipA0vEC0P&body-hash=I7jdmsumuuig4d0hBXftM4xFJ4U%3D&signature=Iq8ojXr3cLwjD%2FVTggTv7QUh1KY%3D
+[Sat Aug 26 03:08:28.106289 2017] [:error] [pid 15265] [client 91.196.50.33:52903] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Sat Aug 26 10:41:42.771627 2017] [:error] [pid 32302] [client 91.196.50.33:39034] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Sun Aug 27 03:46:35.586822 2017] [:error] [pid 9580] [client 91.196.50.33:51291] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Sun Aug 27 18:40:23.067456 2017] [:error] [pid 21221] [client 91.196.50.33:47838] script '/var/www/ahp/testproxy.php' not found or unable to stat
+[Sun Aug 27 18:50:30.215612 2017] [:error] [pid 21617] [client 202.101.247.10:43166] script '/var/www/ahp/xmlrpc.php' not found or unable to stat
+[Mon Aug 28 01:38:41.507547 2017] [:error] [pid 21609] [client 91.196.50.33:56851] script '/var/www/ahp/testproxy.php' not found or unable to stat

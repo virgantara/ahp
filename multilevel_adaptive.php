@@ -85,7 +85,7 @@ for($i = 1;$i<count($criteria);$i++)
 <div class="wrapper">
 
   <?php 
-  include_once "header_menu.php";
+//  include_once "header_menu.php";
   ?>
   <!-- Full Width Column -->
   <div class="content-wrapper">
@@ -96,11 +96,12 @@ for($i = 1;$i<count($criteria);$i++)
           Selection
           <!-- <small>Example 2.0</small> -->
         </h1>
+     <!--
         <ol class="breadcrumb">
           <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
           <li><a href="#">Layout</a></li>
           <li class="active">Top Navigation</li>
-        </ol>
+        </ol>-->
       </section>
 
       <!-- Main content -->
