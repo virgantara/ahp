@@ -2,6 +2,8 @@
 <?php 
 
 include "head.php";
+
+include_once "config.php"
 ?>
 
 
@@ -9,6 +11,9 @@ include "head.php";
 <div class="wrapper">
 
   <?php 
+  
+  
+  
   include_once "header_menu.php";
 
 include_once "db_helper.php";
@@ -46,14 +51,6 @@ include_once "db_helper.php";
  <div class="box-body">
 <?php
 
-
-$all_joinsub_criteria =  array(
-      'C1',
-      'S1','S2','S3','S4',
-      'R1','R2',
-      'A1',
-      'U1','U2','U3',
-);
 
 try {
 
