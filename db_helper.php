@@ -1,12 +1,17 @@
 <?php 
 
+//define('C_CONN','mongodb://admin:admin@cluster0-shard-00-00-cfus9.mongodb.net:27017,cluster0-shard-00-01-cfus9.mongodb.net:27017,cluster0-shard-00-02-cfus9.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin');
+
+define('C_CONN','mongodb://admin:admin@101.50.1.164:27017/admin');
+
 function getProviderScore()
 {
 	$scoring = array();
 	try 
 	{
-
-        $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
+	//$conn = "mongodb://localhost:27017";
+$conn = C_CONN;
+        $manager = new MongoDB\Driver\Manager($conn);
           
         $query = new MongoDB\Driver\Query([]); 
          
@@ -160,7 +165,8 @@ function initProvider()
 		
 	try {
 	         
-	    $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
+	   $conn = C_CONN;
+        $manager = new MongoDB\Driver\Manager($conn);
 	    
 	    $query = new MongoDB\Driver\Query(array('provider' => array('$ne'=>true)));
 
@@ -209,7 +215,8 @@ function initSetting($url)
 {
 	try {
          
-	    $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
+	    $conn = C_CONN;
+        $manager = new MongoDB\Driver\Manager($conn);
 	    
 	    
 	    $query = new MongoDB\Driver\Query(array('baseurl' => array('$ne'=>true)));
@@ -263,11 +270,16 @@ function loadBaseUrl()
 
 	try {
 			 
-		$manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
+		$conn = C_CONN;
+        $manager = new MongoDB\Driver\Manager($conn);
+		
 		
 		$query = new MongoDB\Driver\Query(array('baseurl' => array('$ne'=>true)));
-
+		
 		$cursor = $manager->executeQuery('ahp.setting', $query);
+		
+		;
+		
 		
 		$result = $cursor->toArray();
 
