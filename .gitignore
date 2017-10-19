@@ -2,6 +2,6 @@ logs/*
 access.log
 error.log
 *.zip
-
+*.txt
 *.log
 
