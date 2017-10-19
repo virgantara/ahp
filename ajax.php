@@ -27,7 +27,8 @@ $documents = $collection->find([]);
 $headers = array();
 foreach($documents as $doc)
 {
-  
+  $size = count($doc);
+  if($size > 2){
     foreach($doc as $q=>$v)
     {
     	if($q != '_id')
@@ -36,7 +37,7 @@ foreach($documents as $doc)
     }
     break;
     
-  
+  }
 }
 
 $documents = $collection->find([]);
@@ -44,10 +45,10 @@ $documents = $collection->find([]);
 $content = array();
 foreach($documents as $row)
 {
-	// $size = count($doc);
- //  	if($size > 2){
+	$size = count($doc);
+  	if($size > 2){
 		$content[] = $row;
-	// }
+	}
 }
 
 $results = array(
