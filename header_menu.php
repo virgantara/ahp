@@ -16,6 +16,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setting <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
+                <li><a href="<?php echo $baseurl;?>/cloudharmony.php">Cloud Harmony</a></li>
                 <li><a href="#">Criteria</a></li>
                 <li><a href="<?php echo $baseurl;?>/provider.php">Provider</a></li>
                 <li class="divider"></li>
