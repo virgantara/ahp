@@ -17,6 +17,8 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setting <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="<?php echo $baseurl;?>/cloudharmony.php">Cloud Harmony</a></li>
+                <li><a href="<?php echo $baseurl;?>/chsvc.php">Cloud Harmony Services</a></li>
+                <li><a href="<?php echo $baseurl;?>/chava.php">Cloud Harmony Availability</a></li>
                 <li><a href="#">Criteria</a></li>
                 <li><a href="<?php echo $baseurl;?>/provider.php">Provider</a></li>
                 <li class="divider"></li>
@@ -51,16 +53,16 @@
               </a>
               <ul class="dropdown-menu">
                 <!-- The user image in the menu -->
-                <li class="user-header">
+                <!-- <li class="user-header">
                   <img src="<?php echo $baseurl;?>/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                   <p>
                     Alexander Pierce - Web Developer
                     <small>Member since Nov. 2012</small>
                   </p>
-                </li>
+                </li> -->
                 <!-- Menu Body -->
-                <li class="user-body">
+                <!-- <li class="user-body">
                   <div class="row">
                     <div class="col-xs-4 text-center">
                       <a href="#">Followers</a>
@@ -72,17 +74,17 @@
                       <a href="#">Friends</a>
                     </div>
                   </div>
-                  <!-- /.row -->
-                </li>
+                   /.row 
+                </li> -->
                 <!-- Menu Footer-->
-                <li class="user-footer">
+               <!--  <li class="user-footer">
                   <div class="pull-left">
                     <a href="#" class="btn btn-default btn-flat">Profile</a>
                   </div>
                   <div class="pull-right">
                     <a href="#" class="btn btn-default btn-flat">Sign out</a>
                   </div>
-                </li>
+                </li> -->
               </ul>
             </li>
           </ul>

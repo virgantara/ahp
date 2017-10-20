@@ -107,7 +107,7 @@ include "script.php";
     $.ajax({
       type : 'post',
       url : 'ajax.php',
-      data : 'q='+param,
+      data : 'q='+param+'&status=1',
       beforeSend : function(){
         $('#loading').show();
       },

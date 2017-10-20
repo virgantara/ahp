@@ -1,61 +1,25 @@
 <?php 
 
-include_once "db_helper.php";
-require 'vendor/autoload.php';
+include_once "ajax_helper.php";
 
-if(empty($_POST['q'])) exit;
+if(empty($_POST['q']) || empty($_POST['status'])) exit;
 
 $q = $_POST['q'];
+$status = $_POST['status'];
 
-$m= new MongoDB\Client(C_CONN);
-$db = $m->ahp;
+// $q = 'aws:ec2';
+// $status=2;
 
-if($q == 'compute')
-	$collection = $db->compute;
-else if($q == 'cdn')
-	$collection = $db->cdn;
-else if($q == 'storage')
-	$collection = $db->storage;
-else if($q == 'dns')
-	$collection = $db->dns;
-else if($q == 'paas')
-	$collection = $db->paas;
-
-
-
-$documents = $collection->find([]);
-$headers = array();
-foreach($documents as $doc)
-{
-  $size = count($doc);
-  if($size > 2){
-    foreach($doc as $q=>$v)
-    {
-    	if($q != '_id')
-      $headers[] = $q;
-      
-    }
-    break;
-    
-  }
+switch ($status) {
+	case 1:
+		echo cloud_harmony_status($q);
+		break;
+	
+	case 2:
+		echo ch_geo_svc($q);
+		break;
 }
 
-$documents = $collection->find([]);
 
-$content = array();
-foreach($documents as $row)
-{
-	$size = count($doc);
-  	if($size > 2){
-		$content[] = $row;
-	}
-}
-
-$results = array(
-	'headers' => $headers,
-	'content' => $content
-);
-
-echo json_encode($results);
 
 ?>
