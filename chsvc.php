@@ -15,14 +15,18 @@ include_once "config.php"
   
   
   include_once "header_menu.php";
+include_once "db_helper.php";
+$params = array();
+foreach(getCloudProviders() as $v){
+  $params[$v->code] = $v->name;
+}
 
+// $params = array(
+//   'aws:ec2' => 'Amazon Web Service EC2',
+//   'google:compute' => 'Google Compute Engine',
+//   'azure:compute' => 'Microsoft Azure Cloud Storage',
 
-$params = array(
-  'aws:ec2' => 'Amazon Web Service EC2',
-  'google:compute' => 'Google Compute Engine',
-  'azure:compute' => 'Microsoft Azure Cloud Storage',
-
-);
+// );
 
   ?>
 
@@ -40,8 +44,11 @@ $params = array(
     padding: 0;
     list-style: none;
 }
+
   </style>
 
+
+  <link rel="stylesheet" href="assets/css/custom.css">
   <!-- Full Width Column -->
   <div class="content-wrapper">
     <div class="container">
@@ -139,12 +146,14 @@ $params = array(
         </div>
         <!-- /.col -->
         <div class="col-md-9">
+
           <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
               <li class="active"><a href="#activity" data-toggle="tab">Regions</a></li>
              
             </ul>
             <div class="tab-content">
+               <div id="map"></div>
               <div class="active tab-pane" id="regions">
                 <!-- Post -->
                 
@@ -196,15 +205,19 @@ include "script.php";
 ?>
 
 
+<script src="https://maps.google.com/maps/api/js?sensor=true&v=3&key=AIzaSyD4iB21WyP0W-aZSk0ilBn_cU_2urjhg9U">
+</script>
+<script src="assets/js/gmaps.js"></script>
 
 <script type="text/javascript">
-  function fetchData(param){
+  function fetchData(param,map){
     $.ajax({
       type : 'post',
       url : 'ajax.php',
       data : 'q='+param+'&status=2',
       beforeSend : function(){
         $('#loading').show();
+        map.removeMarkers();
       },
       success : function(data){
         var parsed = $.parseJSON(data);
@@ -225,6 +238,16 @@ include "script.php";
         $('#regions').empty();
         var item = '<ul class="timeline timeline-inverse">';
         $.each(parsed.regions, function(key, value){
+
+          map.addMarker({
+            lat: value.locationLat,
+            lng: value.locationLong,
+            title: value.city,
+            click: function(e) {
+              alert(value.city + ' - '+value.country);
+            }
+          });
+
           item += '<li><div class="timeline-item">';
 
           item += '  <h3 class="timeline-header"><a href="#">'+value.city+'</a> '+value.country+'</h3>';
@@ -243,12 +266,23 @@ include "script.php";
     });
   }
   $(document).ready(function(){
+
+
+   var map = new GMaps({
+    div: '#map',
+    lat: 0,
+    lng: 0,
+    zoom : 1,
+    minZoom : 1,
+
+  });
+
     var param = $('#params_attr').val();
     
-      fetchData(param);
+      fetchData(param,map);
 
       $('#params_attr').change(function(){
-        fetchData($(this).val());
+        fetchData($(this).val(),map);
       });
   });
 </script>

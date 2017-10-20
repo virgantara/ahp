@@ -17,14 +17,11 @@ include_once "config.php"
   include_once "header_menu.php";
 
 
-
-$params = array(
-  'aws:ec2' => 'Amazon Web Service EC2',
-  'google:compute' => 'Google Compute Engine',
-  'azure:compute' => 'Microsoft Azure Cloud Storage',
-
-);
-
+include_once "db_helper.php";
+$params = array();
+foreach(getCloudProviders() as $v){
+  $params[$v->code] = $v->name;
+}
 
   ?>
 

@@ -4,6 +4,25 @@
 
 define('C_CONN','mongodb://admin:admin@101.50.1.164:27017/admin');
 
+require_once 'vendor/autoload.php';
+
+function getCloudProviders()
+{
+	$m= new MongoDB\Client(C_CONN);
+	$db = $m->ahp;
+
+	$collection = $db->cloudprovider;
+
+	$documents = $collection->find();
+	$content = array();
+	foreach($documents as $doc)
+	{
+	  $content[] = $doc;
+	}
+
+	return $content;
+}
+
 function getProviderScore()
 {
 	$scoring = array();
