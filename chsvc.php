@@ -85,8 +85,7 @@ $params = array(
       <h1 >
         Cloud Service
       </h1>
-    active" >User profile</li>
-      </ol>
+    
     </section>
 
     <!-- Main content -->
