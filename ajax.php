@@ -18,6 +18,12 @@ switch ($status) {
 	case 2:
 		echo ch_geo_svc($q);
 		break;
+
+	case 3:
+		echo ch_geo_ava($q);
+		break;
+
+
 }
 
 

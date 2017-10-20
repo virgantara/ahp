@@ -4,6 +4,48 @@
 include_once "db_helper.php";
 require_once 'vendor/autoload.php';
 
+function ch_geo_ava($param)
+{
+	$m= new MongoDB\Client(C_CONN);
+	$db = $m->ahp;
+
+	$collection = $db->geoavailability;
+
+	$documents = $collection->find();
+	$headers = array();
+	foreach($documents as $doc)
+	{
+	  $size = count($doc);
+	  if($size > 1){
+	    foreach($doc as $q=>$v)
+	    {
+	    	if($q != '_id')
+	      		$headers[] = $q;
+	      
+	    }
+	    break;
+	    
+	  }
+	}
+
+
+	$documents = $collection->find(array('serviceId'=>$param));
+	$content = array();
+	foreach($documents as $row)
+	{
+		
+		$content[] = $row;
+		
+	}
+
+	$results = array(
+		'headers' => $headers,
+		'content' => $content
+	);
+
+	return json_encode($results);
+}
+
 function ch_geo_svc($q)
 {
 	$m= new MongoDB\Client(C_CONN);
