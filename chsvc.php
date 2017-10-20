@@ -217,9 +217,10 @@ include "script.php";
       data : 'q='+param+'&status=2',
       beforeSend : function(){
         $('#loading').show();
-        map.removeMarkers();
+       
       },
       success : function(data){
+
         var parsed = $.parseJSON(data);
         parsed = parsed[0];
         // console.log(parsed[0]);
@@ -237,6 +238,7 @@ include "script.php";
 
         $('#regions').empty();
         var item = '<ul class="timeline timeline-inverse">';
+         map.removeMarkers();
         $.each(parsed.regions, function(key, value){
 
           map.addMarker({
