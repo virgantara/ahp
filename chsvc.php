@@ -238,7 +238,7 @@ include "script.php";
 
         $('#regions').empty();
         var item = '<ul class="timeline timeline-inverse">';
-         map.removeMarkers();
+
         $.each(parsed.regions, function(key, value){
 
           map.addMarker({
@@ -284,6 +284,7 @@ include "script.php";
       fetchData(param,map);
 
       $('#params_attr').change(function(){
+        map.removeMarkers();
         fetchData($(this).val(),map);
       });
   });
