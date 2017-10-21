@@ -1,5 +1,7 @@
 <?php 
-class CloudParent
+
+
+class CloudScore
 {
 	public $name = '';
 	public $availability = 0;
