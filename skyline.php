@@ -85,7 +85,7 @@ foreach($documents as $doc)
 
 </div>
 <div class="col-xs-6">
-<h2>Skyline Providers</h2>
+<h2>Skyline Providers by Minimum Cost & Maximum Availability</h2>
 	<table class="table table-bordered">
     <thead>
       <tr>
