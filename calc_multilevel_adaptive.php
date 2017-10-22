@@ -202,7 +202,7 @@ foreach($sub_criteria as $sc)
     foreach($sc as $q => $v)
     {
           
-        echo '<td>'.round($data[$j][$i],3).'</td>'; 
+        echo '<td>'.round($data[$j][$i],2).'</td>'; 
         $j++;
     }
 
@@ -222,7 +222,7 @@ foreach($sub_criteria as $sc)
         $sum = $sum + $v;
      }
      $sums[$j] = $sum;
-     echo '<td><strong>'.round($sum,3).'</strong></td>';
+     echo '<td><strong>'.round($sum,2).'</strong></td>';
   }
   echo '</tr>';
   echo '</table>';
@@ -266,7 +266,7 @@ foreach($sub_criteria as $sc)
 
       echo '<td>'.$sum.'</td>';
       $priority_vector_criteria[$isc][$i] = $sum/count($sc);
-      echo '<td>'.$sum/count($sc).'</td>';
+      echo '<td>'.round($sum/count($sc),2).'</td>';
       echo '</tr>';
       $i++;
     
@@ -325,7 +325,7 @@ foreach($sub_criteria as $q => $v)
     echo $v1;
     echo '</td>';
     echo '<td>';
-    echo round(($priority_vector_criteria[$i][$j] * 100),3).' %';
+    echo round(($priority_vector_criteria[$i][$j] * 100),2).' %';
     echo '</td>';
     echo '</tr>';
     $j++;

@@ -394,7 +394,7 @@ foreach($lv1 as $q => $v)
            echo '<td>';
            $val = $respect_to_value[$i][$j];
            // print_r($val);
-          echo $val;
+          echo round($val,2);
            echo '</td>';
             $j++;
 
@@ -414,7 +414,7 @@ foreach($lv1 as $q => $v)
     $sums = $sum_respect_to[$q];
     foreach($sums as $q3 => $v3)
     {
-      echo '<td>'.$v3.'</td>';
+      echo '<td>'.round($v3,2).'</td>';
     }
 
     echo '</tr>';
@@ -460,18 +460,18 @@ foreach($lv1 as $q => $v)
            $val = $respect_to_value[$i][$j];
            // $sums = $sums[$q][$j];
            $sumvec = $val /  $sum_respect_to[$q][$j];
-           echo $sumvec;
+           echo round($sumvec,2);
            $sum = $sum +$sumvec;
            $j++;
            echo '</td>';
         }
 
         echo '<td>';
-        echo $sum;
+        echo round($sum,2);
         echo '</td>';
         echo '<td>';
         $prior_vect = $sum / count($scoring); 
-        echo $prior_vect;
+        echo round($prior_vect,2);
 
         
 
