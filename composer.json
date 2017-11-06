@@ -4,7 +4,14 @@
 	    "ext-mongo": "1.6.13"
 	},
 	"require": {
-		"mongodb/mongodb" : "^1.1"
+		"mongodb/mongodb" : "^1.1",
+		"doctrine/annotations": "~1.0",
+        "doctrine/collections": "~1.1",
+        "doctrine/common": "~2.4",
+        "doctrine/cache": "~1.0",
+        "doctrine/inflector": "~1.0",
+        "doctrine/instantiator": "^1.0.1",
+		"doctrine/mongodb": "^1.4.0"
 		
 	}
 }
