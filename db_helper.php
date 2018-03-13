@@ -2,7 +2,8 @@
 
 //define('C_CONN','mongodb://admin:admin@cluster0-shard-00-00-cfus9.mongodb.net:27017,cluster0-shard-00-01-cfus9.mongodb.net:27017,cluster0-shard-00-02-cfus9.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin');
 
-define('C_CONN','mongodb://admin:admin@101.50.1.164:27017/admin');
+//define('C_CONN','mongodb://admin:admin@101.50.1.164:27017/admin');
+define('C_CONN','mongodb://admin:admin@127.0.0.1:27017/admin');
 
 require_once 'vendor/autoload.php';
 
