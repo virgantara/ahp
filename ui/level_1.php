@@ -17,7 +17,7 @@
                   <i class="glyphicon glyphicon-option-vertical"></i><h3 class="box-title">Select 1 | Level Parameters</h3>
                 </div>
                 <!-- /.box-header -->
-                <div class="box-body">
+                <div class="box-body" id="formLevel1">
                   <?php
                   if ($_POST['level']=='beginner') {
                   ?>
@@ -34,6 +34,17 @@
                   ?>
                   <div class="form-group">
                     <label>Level 1</label>
+                    <?php
+                    if ($_POST['level']=='beginner') {
+                    ?>
+                    <button type="button" class="btn btn-success pull-right" onclick="cloneLvl1()">Add more attribute</button>
+                    <button type="button" class="btn btn-danger pull-right"  style="margin-right:5px;" onclick="removeCloneLvl1()">Remove</button>
+                    <?php
+                    }
+                    ?>
+                  </div>
+                  
+                  <div class="form-group" id="attr1">
                     <select id="level1" name="level" class="form-control select2"> <!-- membuat combobox pertama, dengan id makes -->
                       <option selected="selected">-- Choose Attribute --</option>
                       <?php
