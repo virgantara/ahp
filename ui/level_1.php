@@ -34,23 +34,12 @@
                   ?>
                   <div class="form-group">
                     <label>Level 1</label>
-                    <?php
-                    if ($_POST['level']=='beginner') {
-                    ?>
-                    <button type="button" class="btn btn-success pull-right" onclick="cloneLvl1()">Add more attribute</button>
-                    <button type="button" class="btn btn-danger pull-right"  style="margin-right:5px;" onclick="removeCloneLvl1()">Remove</button>
-                    <?php
-                    }
-                    ?>
                   </div>
                   
                   <div class="form-group" id="attr1">
-                    <select id="level1" name="level" class="form-control select2"> <!-- membuat combobox pertama, dengan id makes -->
-                      <option selected="selected">-- Choose Attribute --</option>
-                      <?php
-                      //menampilkan data dari array yang sudah di buat diatas
-                      foreach($level1 as $m =>$isi){ echo '<option value="'.$m.'">'.$isi.'</option>'; }
-                      ?>
+                    <?php
+                    foreach($level1 as $m =>$isi){ echo '<input type="checkbox" name="level1[]" value="'.$m.'"><span>&nbsp&nbsp</span>'.$isi.'</br>'; }
+                    ?>
                     </select>
                   </div>
                 </div>

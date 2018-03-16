@@ -151,24 +151,6 @@
       $('#models').html(data); //  menampilkan variabel data
     });
   });
-
-  /* Clone Level 1 Attribute Element */
-  function cloneLvl1() {
-    var attr = document.getElementById("attr1");
-    var cloneAttr = attr.cloneNode(true);
-    document.getElementById("formLevel1").append(cloneAttr);
-    console.log("test");
-  }
-
-  /* Remove last level 1 element if necessary */
-  function removeCloneLvl1() {
-    var parForm = document.getElementById("formLevel1");
-    var elemCount = parForm.childElementCount;
-    console.log(elemCount);
-    if (elemCount > 1) {
-      parForm.removeChild(parForm.lastChild);
-    }
-  }
 </script>
 </body>
 </html>
