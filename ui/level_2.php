@@ -8,7 +8,7 @@
           }
           ?>
           <!-- col right -->
-          <form method="post" enctype="multipart/form-data" action="" name="form">
+          <form method="post" enctype="multipart/form-data" action="index.php" name="form">
             <div class="col-md-8">
               <!-- LEVEL 2 -->
               <div class="box box-warning">
@@ -84,7 +84,7 @@
                     <input type="checkbox" name="Se[]" value="AC"><span>&nbsp</span>Access Control</br>
                     <input type="checkbox" name="Se[]" value="DS"><span>&nbsp</span>Data Security</br>
                     <input type="checkbox" name="Se[]" value="GO"><span>&nbsp</span>Geography</br>
-                    <input type="checknox" name="Se[]" value="AU">Auditability</br>
+                    <input type="checkbox" name="Se[]" value="AU">Auditability</br>
                   </div>
                   <?php
                   }
@@ -92,7 +92,7 @@
                   ?>
                   <div class="form-group">
                   <label>Usability</label></br>
-                    <input type="checknox" name="Us[]" value="UI"><span>&nbsp</span>Interface</br>
+                    <input type="checkbox" name="Us[]" value="UI"><span>&nbsp</span>Interface</br>
                     <input type="checkbox" name="Us[]" value="OP"><span>&nbsp</span>Operability</br>
                     <input type="checkbox" name="Us[]" value="LR"><span>&nbsp</span>Learnability</br>
                   </div>
@@ -103,25 +103,10 @@
                 </div>
               </div>
               <!-- /.box -->
-              <!-- LEVEL 3 -->
-              <div class="box box-warning">
-                <div class="box-header with-border">
-                  <i class="glyphicon glyphicon-option-vertical"></i><h3 class="box-title">Select 3 | Level Parameters</h3>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body">
-                  <div class="form-group">
-                    <label>Level 3</label>
-                    <select id="models" name="models" class="form-control select2">
-                      <option selected="selected">-- Choose Attribute --</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <!-- /.box -->
    
               <div class="pull-right">
-                <button type="button" class="btn btn-block btn-success btn-lg">Process &nbsp;&nbsp;&nbsp;<i class="fa fa-refresh"></i></button> 
+                <input type="hidden" name="level" value="intermediate-lvl3">
+                <button type="submit" class="btn btn-block btn-success btn-lg" name="next">Next &nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-circle-right"></i></button> 
               </div>
             </div>
           </form>

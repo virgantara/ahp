@@ -98,10 +98,16 @@
             elseif ($_POST['level']=='intermediate') {
               include "level_1.php";
             }
-            else {
+            elseif ($_POST['level']=='intermediate-lvl2') {
               //if (isset($_POST['level_1'])) {
-                include "level_2_3.php";
+                include "level_2.php";
               //}
+            }
+            elseif ($_POST['level']=='intermediate-lvl3') {
+              include "level_3.php";
+            }
+            else {
+              include "main_page.php";
             }
           }
 
@@ -139,7 +145,7 @@
 <script src="dist/js/demo.js"></script>
 <!-- Select2 -->
 <script src="plugins/select2/select2.full.min.js"></script>
-<script>
+<!-- <script>
   $('#level2').change(function(){ //jika combobox pertama nilainya berubah maka menjalankan script di bawah
     $('#models').css("display","block"); //menampilkan combobox kedua
     
@@ -151,6 +157,6 @@
       $('#models').html(data); //  menampilkan variabel data
     });
   });
-</script>
+</script> -->
 </body>
 </html>

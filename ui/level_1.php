@@ -17,7 +17,7 @@
                   <i class="glyphicon glyphicon-option-vertical"></i><h3 class="box-title">Select 1 | Level Parameters</h3>
                 </div>
                 <!-- /.box-header -->
-                <div class="box-body" id="formLevel1">
+                <div class="box-body">
                   <?php
                   if ($_POST['level']=='beginner') {
                   ?>
@@ -56,6 +56,7 @@
               elseif ($_POST['level']=='intermediate') {
               ?>
                 <div class="pull-right">
+                  <input type="hidden" name="level" value="intermediate-lvl2">
                   <button type="submit" class="btn btn-block btn-success btn-lg" name="next">Next &nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-circle-right"></i></button> 
                 </div>
               <?php
