@@ -10,7 +10,7 @@
     'Us' => 'Usability');
 ?>
           <!-- col right -->
-          <form method="post" enctype="multipart/form-data" action="index.php" name="form">
+          <form method="post" enctype="multipart/form-data" action="getAggregate.php" name="form">
             <div class="col-md-8">
               <div class="box box-danger">
                 <div class="box-header with-border">
@@ -38,7 +38,7 @@
                   
                   <div class="form-group" id="attr1">
                     <?php
-                    foreach($level1 as $m =>$isi){ echo '<input type="checkbox" name="level1[]" value="'.$m.'"><span>&nbsp&nbsp</span>'.$isi.'</br>'; }
+                    foreach($level1 as $m =>$isi){ echo '<input type="checkbox" name="'.$m.'" value="'.$m.'"><span>&nbsp&nbsp</span>'.$isi.'</br>'; }
                     ?>
                     </select>
                   </div>
@@ -49,7 +49,7 @@
               if ($_POST['level']=='beginner') {
               ?>
                 <div class="pull-right">
-                  <button type="button" class="btn btn-block btn-success btn-lg">Process &nbsp;&nbsp;&nbsp;<i class="fa fa-refresh"></i></button> 
+                  <button type="submit" class="btn btn-block btn-success btn-lg">Process &nbsp;&nbsp;&nbsp;<i class="fa fa-refresh"></i></button> 
                 </div>
               <?php
               }
