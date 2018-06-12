@@ -291,7 +291,6 @@ foreach($lv1 as $lv)
 
 
 $score_aggregate = array();
-
 $row = 0;
 foreach($scoring as $q => $v)
 {
@@ -304,7 +303,11 @@ foreach($scoring as $q => $v)
 
     $row++;
 }
+print_r($score_aggregate);
+die();
 
+
+// @TODO: Score aggregate sudah oke mas, tinggal masuk ke matrix, kok seng di load cuma 8 instance ngikuti jumlah atribute tok
 $respect_to = array();
 
 $kr = 0;
@@ -359,6 +362,9 @@ foreach($lv1 as $q => $v)
 
   $kr++;
 }
+
+// print_r(count($respect_to));
+// die();
 
 $sum_respect_to = array();
 
