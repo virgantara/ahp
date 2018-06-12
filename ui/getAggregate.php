@@ -1,7 +1,7 @@
 <?php
 include 'mongoQueryBeginner.php';
 
-$data = $instanceData;
+$data = $instanceData2;
 //print_r($data);
 ?>
 <html>

@@ -18,12 +18,8 @@ $allPrice = [];
 
 // Hold all instance AHP Aggregate Data
 $instanceData = array();
-$i6 = array();
-$i5 = array();
-$i4 = array();
-$i3 = array();
-$i2 = array();
-$i1 = array();
+// Only for checking
+$instanceData2 = array();
 
 foreach($resTmp as $up) {
    $a = $up["assurance"]["availability"]["uptime"];
@@ -248,8 +244,20 @@ foreach($res as $r) {
 
     // Gather All Data Into Aggregate Matrix
     $instanceName = $r["instanceName"];
-    $data = [$instanceName, $sec, $usa, $asc, $perf, $cpr, $prc, $comp];
+    $data = array(
+        "instanceName" => $instanceName,
+        "security" => $sec,
+        "usability" => $usa,
+        "assurance" => $asc,
+        "performance" => $perf,
+        "companyPerformance" => $cpr,
+        "pricing" => $prc,
+        "compliance" => $comp
+        // "value" => array($sec, $usa, $asc, $perf, $cpr, $prc, $comp)
+    );
+    $data2 = [$instanceName, $sec, $usa, $asc, $perf, $cpr, $prc, $comp];
     array_push($instanceData, $data);
+    array_push($instanceData2, $data2);
 
     $data = [];
 }

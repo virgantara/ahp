@@ -88,7 +88,6 @@
             // mengatasi variabel yang belum di definisikan (notice undefined index)
             
           if (!isset($_POST['next'])) {
-
             include "main_page.php";
           }
           elseif (isset($_POST['next'])) {
