@@ -1,13 +1,13 @@
 <?php
   //membuat data combobox pertama dari array dibawah ini_get
   $level1 = array(
-    'assurance',
-    'companyPerformance',
-    'compliance',
-    'performance',
-    'pricing',
     'security',
-    'usability'
+    'usability',
+    'assurance',
+    'performance',
+    'companyPerformance',
+    'pricing',
+    'compliance'
   );
 ?>
 <!-- col right -->

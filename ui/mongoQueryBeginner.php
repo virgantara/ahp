@@ -246,14 +246,14 @@ foreach($res as $r) {
     $instanceName = $r["instanceName"];
     $data = array(
         "instanceName" => $instanceName,
-        "security" => $sec,
-        "usability" => $usa,
-        "assurance" => $asc,
-        "performance" => $perf,
-        "companyPerformance" => $cpr,
-        "pricing" => $prc,
-        "compliance" => $comp
-        // "value" => array($sec, $usa, $asc, $perf, $cpr, $prc, $comp)
+        // "security" => $sec,
+        // "usability" => $usa,
+        // "assurance" => $asc,
+        // "performance" => $perf,
+        // "companyPerformance" => $cpr,
+        // "pricing" => $prc,
+        // "compliance" => $comp
+        "value" => array($sec, $usa, $asc, $perf, $cpr, $prc, $comp)
     );
     $data2 = [$instanceName, $sec, $usa, $asc, $perf, $cpr, $prc, $comp];
     array_push($instanceData, $data);

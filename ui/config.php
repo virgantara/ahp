@@ -40,15 +40,28 @@ $importance = array(
 
   );
 
-$criteria = array(
-    0 => "*",
-    1=>      "Cost",
-    2=>      "Security",
-    3=>      "Reliability",
-    4=>      "Availability",
-    5=>      "Usability",
+
+
+// $criteria = array(
+//     0 => "*",
+//     1=>      "Cost",
+//     2=>      "Security",
+//     3=>      "Reliability",
+//     4=>      "Availability",
+//     5=>      "Usability",  
+// );
+
+// $criteria = array(
+//   0 => "*",
+//   1=> "security",
+//   2=> "usability",
+//   3=> "assurance",
+//   4=> "performance",
+//   5=> "companyPerformance",
+//   6=> "pricing",
+//   7=> "compliance"
   
-  );
+// );
 
 $all_joinsub_criteria =  array(
       'C1',
