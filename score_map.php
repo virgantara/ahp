@@ -1,4 +1,20 @@
 <?php
+    // helper function to handle 0 / 0
+    // $upper and $div must be in float
+    function zeroByZero($upper, $div) {
+        $res = 0;
+        if($upper == 0 and $div ==0) {
+            $res = 1;
+            return $res;
+        } elseif($upper != 0 and $div != 0) {
+            $res = $upper / $div;
+            return $res;
+        }else {
+            $res = "Cannot div by 0";
+            return $res;
+        }
+    }
+
     /* Security */
     // Access Control
 
@@ -111,9 +127,11 @@
         $instanceUp = (float)$instanceUp;
         $upMax = max($allUp);
         $upMin = min($allUp);
+        $upper = $upMax - $instanceUp;
         $delta = $upMax - $upMin;
+        $zeroCheck = zeroByZero($upper,$delta);
         $deltaScore = 99;
-        return 100 - ((($upMax - $instanceUp)/$delta)*$deltaScore);
+        return 100 - ($zeroCheck * $deltaScore);
     }
 
     // Outages
@@ -121,9 +139,11 @@
         $instanceOut = (float)$instanceOut;
         $outMax = max($allOut);
         $outMin = min($allOut);
+        $upper = $instanceOut-$outMin;
         $delta = $outMax-$outMin;
+        $zeroCheck = zeroByZero($upper, $delta);
         $deltaScore = 99;
-        return 100 - ((($instanceOut-$outMin)/$delta)*$deltaScore);
+        return 100 - ($zeroCheck * $deltaScore);
     }
 
     // MTTF
@@ -131,9 +151,11 @@
         $instanceF = (float)$instanceF;
         $fMax = max($allF);
         $fMin = min($allF);
+        $upper = $fMax - $instanceF;
         $delta = $fMax - $fMin;
+        $zeroCheck = zeroByZero($upper, $delta);
         $deltaScore = 99;
-        return 100 - ((($fMax - $instanceF)/$delta)*$deltaScore);
+        return 100 - ($zeroCheck * $deltaScore);
     }
 
     // MTTR
@@ -141,9 +163,11 @@
         $instanceR = (float)$instanceR;
         $rMax = max($allR);
         $rMin = min($allR);
+        $upper = $instanceR-$rMin;
         $delta = $rMax-$rMin;
+        $zeroCheck = zeroByZero($upper, $delta);
         $deltaScore = 99;
-        return 100 - ((($instanceR-$rMin)/$delta)*$deltaScore);
+        return 100 - ($zeroCheck * $deltaScore);
     }
 
     // recoverability

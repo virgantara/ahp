@@ -27,4 +27,7 @@ function renameCriteria($data) {
   }
   return $renameI;
 }
+
+$a = 0 / 0;
+echo $a;
 ?>

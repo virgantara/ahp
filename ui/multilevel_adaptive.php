@@ -288,8 +288,7 @@ foreach($lv1 as $lv)
     
 }
 
-
-
+// Get Aggregate Score From Database
 $score_aggregate = array();
 $row = 0;
 foreach($scoring as $q => $v)
@@ -303,37 +302,32 @@ foreach($scoring as $q => $v)
 
     $row++;
 }
-print_r($score_aggregate);
-die();
 
-
-// @TODO: Score aggregate sudah oke mas, tinggal masuk ke matrix, kok seng di load cuma 8 instance ngikuti jumlah atribute tok
+// Handle Respect to Attribute Matrix
 $respect_to = array();
-
 $kr = 0;
-foreach($lv1 as $q => $v)
-{
-
+foreach($lv1 as $q => $v) {
   $j = 0;
   $respect_to_value = array();
 
-  for($ii = 0 ; $ii <= count($score_aggregate[0]);$ii++)
+  for($ii=0; $ii <= count($score_aggregate)-1;$ii++)
   {
-    for($jj = 0 ; $jj <= count($score_aggregate[0]);$jj++)
+    for($jj=0; $jj <= count($score_aggregate)-1;$jj++)
     {
       $respect_to_value[$ii][$jj] = 0;
     } 
   }
 
-  // echo count($score_aggregate);
+  // print_r(count($respect_to_value[0]));
   // die();
 
   foreach($scoring as $q2 => $v2)
   {
 
     $row = $j;
-    
     $val_main = $score_aggregate[$row][$kr];
+    // print_r($val_main);
+    // die();
     
     foreach($score_aggregate as $q2 => $v2)
     {
@@ -352,6 +346,8 @@ foreach($lv1 as $q => $v)
         
 
     }
+    // print_r($respect_to_value);
+    // die();
 
     $j++;
 
