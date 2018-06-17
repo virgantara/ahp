@@ -31,7 +31,7 @@ $data = $instanceData2;
                                 <td>".$row[4]."</td>
                                 <td>".$row[5]."</td>
                                 <td>".$row[6]."</td>
-                                <td>".$row[6]."</td>
+                                <td>".$row[7]."</td>
                             </tr>
                         ";
                     }

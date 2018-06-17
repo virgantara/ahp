@@ -235,8 +235,8 @@ foreach($res as $r) {
     $iso27017 = iso27017($r["compliances"]["standardComp"]["iso27017"]);
     $pciDss = pciDss($r["compliances"]["standardComp"]["pcidss"]);
     $soc1 = soc1($r["compliances"]["standardComp"]["soc1"]);
-    $soc2 = soc1($r["compliances"]["standardComp"]["soc2"]);
-    $soc3 = soc1($r["compliances"]["standardComp"]["soc3"]);
+    $soc2 = soc2($r["compliances"]["standardComp"]["soc2"]);
+    $soc3 = soc3($r["compliances"]["standardComp"]["soc3"]);
 
     $stdComp = $ssae16 + $iso27001 + $iso9001 + $iso27017 + $pciDss + $soc1 + $soc2 + $soc3;
 
@@ -246,14 +246,14 @@ foreach($res as $r) {
     $instanceName = $r["instanceName"];
     $data = array(
         "instanceName" => $instanceName,
-        // "security" => $sec,
-        // "usability" => $usa,
-        // "assurance" => $asc,
-        // "performance" => $perf,
-        // "companyPerformance" => $cpr,
-        // "pricing" => $prc,
-        // "compliance" => $comp
-        "value" => array($sec, $usa, $asc, $perf, $cpr, $prc, $comp)
+        "security" => $sec,
+        "usability" => $usa,
+        "assurance" => $asc,
+        "performance" => $perf,
+        "companyPerformance" => $cpr,
+        "pricing" => $prc,
+        "compliance" => $comp
+        // "value" => array($sec, $usa, $asc, $perf, $cpr, $prc, $comp)
     );
     $data2 = [$instanceName, $sec, $usa, $asc, $perf, $cpr, $prc, $comp];
     array_push($instanceData, $data);

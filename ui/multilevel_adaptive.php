@@ -335,8 +335,9 @@ foreach($lv1 as $q => $v) {
           // echo '0 ';
           continue;
         }
-        if($row <= count($score_aggregate[$row]))
+        if($row <= count($score_aggregate/*[$row]*/))
         {
+
           $val = $val_main / $score_aggregate[$row][$kr] ;
           // echo $val.' ';
           $respect_to_value[$j][$row] = $val;
