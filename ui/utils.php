@@ -53,38 +53,28 @@ function respectToAttr($data, $attr){
         }
         $holder[$i][$j] = $val;
         $holder[$j][$i] = 1/$val;
-        
-        // if($j==2){
-        //   echo "posisi i = $i";
-        //   echo "<br/>";
-        //   echo "posisi j = $j";
-        //   echo "<br/>";
-        //   echo $holder[$i][$j];
-        //   echo "<br/>";
-        //   echo $holder[$j][$i];
-        //   die();
-        // }
       }
-    }
-    if($i==2) {
-      print_r($holder[0]);
-      echo "<br/>";
-      echo "<br/>";
-      print_r($holder[1]);
-      echo "<br/>";
-      echo "<br/>";
-      print_r($holder[2]);
-      die();
     }
   }
   return $holder;
 }
-print_r(respectToAttr($instanceData,"pricing")[0]);
-// echo "<br/>";
-// echo "<br/>";
-// print_r(respectToAttr($instanceData,"pricing")[1]);
-// echo "<br/>";
-// echo "<br/>";
-// print_r(respectToAttr($instanceData,"pricing")[2]);
+$value = respectToAttr($instanceData,"security");
+// print_r($value);
+// die();
+
+function respectToAttrSum($value) {
+  $holder = array();
+  $sum = 0;
+  for($i=0; $i<count($value); $i++){
+    for($j=0; $j<count($value); $j++){
+      $sum = $sum + $value[$j][$i];
+    }
+    array_push($holder, $sum);
+    $sum = 0;
+  }
+  return $holder;
+}
+print_r(respectToAttrSum($value));
 die();
+
 ?>
