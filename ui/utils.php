@@ -1,34 +1,7 @@
 <?php
-// Can be simplified into single file
-function renameCriteria($data) {
-  $renameI = '';
-  switch ($data) {
-    case 'As':
-      $renameI = 'Assurance';
-      break;
-    case 'Cp':
-      $renameI = 'Company Performance';
-      break;
-    case 'Cm':
-      $renameI = 'Compliance';
-      break;
-    case 'Pe':
-      $renameI = 'Performance';
-      break;
-    case 'Pr':
-      $renameI = 'Pricing';
-      break;
-    case 'Se':
-      $renameI = 'Security';
-      break;
-    case 'Us':
-      $renameI = 'Usability';
-      break;
-  }
-  return $renameI;
-}
-
+// For debugging
 include_once "mongoQueryBeginner.php";
+
 function respectToAttr($data, $attr){
   // construct holder matrix
   $holder = array();
@@ -58,14 +31,16 @@ function respectToAttr($data, $attr){
   }
   return $holder;
 }
-$value = respectToAttr($instanceData,"security");
-// print_r($value);
-// die();
+
+// For dubugging
+$value = respectToAttr($instanceData,"pricing");
 
 function respectToAttrSum($value) {
   $holder = array();
   $sum = 0;
+  // columns
   for($i=0; $i<count($value); $i++){
+    // rows
     for($j=0; $j<count($value); $j++){
       $sum = $sum + $value[$j][$i];
     }
@@ -74,7 +49,34 @@ function respectToAttrSum($value) {
   }
   return $holder;
 }
-print_r(respectToAttrSum($value));
-die();
+// For debugging
+$s = respectToAttrSum($value);
 
+function normRespectToAttr($value, $sum){
+  $holder = array();
+  $size = count($value)+2;
+  // Initial matrix
+  for($i=0; $i<$size-2; $i++){
+    for($j=0; $j<$size; $j++){
+      $holder[$i][$j] = 0;
+    }
+  }
+  
+  for($i=0; $i<$size-2; $i++){
+    $sumH = 0; // sum horizontal
+    for($j=0; $j<$size; $j++){
+      if($j<$size-2) {
+        $val = $value[$i][$j] / $sum[$j];
+        $sumH = $sumH + $val;
+        $holder[$i][$j] = $val;
+      } elseif($j<$size-1) {
+        $holder[$i][$j] = $sumH;
+      } else {
+        // Priority Vector
+        $holder[$i][$j] = $sumH / count($value);
+      }
+    }
+  }
+  return $holder;
+}
 ?>

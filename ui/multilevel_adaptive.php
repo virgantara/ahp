@@ -57,6 +57,7 @@
 <?php 
 include_once "config.php";
 include_once "mongoQueryBeginner.php";
+include "utils.php";
 $scoring = $instanceData;
 ?>
 
@@ -274,283 +275,291 @@ echo '</table>';
 
 /* Calculate Aggreate Mas Oddy Version */
 
-$isc = 0;
+// $isc = 0;
 
-// print_r($lv1);exit;
+// // print_r($lv1);exit;
 
-$joinsub_criteria = array();
-foreach($lv1 as $lv)
-{
-    foreach($level2_criteriaName[$lv] as $val)
-    {
-      $joinsub_criteria[] = $val;  
-    }
+// $joinsub_criteria = array();
+// foreach($lv1 as $lv)
+// {
+//     foreach($level2_criteriaName[$lv] as $val)
+//     {
+//       $joinsub_criteria[] = $val;  
+//     }
     
-}
+// }
 
-// Get Aggregate Score From Database
-$score_aggregate = array();
-$row = 0;
-foreach($scoring as $q => $v)
-{
-    $col = 0;
-    foreach($v['value'] as $qq => $vv)
-    {
-      $score_aggregate[$row][$col] = $vv;
-      $col++;
-    }
+// // Get Aggregate Score From Database
+// $score_aggregate = array();
+// $row = 0;
+// foreach($scoring as $q => $v)
+// {
+//     $col = 0;
+//     foreach($v['value'] as $qq => $vv)
+//     {
+//       $score_aggregate[$row][$col] = $vv;
+//       $col++;
+//     }
 
-    $row++;
-}
+//     $row++;
+// }
 
-// Handle Respect to Attribute Matrix
-$respect_to = array();
-$kr = 0;
-foreach($lv1 as $q => $v) {
-  $j = 0;
-  $respect_to_value = array();
+// // Handle Respect to Attribute Matrix
+// $respect_to = array();
+// $kr = 0;
+// foreach($lv1 as $q => $v) {
+//   $j = 0;
+//   $respect_to_value = array();
 
-  for($ii=0; $ii <= count($score_aggregate)-1;$ii++)
-  {
-    for($jj=0; $jj <= count($score_aggregate)-1;$jj++)
-    {
-      $respect_to_value[$ii][$jj] = 0;
-    } 
-  }
+//   for($ii=0; $ii <= count($score_aggregate)-1;$ii++)
+//   {
+//     for($jj=0; $jj <= count($score_aggregate)-1;$jj++)
+//     {
+//       $respect_to_value[$ii][$jj] = 0;
+//     } 
+//   }
 
-  // print_r(count($respect_to_value[0]));
-  // die();
+//   // print_r(count($respect_to_value[0]));
+//   // die();
 
-  foreach($scoring as $q2 => $v2)
-  {
+//   foreach($scoring as $q2 => $v2)
+//   {
 
-    $row = $j;
-    $val_main = $score_aggregate[$row][$kr];
-    // print_r($val_main);
-    // die();
+//     $row = $j;
+//     $val_main = $score_aggregate[$row][$kr];
+//     // print_r($val_main);
+//     // die();
     
-    foreach($score_aggregate as $q2 => $v2)
-    {
-        if($row == count($scoring)){
-          // echo '0 ';
-          continue;
-        }
-        if($row <= count($score_aggregate/*[$row]*/))
-        {
+//     foreach($score_aggregate as $q2 => $v2)
+//     {
+//         if($row == count($scoring)){
+//           // echo '0 ';
+//           continue;
+//         }
+//         if($row <= count($score_aggregate/*[$row]*/))
+//         {
 
-          $val = $val_main / $score_aggregate[$row][$kr] ;
-          // echo $val.' ';
-          $respect_to_value[$j][$row] = $val;
-          $respect_to_value[$row][$j] = 1/ $val;
-          $row++;
-        }  
+//           $val = $val_main / $score_aggregate[$row][$kr] ;
+//           // echo $val.' ';
+//           $respect_to_value[$j][$row] = $val;
+//           $respect_to_value[$row][$j] = 1/ $val;
+//           $row++;
+//         }  
         
 
-    }
-    // print_r($respect_to_value);
-    // die();
+//     }
+//     // print_r($respect_to_value);
+//     // die();
 
-    $j++;
+//     $j++;
 
-    // echo '<br>';
-  }
+//     // echo '<br>';
+//   }
 
-  $respect_to[$q] = $respect_to_value;
+//   $respect_to[$q] = $respect_to_value;
 
-  $kr++;
-}
+//   $kr++;
+// }
 
 // print_r(count($respect_to));
 // die();
 
-$sum_respect_to = array();
+// $sum_respect_to = array();
 
-$kr = 0;
-foreach($respect_to as $q => $v)
-{
-  $sum_respect_to_value = array();
+// $kr = 0;
+// foreach($respect_to as $q => $v)
+// {
+//   $sum_respect_to_value = array();
 
-  $col = 0;
-  foreach($v as $q2 => $v2)
-  {
+//   $col = 0;
+//   foreach($v as $q2 => $v2)
+//   {
 
-    $total = 0;
-    $row = 0;
-    foreach($v2 as $qq2 => $vv2)
-    {
-      $val = $respect_to[$kr][$row][$col];
-      $total = $total + $val;
-      $row++;
-    }
-    $sum_respect_to_value[$col]= $total;
-    $col++;
-  }
+//     $total = 0;
+//     $row = 0;
+//     foreach($v2 as $qq2 => $vv2)
+//     {
+//       $val = $respect_to[$kr][$row][$col];
+//       $total = $total + $val;
+//       $row++;
+//     }
+//     $sum_respect_to_value[$col]= $total;
+//     $col++;
+//   }
 
-  $sum_respect_to[$q] = $sum_respect_to_value;
+//   $sum_respect_to[$q] = $sum_respect_to_value;
 
-  $kr++;
-}
+//   $kr++;
+// }
 
 
 /* Respect to Attribute Vendor Comparison */
 $priority_vector_respect = array();
-foreach($lv1 as $q => $v)
-{
-  $rtocost = array();
-  $respect_to_value = $respect_to[$q];
+foreach($lv1 as $q => $v) {
+  // $rtocost = array();
+  // $respect_to_value = $respect_to[$q];
     
   // foreach($sc as $q => $v)
   // {
-    // if($q == 0) continue;
+  // if($q == 0) continue;
 
-    echo '<br><strong>Respect to '.$v.'</strong>';
-    echo '<div class="table-responsive">';
-    echo '<table class="table table-bordered">';
-    echo '<tr>';
-    echo '<td>#</td>';
+  /* Respect To Attribute Table */
+  echo '<br><strong>Respect to '.$v.'</strong>';
+  echo '<div class="table-responsive">';
+  echo '<table class="table table-bordered">';
+  echo '<tr>';
+  echo '<td>#</td>';
 
-    // Header top instance
-    foreach($scoring as $row)
-    {
-        echo '<td>';
-        echo $row['instanceName'];
-        echo '</td>';
-
-    }
-    echo '</tr>';
-
-    // Header side instance
-    // for($i=0; $i<count($scoring); $i++) {
-    //   echo '<tr>';
-    //   echo '<td>';
-    //   echo $scoring[$i]['instanceName'];
-    //   echo '</td>';
-    //   for($j=0; $j<count($scoring); $j++) {
-    //     echo '<td>';
-    //     if($i == $j) {
-    //       $val = $scoring[$i][$v] / $scoring[$i][$v];
-    //       echo $val;
-    //     }
-
-    //     $value = $scoring[$i][$v] / $scoring[$i+1][$v];
-    //     echo $value;
-
-    //     echo '</td>';
-    //   }
-    // }
-
-    $i = 0;
-    foreach($scoring as $row) {  
-      echo '<tr>';
+  // Header top instance
+  foreach($scoring as $row)
+  {
       echo '<td>';
       echo $row['instanceName'];
       echo '</td>';
-      $j = 0;
-      
-      foreach($scoring as $col) {
-        echo '<td>';
-        $val = $respect_to_value[$i][$j];
-        // print_r($val);
-        echo round($val,2);
-        echo '</td>';
-        $j++;
-      }
 
-        $i++;
-    echo '</tr>';
+  }
+  echo '</tr>';
 
-    }
-    
-
+  // Header side instance
+  $value = respectToAttr($scoring,$v);
+  // print_r($value);
+  // die();
+  for($i=0; $i<count($scoring); $i++) {
     echo '<tr>';
-
-    $i = 0;
-
-    
-    echo '<td>Sum</td>';
-    $sums = $sum_respect_to[$q];
-    foreach($sums as $q3 => $v3)
-    {
-      echo '<td>'.round($v3,2).'</td>';
+    echo '<td>';
+    echo $scoring[$i]['instanceName'];
+    echo '</td>';
+    for($j=0; $j<count($scoring); $j++) {
+      echo '<td>';
+      echo $value[$i][$j];
+      echo '</td>';
     }
+  }
+  echo '<tr>';
 
-    echo '</tr>';
-    echo '</table>';
-    echo '</div>';
+  /* Deprecated Code Mas Oddy */
+  // $i = 0;
+  // foreach($scoring as $row) {  
+  //   echo '<tr>';
+  //   echo '<td>';
+  //   echo $row['instanceName'];
+  //   echo '</td>';
+  //   $j = 0; 
+  //   foreach($scoring as $col) {
+  //     echo '<td>';
+  //     $val = $respect_to_value[$i][$j];
+  //     // print_r($val);
+  //     echo round($val,2);
+  //     echo '</td>';
+  //     $j++;
+  //   }
+  //     $i++;
+  // echo '</tr>';
+  // }
+  //$i = 0;
 
+  /* SUM row */
+  $sumRow = respectToAttrSum($value); // sum each column
+  echo '<td>Sum</td>';
+  // $sums = $sum_respect_to[$q];
+  // foreach($sums as $q3 => $v3)
+  // {
+  //   echo '<td>'.round($v3,2).'</td>';
+  // }
+  for($i=0; $i<count($sumRow); $i++){
+    echo "<td>$sumRow[$i]</td>";
+  }
+  echo '</tr>';
+  echo '</table>';
+  echo '</div>';
+  /* End of Respect To Attribute Table */
 
-die();
+  /* ======================================== */
 
-   // Rescpect to attribute Normalize
-//     echo '<br><strong>Respect to '.$v.' Normalized Matrix</strong>';
-//       echo '<table class="table table-bordered">';
-//     echo '<tr>';
-//     echo '<td>&nbsp;</td>';
-//     foreach($scoring as $row)
-//     {
+  /* Normalized Respect To Attribute Table */
+  // Rescpect to attribute Normalize
+  echo '<br><strong>Respect to '.$v.' Normalized Matrix</strong>';
+  echo '<div class="table-responsive">';
+  echo '<table class="table table-bordered">';
+  echo '<tr>';
+  echo '<td>&nbsp;</td>';
+  
+  // Header Top
+  foreach($scoring as $row)
+  {
+      echo '<td>';
+      echo $row['instanceName'];
+      echo '</td>';
+  }
+  echo '<td>SUM</td>';
+  echo '<td>Priority Vector</td>';
+  echo '</tr>';
 
-//         echo '<td>';
-//         echo $row['provider'];
-//         echo '</td>';
+  // Header side
+  $norm = normRespectToAttr($value, $sumRow); // Calculate normalize matrix
+  for($i=0; $i<count($scoring); $i++) {
+    echo '<tr>';
+    echo '<td>';
+    echo $scoring[$i]['instanceName'];
+    echo '</td>';
+    for($j=0; $j<count($norm[$i]); $j++) {
+      echo '<td>';
+      echo $norm[$i][$j];
+      echo '</td>';
+    }
+    echo "</tr>";
+    // die();
+  }
+  echo '</table>';
+  echo '</div>';
+  // die();
 
-//     }
+  /* Deprecated Code Mas Oddy */
+  //$i = 0;
+  // foreach($scoring as $row)
+  // { 
+  //  echo '<tr>';
 
-//      echo '<td>SUM</td>';
-//       echo '<td>Priority Vector</td>';
+  //     echo '<td>';
+  //     echo $row['provider'];
+  //     echo '</td>';
 
-//     echo '</tr>';
+      // $j = 0;
+      // $sum = 0;
+      // foreach($scoring as $col)
+      // {
 
-//     $i = 0;
+      //    echo '<td>';
+          
+      //    $val = $respect_to_value[$i][$j];
+      //    // $sums = $sums[$q][$j];
+      //    $sumvec = $val /  $sum_respect_to[$q][$j];
+      //    echo round($sumvec,2);
+      //    $sum = $sum +$sumvec;
+      //    $j++;
+      //    echo '</td>';
+      // }
 
-//     foreach($scoring as $row)
-//     { 
-//      echo '<tr>';
+      // echo '<td>';
+      // echo round($sum,2);
+      // echo '</td>';
+      // echo '<td>';
+      // $prior_vect = $sum / count($scoring); 
+      // echo round($prior_vect,2);
 
-//         echo '<td>';
-//         echo $row['provider'];
-//         echo '</td>';
+      // $priority_vector_respect[$q][$i] = $prior_vect;  
+      // echo '#'.$q.'#'.$i.'#<br>';
+      // echo '</td>';
 
-//         $j = 0;
-//         $sum = 0;
-//         foreach($scoring as $col)
-//         {
+      //$i++;
+  // echo '</tr>';
 
-//            echo '<td>';
-           
-//            $val = $respect_to_value[$i][$j];
-//            // $sums = $sums[$q][$j];
-//            $sumvec = $val /  $sum_respect_to[$q][$j];
-//            echo round($sumvec,2);
-//            $sum = $sum +$sumvec;
-//            $j++;
-//            echo '</td>';
-//         }
-
-//         echo '<td>';
-//         echo round($sum,2);
-//         echo '</td>';
-//         echo '<td>';
-//         $prior_vect = $sum / count($scoring); 
-//         echo round($prior_vect,2);
-
-        
-
-//         $priority_vector_respect[$q][$i] = $prior_vect;  
-//         // echo '#'.$q.'#'.$i.'#<br>';
-
-         
-//         echo '</td>';
-
-//         $i++;
-//     echo '</tr>';
-
-//     }
-
-
-//     echo '</table>';
-//   // }
-$isc++;
 }
+
+  // }
+//$isc++;
+//}
+
 
 
 
