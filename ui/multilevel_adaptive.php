@@ -601,34 +601,24 @@ $input_array = array (
 
 
 <?php 
-
-foreach($priority_vector_main_criteria as $pr)
-{
-
-
+foreach($priority_vector_main_criteria as $pr) {
 ?>
-<input type="hidden" name="pvec[]" value="<?php echo $pr;?>"/>
+  <input type="hidden" name="pvec[]" value="<?php echo $pr;?>"/>
 <?php 
 }
 ?>
+
 <?php 
 $i = 0;
-foreach($lv1 as $maincrit)
-{
+foreach($lv1 as $maincrit){
   echo '<h3>'.$maincrit.'</h3>';
   echo "<table width='40%'>";
   
- $sum=count($level2_criteriaName[$maincrit]);
+  $sum=count($level2_criteriaName[$maincrit]);
   $data = $level2_criteriaName[$maincrit];
   
-
-
-  for ($j = 0 ; $j < $sum; $j++)
-  {
-
-    for ($k = 0 ; $k<$sum ; $k++)
-    {
-
+  for ($j = 0 ; $j < $sum; $j++){
+    for ($k = 0 ; $k<$sum ; $k++){
       if($sum == 1){
         echo "<tr>
         <th colspan='8'>";
@@ -642,8 +632,6 @@ foreach($lv1 as $maincrit)
         <tr>";
       }
       if ($j<$k) {
-      # code...
-
       echo "
         <tr>
         <th colspan='4'>";

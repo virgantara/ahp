@@ -63,15 +63,13 @@ $importance = array(
   
 // );
 
-$all_joinsub_criteria =  array(
-      'C1',
-      'S1','S2','S3','S4',
-      'R1','R2',
-      'A1',
-      'U1','U2'
-);
-
-
+// $all_joinsub_criteria =  array(
+//       'C1',
+//       'S1','S2','S3','S4',
+//       'R1','R2',
+//       'A1',
+//       'U1','U2'
+// );
 
 // $sub_criteria = array(
 //   array('C1'),
@@ -87,6 +85,48 @@ $sub_criteria_name = array(
   'Reliability' => array('R1','R2',),
   'Availability' => array('A1',),
   'Usability' => array('U1','U2'),
+);
+
+$all_joinsub_criteria = array(
+  // Security
+  'accessControl',
+  'dataSecurity',
+  'geography',
+  'auditability',
+
+  // Usability
+  'interface',
+  'operability',
+  'learnability',
+
+  // Assurance
+  'availability',
+  'downtime',
+  'recoverability',
+
+  // Performance
+  'hardware',
+  'functionality',
+  'flexibility',
+  'scalability',
+  
+  // Company Performance
+  'training',
+  'customerSupport',
+
+  // Pricing
+  'price',
+  'chargeModel',
+  'pricingUnit',
+  'currency',
+  'supportFee',
+  'discounting',
+  'pricingSystem',
+  
+  // Compliances
+  'securityCompliance',
+  'legalCompliance',
+  'standardCompliance'
 );
 
 $lv1 = array(

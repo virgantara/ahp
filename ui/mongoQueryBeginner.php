@@ -19,7 +19,7 @@ $allPrice = [];
 // Hold all instance AHP Aggregate Data
 $instanceData = array();
 // Only for checking
-$instanceData2 = array();
+$instanceDataLevel2 = array();
 
 foreach($resTmp as $up) {
    $a = $up["assurance"]["availability"]["uptime"];
@@ -211,7 +211,7 @@ foreach($res as $r) {
     // Pricing System
     $priceSys = $tieredPricing + $volumePricing;
 
-    $prc = $price + $chargeModel + $priceUnit + $supFee + $disc + $priceSys;
+    $prc = $price + $chargeModel + $priceUnit + $curr + $supFee + $disc + $priceSys;
 
     /* Compliance */
     // Security Compliance
@@ -244,6 +244,8 @@ foreach($res as $r) {
 
     // Gather All Data Into Aggregate Matrix
     $instanceName = $r["instanceName"];
+
+    // Score Aggregate Based on Level 1
     $data = array(
         "instanceName" => $instanceName,
         "security" => $sec,
@@ -255,10 +257,55 @@ foreach($res as $r) {
         "compliance" => $comp
         // "value" => array($sec, $usa, $asc, $perf, $cpr, $prc, $comp)
     );
-    $data2 = [$instanceName, $sec, $usa, $asc, $perf, $cpr, $prc, $comp];
+
+    // Score Aggregate Based on Level 2
+    $data2 = array(
+        "instanceName" => $instanceName,
+        "security" => array(
+            "accessControl" => $ac,
+            "dataSecurity" => $dc,
+            "geography" => $geo,
+            "auditability" => $audit
+        ),
+        "usability" => array(
+            "interface" => $interface,
+            "operability" => $learn,
+            "learnability" => $opera
+        ),
+        "assurance" => array(
+            "availability" => $avail,
+            "downtime" => $down,
+            "recoverability" => $rec
+        ),
+        "performance" => array(
+            "hardware" => $hrd,
+            "functionality" => $func,
+            "flexibility" => $flex,
+            "scalability" => $scal
+        ),
+        "companyPerformance" => array(
+            "training" => $train,
+            "customerSupport" => $cs
+        ),
+        "pricing" => array(
+            "price" => $price,
+            "chargeModel" => $chargeModel,
+            "pricingUnit" => $priceUnit,
+            "currency" => $curr,
+            "supportFee" => $supFee,
+            "discounting" => $disc,
+            "pricingSystem" => $priceSys
+        ),
+        "compliance" => array(
+            "securityCompliance" => $secComp, 
+            "legalCompliance" => $legComp, 
+            "standardCompliance" => $stdComp
+        )
+    );
     array_push($instanceData, $data);
-    array_push($instanceData2, $data2);
+    array_push($instanceDataLevel2, $data2);
 
     $data = [];
+    $data2 = [];
 }
 ?>
