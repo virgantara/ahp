@@ -54,7 +54,8 @@
       <!-- Main content -->
       <section class="content">
         <div class="row">
-<?php 
+<?php
+ini_set('max_execution_time', 300); // set max execution for 5 minutes 
 include_once "config.php";
 include_once "mongoQueryBeginner.php";
 include "utils.php";

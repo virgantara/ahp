@@ -63,6 +63,7 @@ include_once "db_helper.php";
 $scoring = getProviderScore();
 */
 
+ini_set('max_execution_time', 300); // set max execution for 5 minutes
 $time_start = microtime(true);
 include_once "config.php";
 include_once "mongoQueryBeginner.php";
@@ -117,14 +118,14 @@ foreach($all_joinsub_criteria as $q1 => $v1){
 
 
 
-$score_provider = array();
-$i=0;
-foreach($scoring as $row){
-  for($j=0;$j<count($joinsub_criteria);$j++){
-    $score_provider[$i][$j] = $row['instanceName'][$j];
-  }
-  $i++;
-}
+// $score_provider = array();
+// $i=0;
+// foreach($scoring as $row){
+//   for($j=0;$j<count($joinsub_criteria);$j++){
+//     $score_provider[$i][$j] = $row['instanceName'][$j];
+//   }
+//   $i++;
+// }
 
 ?>
 
@@ -323,7 +324,7 @@ echo '</table>';
 // TODO: Check this code
 $overall_total_weight = array();
 foreach($scoring as $qm => $qv) {
-  echo 'Provider '.$qv['instanceName'].'<br>';
+  echo 'Instance '.$qv['vendorName']. ' - ' .$qv['instanceName'].'<br>';
   echo '<table class="table table-bordered">';
   echo '<tr>';
   // Param is Attribute Level 1
@@ -403,7 +404,7 @@ foreach($scoring as $qm => $qv) {
   echo '</table>';
 
   $overall_total_weight[] = array(
-    'provider' => $qv['instanceName'],
+    'provider' => $qv['vendorName']. ' -  ' .$qv['instanceName'],
     'value' => $total_weight
   );
 }
@@ -425,7 +426,7 @@ if ($a == $b) { return 0; }
 });
 
 $final_result = array_reverse($final_result);
-echo '<strong>Recommended Provider</strong>';
+echo '<strong>Recommended Instance</strong>';
 echo '<table class="table table-bordered">';
 echo '<tr><th>Provider</th><th>Value</th><th>Rank</th></tr>';
 $i = 1;

@@ -117,18 +117,25 @@ foreach($res as $r) {
     /* Assurance */
     // Availability
     $inUp = $r["assurance"]["availability"]["uptime"];
+    $inUp = (float)$inUp;
     $up = uptime($inUp, $allUp);
+
     $inOut = $r["assurance"]["availability"]["outages"];
+    $inOut = (float)$inOut;
     $out = outages($inOut, $allOut);
     $avail = $up + $out;
 
     // Downtime
     $inMf = $r["assurance"]["downtime"]["mttf"];
+    $inMf = (float)$inMf;
     $mttf = mttf($inMf, $allMttf);
+
     $inMr = $r["assurance"]["downtime"]["mttr"];
+    $inMr = (float)$inMr;
     $mttr = mttr($inMr, $allMttr);
     $down = $mttf + $mttr;
 
+    // Recoverability
     $rec = recoverability($r["assurance"]["recoverability"]["recoveryMechanism"]);
 
     $asc = $avail + $down + $rec;
@@ -243,10 +250,12 @@ foreach($res as $r) {
     $comp = $secComp + $legComp + $stdComp;
 
     // Gather All Data Into Aggregate Matrix
+    $vendorName = $r["vendorName"];
     $instanceName = $r["instanceName"];
 
     // Score Aggregate Based on Level 1
     $data = array(
+        "vendorName" => $vendorName,
         "instanceName" => $instanceName,
         "security" => $sec,
         "usability" => $usa,
@@ -260,6 +269,7 @@ foreach($res as $r) {
 
     // Score Aggregate Based on Level 2
     $data2 = array(
+        "vendorName" => $vendorName,
         "instanceName" => $instanceName,
         "security" => array(
             "accessControl" => $ac,
