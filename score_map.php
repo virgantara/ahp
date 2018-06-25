@@ -124,50 +124,66 @@
     $allUp : all instance uptime in array
     */
     function uptime($instanceUp, $allUp) {
+        $score = 100;
         $instanceUp = (float)$instanceUp;
         $upMax = max($allUp);
         $upMin = min($allUp);
         $upper = $upMax - $instanceUp;
         $delta = $upMax - $upMin;
-        $zeroCheck = zeroByZero($upper,$delta);
         $deltaScore = 99;
-        return 100 - ($zeroCheck * $deltaScore);
+        if($upper !=0){
+            $zeroCheck = zeroByZero($upper,$delta);
+            $score = 100 - ($zeroCheck * $deltaScore);
+        }
+        return $score;
     }
 
     // Outages
     function outages($instanceOut, $allOut) {
+        $score = 100;
         $instanceOut = (float)$instanceOut;
         $outMax = max($allOut);
         $outMin = min($allOut);
         $upper = $instanceOut-$outMin;
         $delta = $outMax-$outMin;
-        $zeroCheck = zeroByZero($upper, $delta);
         $deltaScore = 99;
-        return 100 - ($zeroCheck * $deltaScore);
+        if($upper != 0){
+            $zeroCheck = zeroByZero($upper, $delta);
+            $score = 100 - ($zeroCheck * $deltaScore);
+        }
+        return $score;
     }
 
     // MTTF
     function mttf($instanceF, $allF) {
+        $score = 100;
         $instanceF = (float)$instanceF;
         $fMax = max($allF);
         $fMin = min($allF);
         $upper = $fMax - $instanceF;
         $delta = $fMax - $fMin;
-        $zeroCheck = zeroByZero($upper, $delta);
         $deltaScore = 99;
-        return 100 - ($zeroCheck * $deltaScore);
+        if($upper !=0){
+            $zeroCheck = zeroByZero($upper, $delta);
+            $score = 100 - ($zeroCheck * $deltaScore);
+        }
+        return $score;
     }
 
     // MTTR
     function mttr($instanceR, $allR) {
+        $score = 100;
         $instanceR = (float)$instanceR;
         $rMax = max($allR);
         $rMin = min($allR);
         $upper = $instanceR-$rMin;
         $delta = $rMax-$rMin;
-        $zeroCheck = zeroByZero($upper, $delta);
         $deltaScore = 99;
-        return 100 - ($zeroCheck * $deltaScore);
+        if($upper != 0){
+            $zeroCheck = zeroByZero($upper, $delta);
+            $score = 100 - ($zeroCheck * $deltaScore); 
+        }
+        return $score;
     }
 
     // recoverability
@@ -184,12 +200,18 @@
     /* Performance */
     // Hardware
     function disk($instanceDisk, $allDisk) {
+        $score = 100;
         $instanceDisk = (float)$instanceDisk;
         $diskMax = max($allDisk);
         $diskMin = min($allDisk);
+        $upper = $diskMax - $instanceDisk;
         $delta = $diskMax - $diskMin;
         $deltaScore = 99;
-        return 100 - ((($diskMax - $instanceDisk)/$delta)*$deltaScore);
+        if($upper != 0) {
+            $zeroCheck = zeroByZero($upper, $delta);
+            $score = 100 - ($zeroCheck * $deltaScore);
+        }
+        return $score;
     }
 
     $os = 100;
@@ -206,30 +228,48 @@
 
     // Functionality
     function netPerf($instanceNet, $allNet) {
+        $score = 100;
         $instanceNet = (float)$instanceNet;
         $netMax = max($allNet);
         $netMin = min($allNet);
+        $upper = $netMax - $instanceNet;
         $delta = $netMax - $netMin;
         $deltaScore = 99;
-        return 100 - ((($netMax - $instanceNet)/$delta)*$deltaScore);
+        if($upper != 0){
+            $zeroCheck = zeroByZero($upper, $delta);
+            $score = 100 - ($zeroCheck * $deltaScore); 
+        }
+        return $score;
     }
 
     function memory($instanceMem, $allMem) {
+        $score = 100;
         $instanceMem = (float)$instanceMem;
         $memMax = max($allMem);
         $memMin = min($allMem);
+        $upper = $memMax - $instanceMem;
         $delta = $memMax - $memMin;
         $deltaScore = 99;
-        return 100 - ((($memMax - $instanceMem)/$delta)*$deltaScore);
+        if($upper != 0){
+            $zeroCheck = zeroByZero($upper, $delta);
+            $score = 100 - ($zeroCheck * $deltaScore); 
+        }
+        return $score;
     }
 
     function cpu($instanceCpu, $allCpu) {
+        $score = 100;
         $instanceCpu = (float)$instanceCpu;
         $cpuMax = max($allCpu);
         $cpuMin = min($allCpu);
+        $upper = $cpuMax - $instanceCpu;
         $delta = $cpuMax - $cpuMin;
         $deltaScore = 99;
-        return 100 - ((($cpuMax - $instanceCpu)/$delta)*$deltaScore);
+        if($upper != 0){
+            $zeroCheck = zeroByZero($upper, $delta);
+            $score = 100 - ($zeroCheck * $deltaScore); 
+        }
+        return $score;
     }
 
     // Flexibility
@@ -278,12 +318,18 @@
     // Price
     // Both windows and linux use same function
     function price($instancePrice, $allPrice) {
+        $score = 100;
         $instancePrice = (float)$instancePrice;
         $priceMax = max($allPrice);
         $priceMin = min($allPrice);
+        $upper = $instancePrice-$priceMin;
         $delta = $priceMax-$priceMin;
         $deltaScore = 99;
-        return 100 - ((($instancePrice-$priceMin)/$delta)*$deltaScore);
+        if($upper != 0){
+            $zeroCheck = zeroByZero($upper, $delta);
+            $score = 100 - ($zeroCheck * $deltaScore);
+        }
+        return $score;
     }
 
     // Charge Model

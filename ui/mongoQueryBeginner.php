@@ -70,17 +70,30 @@ foreach($resTmp as $c) {
 foreach($resTmp as $p) {
     $w = $p["pricing"]["price"]["win"];
     $l = $p["pricing"]["price"]["linux"];
-    $w = (float)$w;
-    $l = (float)$l;
-    $s = '';
+    
+    // Handling if some region doesn't have the specific instance (price null)
+    if($w == ""){
+        $w = 'NA';
+    }
+    if($l == ""){
+        $l = 'NA';
+    }
 
+    $s = 0;
     if(($w != 'NA') and ($l != 'NA')) {
+        $w = (float)$w;
+        $l = (float)$l;
         $s = ($w+$l) / 2;
+        $s = (float)$s;
         array_push($allPrice, $s);
     } elseif(($w != 'NA') and ($l == 'NA')) {
+        $w = (float)$w;
         array_push($allPrice, $w);
-    } else {
+    } elseif(($w == 'NA') and ($l != 'NA')) {
         array_push($allPrice, $l);
+    } else {
+        $s = 1; $s = (float)$s;
+        array_push($allPrice, 1);
     }
 }
 
@@ -189,15 +202,24 @@ foreach($res as $r) {
     // Price
     $w = $r["pricing"]["price"]["win"];
     $l = $r["pricing"]["price"]["linux"];
-    $price = '';
-    if($w == 'NA') {
-        $price = 1;
-    } elseif($l == 'NA') {
-        $price = 1;
-    } else {
+    $price = 0;
+
+    if(($w != 'NA') and ($l != 'NA')) {
+        $w = (float)$w;
+        $l = (float)$l;
         $inPrice = ($w+$l) / 2;
+        $inPrice = (float)$inPrice;
         $price = price($inPrice, $allPrice);
+    } elseif(($w != 'NA') and ($l == 'NA')) {
+        $w = (float)$w;
+        $price = price($w, $allPrice);
+    } elseif(($w == 'NA') and ($l != 'NA')) {
+        $l = (float)$l;
+        $price = price($l, $allPrice);
+    } else {
+        $price = 1;
     }
+    
     // Charge Model
     $chargeModel = $payAsYouGo + $contract;
 

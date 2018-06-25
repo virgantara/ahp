@@ -1,5 +1,6 @@
 <?php
 // For debugging
+// ini_set('memory_limit', '2048M');
 include_once "mongoQueryBeginner.php";
 
 function respectToAttr($data, $attr){
