@@ -119,7 +119,7 @@ foreach($res as $r) {
     // Interface
     $web = web($r["usability"]["interface"]["web"]);
     $mobile = mobile($r["usability"]["interface"]["mobile"]);
-    $terminal = terminal($r["usability"]["interface"]["mobile"]);
+    $terminal = terminal($r["usability"]["interface"]["terminal"]);
     $interface = $web + $mobile + $terminal;
 
     $learn = learnability($r["usability"]["learnability"]);
