@@ -1,7 +1,12 @@
-logs/*
-access.log
-error.log
-*.zip
-*.txt
-*.log
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
 
